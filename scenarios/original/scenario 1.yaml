@@ -1,0 +1,47 @@
+entities:
+  - x: 2200
+    y: 1200
+    _id: "PrimaryBattleship"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 3200
+        - 1200
+      - - 2400
+        - 1400
+      - - 2100
+        - 1600
+      - - 2150
+        - 1150
+  - x: 500
+    y: 500
+    heading: 90
+    speed: 5
+    _id: "AircraftCarrier"
+    _configuration: "entity_configs/nimitz.yaml"
+    _Navigation:
+      waypoints:
+      - - 3000
+        - 3000
+      - - 3968
+        - 746
+      - - 1080
+        - 1155
+world:
+  guardrails:
+    - - 0
+      - 0
+    - - 5000
+      - 5000
+  obstacles:
+    - - - 2260
+        - 320
+      - - 2365
+        - 350
+      - - 2270
+        - 440
+success_conditions:
+  World:PrimaryBattleship:Navigation:has_waypoints: false
+failure_conditions:
+  World:PrimaryBattleship:RadarSonar:collision_event: true
+  World:PrimaryBattleship:out_of_bounds: true

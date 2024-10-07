@@ -1,0 +1,8 @@
+arcade
+shapely
+pyyaml 
+numpy
+matplotlib 
+zmq
+icecream
+

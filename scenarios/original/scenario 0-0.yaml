@@ -1,0 +1,45 @@
+entities:
+  - x: 2200
+    y: 1600
+    heading: 90
+    speed: 5
+    #supervisor: "BaseRemoteNavigator"
+    #supervisor_kwargs:
+    #  url: "http://192.168.30.30:8080"
+    supervisor: "CollisionAvoidanceNavigator"
+    _id: "PrimaryBattleship"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 3200
+        - 1600
+      - - 2400
+        - 1800
+      - - 2100
+        - 2000
+      - - 2150
+        - 1550
+    _Weapons:
+      targets:
+        - - 3500
+          - 3000
+world:
+  guardrails:
+    - - 0
+      - 0
+    - - 5000
+      - 5000
+  obstacles:
+    - - - 3380
+        - 1620
+      - - 3400
+        - 1620
+      - - 3400
+        - 1640
+      - - 3380
+        - 1640
+success_conditions:
+  World:PrimaryBattleship:Navigation:has_waypoints: false
+failure_conditions:
+  World:PrimaryBattleship:RadarSonar:collision_event: true
+  World:PrimaryBattleship:out_of_bounds: true

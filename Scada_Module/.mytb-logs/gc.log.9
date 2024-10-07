@@ -1,0 +1,698 @@
+[2023-11-12T16:57:21.892+0000][0.015s][info][gc,heap] Heap region size: 1M
+[2023-11-12T16:57:21.925+0000][0.048s][info][gc     ] Using G1
+[2023-11-12T16:57:21.926+0000][0.048s][info][gc,heap,coops] Heap address: 0x0000000706200000, size: 3998 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+[2023-11-12T16:57:21.928+0000][0.050s][info][gc,cds       ] Mark closed archive regions in map: [0x00000007bfc00000, 0x00000007bfc6aff8]
+[2023-11-12T16:57:21.929+0000][0.051s][info][gc,cds       ] Mark open archive regions in map: [0x00000007bf800000, 0x00000007bf847ff8]
+[2023-11-12T16:57:22.158+0000][0.280s][debug][safepoint    ] Safepoint synchronization initiated. (9 threads)
+[2023-11-12T16:57:22.158+0000][0.280s][info ][safepoint    ] Application time: 0.1206961 seconds
+[2023-11-12T16:57:22.158+0000][0.280s][info ][safepoint    ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:22.160+0000][0.282s][info ][safepoint    ] Leaving safepoint region
+[2023-11-12T16:57:22.160+0000][0.282s][info ][safepoint    ] Total time for which application threads were stopped: 0.0020352 seconds, Stopping threads took: 0.0000344 seconds
+[2023-11-12T16:57:23.125+0000][1.247s][debug][safepoint    ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.125+0000][1.247s][info ][safepoint    ] Application time: 0.9649260 seconds
+[2023-11-12T16:57:23.125+0000][1.247s][info ][safepoint    ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:23.125+0000][1.247s][info ][safepoint    ] Leaving safepoint region
+[2023-11-12T16:57:23.125+0000][1.248s][info ][safepoint    ] Total time for which application threads were stopped: 0.0004009 seconds, Stopping threads took: 0.0001225 seconds
+[2023-11-12T16:57:23.198+0000][1.320s][debug][safepoint    ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.198+0000][1.321s][info ][safepoint    ] Application time: 0.0729245 seconds
+[2023-11-12T16:57:23.199+0000][1.321s][info ][safepoint    ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:23.199+0000][1.321s][info ][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:23.200+0000][1.322s][info ][gc,task      ] GC(0) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:23.219+0000][1.341s][info ][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,phases    ] GC(0)   Evacuate Collection Set: 17.6ms
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,phases    ] GC(0)   Post Evacuate Collection Set: 1.2ms
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,phases    ] GC(0)   Other: 1.7ms
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,heap      ] GC(0) Eden regions: 56->0(143)
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,heap      ] GC(0) Survivor regions: 0->7(7)
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,heap      ] GC(0) Old regions: 2->3
+[2023-11-12T16:57:23.220+0000][1.342s][info ][gc,heap      ] GC(0) Humongous regions: 2->0
+[2023-11-12T16:57:23.220+0000][1.343s][info ][gc,metaspace ] GC(0) Metaspace: 2389K(5760K)->2389K(5760K) NonClass: 2191K(5120K)->2191K(5120K) Class: 198K(640K)->198K(640K)
+[2023-11-12T16:57:23.221+0000][1.343s][info ][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 58M->8M(252M) 21.725ms
+[2023-11-12T16:57:23.221+0000][1.343s][info ][gc,cpu       ] GC(0) User=0.06s Sys=0.01s Real=0.02s
+[2023-11-12T16:57:23.221+0000][1.343s][info ][safepoint    ] Leaving safepoint region
+[2023-11-12T16:57:23.221+0000][1.343s][info ][safepoint    ] Total time for which application threads were stopped: 0.0223466 seconds, Stopping threads took: 0.0001237 seconds
+[2023-11-12T16:57:23.221+0000][1.343s][info ][gc,stringdedup] Concurrent String Deduplication (1.343s)
+[2023-11-12T16:57:23.223+0000][1.345s][info ][gc,stringdedup] Concurrent String Deduplication 259.1K->256.1K(3016.0B) avg 0.6% (1.343s, 1.345s) 1.713ms
+[2023-11-12T16:57:23.351+0000][1.474s][debug][safepoint     ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.352+0000][1.474s][info ][safepoint     ] Application time: 0.1306199 seconds
+[2023-11-12T16:57:23.352+0000][1.474s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:23.352+0000][1.474s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:23.352+0000][1.474s][info ][safepoint     ] Total time for which application threads were stopped: 0.0004531 seconds, Stopping threads took: 0.0001288 seconds
+[2023-11-12T16:57:23.362+0000][1.484s][debug][safepoint     ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.362+0000][1.484s][info ][safepoint     ] Application time: 0.0096380 seconds
+[2023-11-12T16:57:23.362+0000][1.484s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:23.362+0000][1.484s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:23.362+0000][1.484s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002035 seconds, Stopping threads took: 0.0000157 seconds
+[2023-11-12T16:57:23.447+0000][1.569s][debug][safepoint     ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.447+0000][1.569s][info ][safepoint     ] Application time: 0.0847203 seconds
+[2023-11-12T16:57:23.447+0000][1.569s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:23.447+0000][1.569s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:23.447+0000][1.569s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:23.447+0000][1.569s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002894 seconds, Stopping threads took: 0.0000467 seconds
+[2023-11-12T16:57:23.461+0000][1.583s][debug][safepoint     ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:23.461+0000][1.583s][info ][safepoint     ] Application time: 0.0133917 seconds
+[2023-11-12T16:57:23.461+0000][1.583s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:23.461+0000][1.583s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:23.461+0000][1.583s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:23.461+0000][1.583s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002408 seconds, Stopping threads took: 0.0000447 seconds
+[2023-11-12T16:57:24.232+0000][2.354s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:24.232+0000][2.354s][info ][safepoint     ] Application time: 0.7711998 seconds
+[2023-11-12T16:57:24.232+0000][2.354s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:24.232+0000][2.354s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:24.232+0000][2.355s][info ][gc,start      ] GC(1) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:24.232+0000][2.355s][info ][gc,task       ] GC(1) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,phases     ] GC(1)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,phases     ] GC(1)   Evacuate Collection Set: 15.8ms
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,phases     ] GC(1)   Post Evacuate Collection Set: 1.2ms
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,phases     ] GC(1)   Other: 0.2ms
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,heap       ] GC(1) Eden regions: 143->0(141)
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,heap       ] GC(1) Survivor regions: 7->9(19)
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,heap       ] GC(1) Old regions: 3->3
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,heap       ] GC(1) Humongous regions: 0->0
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,metaspace  ] GC(1) Metaspace: 7343K(9088K)->7343K(9088K) NonClass: 6506K(7936K)->6506K(7936K) Class: 837K(1152K)->837K(1152K)
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc            ] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 151M->10M(252M) 17.416ms
+[2023-11-12T16:57:24.250+0000][2.372s][info ][gc,cpu        ] GC(1) User=0.06s Sys=0.01s Real=0.02s
+[2023-11-12T16:57:24.250+0000][2.372s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:24.250+0000][2.372s][info ][safepoint     ] Total time for which application threads were stopped: 0.0178126 seconds, Stopping threads took: 0.0000505 seconds
+[2023-11-12T16:57:24.807+0000][2.929s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:24.807+0000][2.929s][info ][safepoint     ] Application time: 0.5568019 seconds
+[2023-11-12T16:57:24.807+0000][2.929s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:24.807+0000][2.929s][info ][safepoint     ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:24.807+0000][2.929s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:24.807+0000][2.929s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002358 seconds, Stopping threads took: 0.0000468 seconds
+[2023-11-12T16:57:24.824+0000][2.946s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:24.824+0000][2.946s][info ][safepoint     ] Application time: 0.0168103 seconds
+[2023-11-12T16:57:24.824+0000][2.946s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:24.824+0000][2.946s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:24.824+0000][2.946s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:24.824+0000][2.946s][info ][safepoint     ] Total time for which application threads were stopped: 0.0003579 seconds, Stopping threads took: 0.0000437 seconds
+[2023-11-12T16:57:24.943+0000][3.065s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:24.943+0000][3.065s][info ][safepoint     ] Application time: 0.1189740 seconds
+[2023-11-12T16:57:24.943+0000][3.065s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:24.943+0000][3.065s][info ][safepoint     ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:24.943+0000][3.066s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:24.944+0000][3.066s][info ][safepoint     ] Total time for which application threads were stopped: 0.0003762 seconds, Stopping threads took: 0.0000479 seconds
+[2023-11-12T16:57:25.001+0000][3.123s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.001+0000][3.124s][info ][safepoint     ] Application time: 0.0577245 seconds
+[2023-11-12T16:57:25.002+0000][3.124s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:25.002+0000][3.124s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:25.002+0000][3.124s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.002+0000][3.124s][info ][safepoint     ] Total time for which application threads were stopped: 0.0005988 seconds, Stopping threads took: 0.0003430 seconds
+[2023-11-12T16:57:25.002+0000][3.125s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.003+0000][3.125s][info ][safepoint     ] Application time: 0.0002291 seconds
+[2023-11-12T16:57:25.003+0000][3.125s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:25.003+0000][3.125s][info ][gc,start      ] GC(2) Pause Young (Normal) (GCLocker Initiated GC)
+[2023-11-12T16:57:25.003+0000][3.125s][info ][gc,task       ] GC(2) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:25.015+0000][3.137s][info ][gc,phases     ] GC(2)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:25.015+0000][3.137s][info ][gc,phases     ] GC(2)   Evacuate Collection Set: 10.4ms
+[2023-11-12T16:57:25.015+0000][3.138s][info ][gc,phases     ] GC(2)   Post Evacuate Collection Set: 1.3ms
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,phases     ] GC(2)   Other: 0.4ms
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,heap       ] GC(2) Eden regions: 141->0(137)
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,heap       ] GC(2) Survivor regions: 9->13(19)
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,heap       ] GC(2) Old regions: 3->3
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,heap       ] GC(2) Humongous regions: 0->0
+[2023-11-12T16:57:25.016+0000][3.138s][info ][gc,metaspace  ] GC(2) Metaspace: 12251K(13056K)->12251K(13056K) NonClass: 10748K(11264K)->10748K(11264K) Class: 1503K(1792K)->1503K(1792K)
+[2023-11-12T16:57:25.016+0000][3.139s][info ][gc            ] GC(2) Pause Young (Normal) (GCLocker Initiated GC) 151M->13M(252M) 13.409ms
+[2023-11-12T16:57:25.017+0000][3.139s][info ][gc,cpu        ] GC(2) User=0.04s Sys=0.00s Real=0.02s
+[2023-11-12T16:57:25.017+0000][3.139s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.017+0000][3.139s][info ][safepoint     ] Total time for which application threads were stopped: 0.0140391 seconds, Stopping threads took: 0.0001335 seconds
+[2023-11-12T16:57:25.017+0000][3.139s][info ][gc,stringdedup] Concurrent String Deduplication (3.139s)
+[2023-11-12T16:57:25.028+0000][3.150s][info ][gc,stringdedup] Concurrent String Deduplication 1923.3K->1730.3K(192.9K) avg 8.0% (3.139s, 3.150s) 11.130ms
+[2023-11-12T16:57:25.336+0000][3.459s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.336+0000][3.459s][info ][safepoint     ] Application time: 0.3194960 seconds
+[2023-11-12T16:57:25.336+0000][3.459s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:25.337+0000][3.459s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:25.337+0000][3.459s][info ][gc,start      ] GC(3) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:25.337+0000][3.459s][info ][gc,task       ] GC(3) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:25.350+0000][3.473s][info ][gc,phases     ] GC(3)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,phases     ] GC(3)   Evacuate Collection Set: 11.7ms
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,phases     ] GC(3)   Post Evacuate Collection Set: 1.7ms
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,phases     ] GC(3)   Other: 0.2ms
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,heap       ] GC(3) Eden regions: 137->0(143)
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,heap       ] GC(3) Survivor regions: 13->7(19)
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,heap       ] GC(3) Old regions: 3->10
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,heap       ] GC(3) Humongous regions: 0->0
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,metaspace  ] GC(3) Metaspace: 16402K(17280K)->16402K(17280K) NonClass: 14276K(14848K)->14276K(14848K) Class: 2125K(2432K)->2125K(2432K)
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc            ] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 150M->15M(252M) 13.795ms
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,cpu        ] GC(3) User=0.07s Sys=0.00s Real=0.01s
+[2023-11-12T16:57:25.351+0000][3.473s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.351+0000][3.473s][info ][safepoint     ] Total time for which application threads were stopped: 0.0143120 seconds, Stopping threads took: 0.0002923 seconds
+[2023-11-12T16:57:25.351+0000][3.473s][info ][gc,stringdedup] Concurrent String Deduplication (3.473s)
+[2023-11-12T16:57:25.352+0000][3.474s][info ][gc,stringdedup] Concurrent String Deduplication 168.6K->56400.0B(113.5K) avg 11.8% (3.473s, 3.474s) 1.394ms
+[2023-11-12T16:57:25.407+0000][3.529s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.407+0000][3.529s][info ][safepoint     ] Application time: 0.0562809 seconds
+[2023-11-12T16:57:25.407+0000][3.529s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:25.407+0000][3.529s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:25.408+0000][3.530s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.408+0000][3.530s][info ][safepoint     ] Total time for which application threads were stopped: 0.0006245 seconds, Stopping threads took: 0.0002193 seconds
+[2023-11-12T16:57:25.561+0000][3.683s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.561+0000][3.684s][info ][safepoint     ] Application time: 0.1537395 seconds
+[2023-11-12T16:57:25.566+0000][3.688s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:25.567+0000][3.689s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.567+0000][3.689s][info ][safepoint     ] Total time for which application threads were stopped: 0.0055843 seconds, Stopping threads took: 0.0049095 seconds
+[2023-11-12T16:57:25.738+0000][3.860s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.738+0000][3.861s][info ][safepoint     ] Application time: 0.1712044 seconds
+[2023-11-12T16:57:25.739+0000][3.861s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:25.739+0000][3.861s][info ][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2023-11-12T16:57:25.739+0000][3.861s][info ][gc,start      ] GC(4) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2023-11-12T16:57:25.739+0000][3.861s][info ][gc,task       ] GC(4) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:25.754+0000][3.876s][info ][gc,phases     ] GC(4)   Pre Evacuate Collection Set: 0.1ms
+[2023-11-12T16:57:25.754+0000][3.876s][info ][gc,phases     ] GC(4)   Evacuate Collection Set: 10.4ms
+[2023-11-12T16:57:25.754+0000][3.876s][info ][gc,phases     ] GC(4)   Post Evacuate Collection Set: 3.5ms
+[2023-11-12T16:57:25.754+0000][3.876s][info ][gc,phases     ] GC(4)   Other: 0.6ms
+[2023-11-12T16:57:25.754+0000][3.876s][info ][gc,heap       ] GC(4) Eden regions: 127->0(173)
+[2023-11-12T16:57:25.754+0000][3.877s][info ][gc,heap       ] GC(4) Survivor regions: 7->8(19)
+[2023-11-12T16:57:25.754+0000][3.877s][info ][gc,heap       ] GC(4) Old regions: 10->10
+[2023-11-12T16:57:25.755+0000][3.877s][info ][gc,heap       ] GC(4) Humongous regions: 0->0
+[2023-11-12T16:57:25.755+0000][3.877s][info ][gc,metaspace  ] GC(4) Metaspace: 20463K(21248K)->20463K(21248K) NonClass: 17883K(18432K)->17883K(18432K) Class: 2579K(2816K)->2579K(2816K)
+[2023-11-12T16:57:25.755+0000][3.877s][info ][gc            ] GC(4) Pause Young (Concurrent Start) (Metadata GC Threshold) 141M->16M(303M) 15.824ms
+[2023-11-12T16:57:25.755+0000][3.877s][info ][gc,cpu        ] GC(4) User=0.04s Sys=0.01s Real=0.02s
+[2023-11-12T16:57:25.755+0000][3.877s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.755+0000][3.877s][info ][safepoint     ] Total time for which application threads were stopped: 0.0167051 seconds, Stopping threads took: 0.0002643 seconds
+[2023-11-12T16:57:25.755+0000][3.877s][info ][gc            ] GC(5) Concurrent Cycle
+[2023-11-12T16:57:25.756+0000][3.878s][info ][gc,marking    ] GC(5) Concurrent Clear Claimed Marks
+[2023-11-12T16:57:25.755+0000][3.878s][info ][gc,stringdedup] Concurrent String Deduplication (3.878s)
+[2023-11-12T16:57:25.756+0000][3.878s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.756+0000][3.878s][info ][safepoint     ] Application time: 0.0008544 seconds
+[2023-11-12T16:57:25.756+0000][3.878s][info ][gc,marking    ] GC(5) Concurrent Clear Claimed Marks 0.187ms
+[2023-11-12T16:57:25.757+0000][3.879s][info ][gc,marking    ] GC(5) Concurrent Scan Root Regions
+[2023-11-12T16:57:25.759+0000][3.881s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:25.759+0000][3.881s][info ][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2023-11-12T16:57:25.759+0000][3.882s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.760+0000][3.882s][info ][safepoint     ] Total time for which application threads were stopped: 0.0031867 seconds, Stopping threads took: 0.0030309 seconds
+[2023-11-12T16:57:25.760+0000][3.882s][info ][gc,marking    ] GC(5) Concurrent Scan Root Regions 3.634ms
+[2023-11-12T16:57:25.760+0000][3.883s][info ][gc,marking    ] GC(5) Concurrent Mark (3.882s)
+[2023-11-12T16:57:25.761+0000][3.883s][info ][gc,marking    ] GC(5) Concurrent Mark From Roots
+[2023-11-12T16:57:25.761+0000][3.883s][info ][gc,task       ] GC(5) Using 2 workers of 2 for marking
+[2023-11-12T16:57:25.762+0000][3.884s][info ][gc,stringdedup] Concurrent String Deduplication 218.6K->129.0K(91720.0B) avg 14.0% (3.878s, 3.884s) 2.826ms
+[2023-11-12T16:57:25.769+0000][3.891s][info ][gc,marking    ] GC(5) Concurrent Mark From Roots 8.506ms
+[2023-11-12T16:57:25.769+0000][3.891s][info ][gc,marking    ] GC(5) Concurrent Preclean
+[2023-11-12T16:57:25.770+0000][3.892s][info ][gc,marking    ] GC(5) Concurrent Preclean 0.291ms
+[2023-11-12T16:57:25.770+0000][3.892s][info ][gc,marking    ] GC(5) Concurrent Mark (3.882s, 3.892s) 9.313ms
+[2023-11-12T16:57:25.770+0000][3.892s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.770+0000][3.892s][info ][safepoint     ] Application time: 0.0103539 seconds
+[2023-11-12T16:57:25.770+0000][3.892s][debug][safepoint     ] Waiting for 3 thread(s) to block
+[2023-11-12T16:57:25.770+0000][3.892s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:25.770+0000][3.892s][info ][gc,start      ] GC(5) Pause Remark
+[2023-11-12T16:57:25.777+0000][3.899s][info ][gc,stringtable] GC(5) Cleaned string and symbol table, strings: 8072 processed, 7 removed, symbols: 55696 processed, 114 removed
+[2023-11-12T16:57:25.777+0000][3.899s][info ][gc            ] GC(5) Pause Remark 18M->18M(303M) 7.152ms
+[2023-11-12T16:57:25.777+0000][3.899s][info ][gc,cpu        ] GC(5) User=0.02s Sys=0.00s Real=0.01s
+[2023-11-12T16:57:25.777+0000][3.899s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.777+0000][3.899s][info ][safepoint     ] Total time for which application threads were stopped: 0.0074276 seconds, Stopping threads took: 0.0001152 seconds
+[2023-11-12T16:57:25.777+0000][3.900s][info ][gc,marking    ] GC(5) Concurrent Rebuild Remembered Sets
+[2023-11-12T16:57:25.781+0000][3.903s][info ][gc,marking    ] GC(5) Concurrent Rebuild Remembered Sets 3.819ms
+[2023-11-12T16:57:25.782+0000][3.904s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:25.782+0000][3.904s][info ][safepoint     ] Application time: 0.0042485 seconds
+[2023-11-12T16:57:25.782+0000][3.904s][debug][safepoint     ] ... found polling page return exception at pc = 0x00007f5fd4efec5c, stub =0x00007f5fd4841800
+[2023-11-12T16:57:25.785+0000][3.908s][debug][safepoint     ] ... found polling page return exception at pc = 0x00007f5fdc2c9394, stub =0x00007f5fd4841800
+[2023-11-12T16:57:25.787+0000][3.909s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:25.787+0000][3.909s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:25.787+0000][3.909s][info ][gc,start      ] GC(5) Pause Cleanup
+[2023-11-12T16:57:25.787+0000][3.909s][info ][gc            ] GC(5) Pause Cleanup 20M->20M(303M) 0.196ms
+[2023-11-12T16:57:25.787+0000][3.909s][info ][gc,cpu        ] GC(5) User=0.00s Sys=0.00s Real=0.00s
+[2023-11-12T16:57:25.787+0000][3.909s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:25.787+0000][3.909s][info ][safepoint     ] Total time for which application threads were stopped: 0.0053962 seconds, Stopping threads took: 0.0050687 seconds
+[2023-11-12T16:57:25.787+0000][3.909s][info ][gc,marking    ] GC(5) Concurrent Cleanup for Next Mark
+[2023-11-12T16:57:25.791+0000][3.913s][info ][gc,marking    ] GC(5) Concurrent Cleanup for Next Mark 3.978ms
+[2023-11-12T16:57:25.791+0000][3.913s][info ][gc            ] GC(5) Concurrent Cycle 35.925ms
+[2023-11-12T16:57:26.025+0000][4.147s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:26.025+0000][4.147s][info ][safepoint     ] Application time: 0.2377226 seconds
+[2023-11-12T16:57:26.025+0000][4.147s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:26.025+0000][4.147s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:26.025+0000][4.147s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:26.025+0000][4.147s][info ][safepoint     ] Total time for which application threads were stopped: 0.0005883 seconds, Stopping threads took: 0.0000488 seconds
+[2023-11-12T16:57:26.521+0000][4.643s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:26.521+0000][4.643s][info ][safepoint     ] Application time: 0.4955794 seconds
+[2023-11-12T16:57:26.521+0000][4.643s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:26.521+0000][4.643s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:26.521+0000][4.643s][info ][gc,start      ] GC(6) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:26.521+0000][4.643s][info ][gc,task       ] GC(6) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,phases     ] GC(6)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,phases     ] GC(6)   Evacuate Collection Set: 10.3ms
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,phases     ] GC(6)   Post Evacuate Collection Set: 1.5ms
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,phases     ] GC(6)   Other: 0.2ms
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,heap       ] GC(6) Eden regions: 173->0(168)
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,heap       ] GC(6) Survivor regions: 8->13(23)
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,heap       ] GC(6) Old regions: 10->10
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,heap       ] GC(6) Humongous regions: 0->0
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,metaspace  ] GC(6) Metaspace: 24039K(25212K)->24039K(25212K) NonClass: 21007K(21756K)->21007K(21756K) Class: 3032K(3456K)->3032K(3456K)
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc            ] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 189M->20M(303M) 12.122ms
+[2023-11-12T16:57:26.533+0000][4.655s][info ][gc,cpu        ] GC(6) User=0.06s Sys=0.00s Real=0.01s
+[2023-11-12T16:57:26.533+0000][4.655s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:26.533+0000][4.655s][info ][safepoint     ] Total time for which application threads were stopped: 0.0124003 seconds, Stopping threads took: 0.0000473 seconds
+[2023-11-12T16:57:26.533+0000][4.656s][info ][gc,stringdedup] Concurrent String Deduplication (4.656s)
+[2023-11-12T16:57:26.534+0000][4.656s][info ][gc,stringdedup] Concurrent String Deduplication 129.5K->26416.0B(103.7K) avg 16.9% (4.656s, 4.656s) 0.878ms
+[2023-11-12T16:57:27.426+0000][5.548s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:27.426+0000][5.548s][info ][safepoint     ] Application time: 0.8922854 seconds
+[2023-11-12T16:57:27.426+0000][5.548s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:27.426+0000][5.548s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:27.426+0000][5.548s][info ][gc,start      ] GC(7) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:27.426+0000][5.548s][info ][gc,task       ] GC(7) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,phases     ] GC(7)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,phases     ] GC(7)   Evacuate Collection Set: 20.9ms
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,phases     ] GC(7)   Post Evacuate Collection Set: 1.6ms
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,phases     ] GC(7)   Other: 0.2ms
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,heap       ] GC(7) Eden regions: 168->0(165)
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,heap       ] GC(7) Survivor regions: 13->16(23)
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,heap       ] GC(7) Old regions: 10->10
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,heap       ] GC(7) Humongous regions: 0->0
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,metaspace  ] GC(7) Metaspace: 24684K(25724K)->24684K(25724K) NonClass: 21590K(22268K)->21590K(22268K) Class: 3094K(3456K)->3094K(3456K)
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc            ] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 188M->24M(303M) 22.802ms
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,cpu        ] GC(7) User=0.08s Sys=0.00s Real=0.02s
+[2023-11-12T16:57:27.449+0000][5.571s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:27.449+0000][5.571s][info ][safepoint     ] Total time for which application threads were stopped: 0.0231643 seconds, Stopping threads took: 0.0000473 seconds
+[2023-11-12T16:57:27.449+0000][5.571s][info ][gc,stringdedup] Concurrent String Deduplication (5.571s)
+[2023-11-12T16:57:27.452+0000][5.575s][info ][gc,stringdedup] Concurrent String Deduplication 794.4K->725.6K(70408.0B) avg 15.2% (5.571s, 5.575s) 3.469ms
+[2023-11-12T16:57:27.912+0000][6.035s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:27.913+0000][6.035s][info ][safepoint     ] Application time: 0.4637132 seconds
+[2023-11-12T16:57:27.916+0000][6.038s][debug][safepoint     ] ... found polling page loop exception at pc = 0x00007f5fdc413a89, stub =0x00007f5fd4841b00
+[2023-11-12T16:57:27.917+0000][6.039s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:27.917+0000][6.040s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:27.918+0000][6.040s][info ][gc,start      ] GC(8) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:27.918+0000][6.040s][info ][gc,task       ] GC(8) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:27.948+0000][6.070s][info ][gc,phases     ] GC(8)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,phases     ] GC(8)   Evacuate Collection Set: 28.7ms
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,phases     ] GC(8)   Post Evacuate Collection Set: 1.7ms
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,phases     ] GC(8)   Other: 0.2ms
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,heap       ] GC(8) Eden regions: 165->0(166)
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,heap       ] GC(8) Survivor regions: 16->15(23)
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,heap       ] GC(8) Old regions: 10->15
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,heap       ] GC(8) Humongous regions: 0->0
+[2023-11-12T16:57:27.948+0000][6.071s][info ][gc,metaspace  ] GC(8) Metaspace: 25703K(26876K)->25703K(26876K) NonClass: 22530K(23292K)->22530K(23292K) Class: 3172K(3584K)->3172K(3584K)
+[2023-11-12T16:57:27.949+0000][6.071s][info ][gc            ] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 189M->27M(303M) 30.866ms
+[2023-11-12T16:57:27.949+0000][6.071s][info ][gc,cpu        ] GC(8) User=0.12s Sys=0.00s Real=0.03s
+[2023-11-12T16:57:27.949+0000][6.071s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:27.949+0000][6.071s][info ][safepoint     ] Total time for which application threads were stopped: 0.0360132 seconds, Stopping threads took: 0.0048237 seconds
+[2023-11-12T16:57:27.949+0000][6.071s][info ][gc,stringdedup] Concurrent String Deduplication (6.071s)
+[2023-11-12T16:57:27.956+0000][6.078s][info ][gc,stringdedup] Concurrent String Deduplication 1344.5K->707.6K(636.9K) avg 23.7% (6.071s, 6.078s) 7.031ms
+[2023-11-12T16:57:28.191+0000][6.313s][debug][safepoint     ] Safepoint synchronization initiated. (12 threads)
+[2023-11-12T16:57:28.191+0000][6.313s][info ][safepoint     ] Application time: 0.2424583 seconds
+[2023-11-12T16:57:28.194+0000][6.316s][debug][safepoint     ] ... found polling page return exception at pc = 0x00007f5fdc44bbde, stub =0x00007f5fd4841800
+[2023-11-12T16:57:28.194+0000][6.316s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:28.194+0000][6.317s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:28.195+0000][6.317s][info ][gc,start      ] GC(9) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:28.195+0000][6.317s][info ][gc,task       ] GC(9) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,phases     ] GC(9)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,phases     ] GC(9)   Evacuate Collection Set: 19.2ms
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,phases     ] GC(9)   Post Evacuate Collection Set: 4.9ms
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,phases     ] GC(9)   Other: 0.2ms
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,heap       ] GC(9) Eden regions: 166->0(213)
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,heap       ] GC(9) Survivor regions: 15->11(23)
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,heap       ] GC(9) Old regions: 15->17
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,heap       ] GC(9) Humongous regions: 0->0
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,metaspace  ] GC(9) Metaspace: 26295K(27388K)->26295K(27388K) NonClass: 23072K(23804K)->23072K(23804K) Class: 3223K(3584K)->3223K(3584K)
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc            ] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 193M->26M(374M) 24.583ms
+[2023-11-12T16:57:28.219+0000][6.341s][info ][gc,cpu        ] GC(9) User=0.07s Sys=0.00s Real=0.02s
+[2023-11-12T16:57:28.219+0000][6.341s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:28.219+0000][6.341s][info ][safepoint     ] Total time for which application threads were stopped: 0.0281700 seconds, Stopping threads took: 0.0033894 seconds
+[2023-11-12T16:57:28.219+0000][6.342s][info ][gc,stringdedup] Concurrent String Deduplication (6.342s)
+[2023-11-12T16:57:28.225+0000][6.347s][info ][gc,stringdedup] Concurrent String Deduplication 1174.9K->359.7K(815.1K) avg 32.2% (6.342s, 6.347s) 5.614ms
+[2023-11-12T16:57:28.952+0000][7.074s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:28.952+0000][7.074s][info ][safepoint     ] Application time: 0.7324722 seconds
+[2023-11-12T16:57:28.952+0000][7.074s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:28.952+0000][7.074s][info ][gc,start      ] GC(10) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:28.952+0000][7.074s][info ][gc,task       ] GC(10) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:28.961+0000][7.083s][info ][gc,phases     ] GC(10)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:28.961+0000][7.084s][info ][gc,phases     ] GC(10)   Evacuate Collection Set: 6.8ms
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,phases     ] GC(10)   Post Evacuate Collection Set: 1.9ms
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,phases     ] GC(10)   Other: 0.5ms
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,heap       ] GC(10) Eden regions: 213->0(212)
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,heap       ] GC(10) Survivor regions: 11->12(28)
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,heap       ] GC(10) Old regions: 17->17
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,heap       ] GC(10) Humongous regions: 0->0
+[2023-11-12T16:57:28.962+0000][7.084s][info ][gc,metaspace  ] GC(10) Metaspace: 31631K(32764K)->31631K(32764K) NonClass: 27841K(28668K)->27841K(28668K) Class: 3790K(4096K)->3790K(4096K)
+[2023-11-12T16:57:28.962+0000][7.085s][info ][gc            ] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 239M->27M(374M) 10.394ms
+[2023-11-12T16:57:28.963+0000][7.085s][info ][gc,cpu        ] GC(10) User=0.03s Sys=0.01s Real=0.01s
+[2023-11-12T16:57:28.963+0000][7.085s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:28.963+0000][7.085s][info ][safepoint     ] Total time for which application threads were stopped: 0.0110882 seconds, Stopping threads took: 0.0000168 seconds
+[2023-11-12T16:57:28.963+0000][7.085s][info ][gc,stringdedup] Concurrent String Deduplication (7.085s)
+[2023-11-12T16:57:28.966+0000][7.088s][info ][gc,stringdedup] Concurrent String Deduplication 1198.1K->261.2K(936.9K) avg 39.6% (7.085s, 7.088s) 3.246ms
+[2023-11-12T16:57:29.358+0000][7.480s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:29.358+0000][7.481s][info ][safepoint     ] Application time: 0.3955188 seconds
+[2023-11-12T16:57:29.359+0000][7.481s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:29.359+0000][7.482s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:29.360+0000][7.482s][info ][safepoint     ] Total time for which application threads were stopped: 0.0008838 seconds, Stopping threads took: 0.0001264 seconds
+[2023-11-12T16:57:29.627+0000][7.749s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:29.627+0000][7.749s][info ][safepoint     ] Application time: 0.2672397 seconds
+[2023-11-12T16:57:29.627+0000][7.749s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:29.627+0000][7.750s][info ][gc,start      ] GC(11) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:29.628+0000][7.750s][info ][gc,task       ] GC(11) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,phases     ] GC(11)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,phases     ] GC(11)   Evacuate Collection Set: 7.3ms
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,phases     ] GC(11)   Post Evacuate Collection Set: 1.4ms
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,phases     ] GC(11)   Other: 0.4ms
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,heap       ] GC(11) Eden regions: 212->0(211)
+[2023-11-12T16:57:29.637+0000][7.759s][info ][gc,heap       ] GC(11) Survivor regions: 12->13(28)
+[2023-11-12T16:57:29.637+0000][7.760s][info ][gc,heap       ] GC(11) Old regions: 17->17
+[2023-11-12T16:57:29.638+0000][7.760s][info ][gc,heap       ] GC(11) Humongous regions: 0->0
+[2023-11-12T16:57:29.638+0000][7.760s][info ][gc,metaspace  ] GC(11) Metaspace: 32811K(33788K)->32811K(33788K) NonClass: 28858K(29436K)->28858K(29436K) Class: 3953K(4352K)->3953K(4352K)
+[2023-11-12T16:57:29.638+0000][7.760s][info ][gc            ] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 239M->27M(374M) 10.484ms
+[2023-11-12T16:57:29.638+0000][7.760s][info ][gc,cpu        ] GC(11) User=0.05s Sys=0.00s Real=0.01s
+[2023-11-12T16:57:29.638+0000][7.760s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:29.638+0000][7.761s][info ][safepoint     ] Total time for which application threads were stopped: 0.0113701 seconds, Stopping threads took: 0.0001346 seconds
+[2023-11-12T16:57:29.639+0000][7.761s][info ][gc,stringdedup] Concurrent String Deduplication (7.761s)
+[2023-11-12T16:57:29.639+0000][7.761s][info ][gc,stringdedup] Concurrent String Deduplication 45768.0B->10888.0B(34880.0B) avg 39.8% (7.761s, 7.761s) 0.267ms
+[2023-11-12T16:57:29.810+0000][7.932s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:29.810+0000][7.933s][info ][safepoint     ] Application time: 0.1718773 seconds
+[2023-11-12T16:57:29.811+0000][7.933s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:29.811+0000][7.933s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:29.811+0000][7.934s][info ][safepoint     ] Total time for which application threads were stopped: 0.0009243 seconds, Stopping threads took: 0.0001504 seconds
+[2023-11-12T16:57:30.149+0000][8.271s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.149+0000][8.271s][info ][safepoint     ] Application time: 0.3376591 seconds
+[2023-11-12T16:57:30.149+0000][8.272s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:30.150+0000][8.272s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.150+0000][8.273s][info ][safepoint     ] Total time for which application threads were stopped: 0.0009952 seconds, Stopping threads took: 0.0001383 seconds
+[2023-11-12T16:57:30.158+0000][8.281s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.159+0000][8.281s][info ][safepoint     ] Application time: 0.0081156 seconds
+[2023-11-12T16:57:30.159+0000][8.281s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:30.159+0000][8.282s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.160+0000][8.282s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007589 seconds, Stopping threads took: 0.0001563 seconds
+[2023-11-12T16:57:30.180+0000][8.302s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.180+0000][8.302s][info ][safepoint     ] Application time: 0.0205165 seconds
+[2023-11-12T16:57:30.180+0000][8.303s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:30.181+0000][8.303s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.181+0000][8.303s][info ][safepoint     ] Total time for which application threads were stopped: 0.0008772 seconds, Stopping threads took: 0.0001458 seconds
+[2023-11-12T16:57:30.255+0000][8.377s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.255+0000][8.377s][info ][safepoint     ] Application time: 0.0734057 seconds
+[2023-11-12T16:57:30.255+0000][8.377s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:30.255+0000][8.377s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:30.255+0000][8.378s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.256+0000][8.378s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007026 seconds, Stopping threads took: 0.0000482 seconds
+[2023-11-12T16:57:30.305+0000][8.427s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.305+0000][8.427s][info ][safepoint     ] Application time: 0.0496519 seconds
+[2023-11-12T16:57:30.305+0000][8.427s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:30.305+0000][8.427s][info ][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2023-11-12T16:57:30.305+0000][8.428s][info ][gc,start      ] GC(12) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2023-11-12T16:57:30.305+0000][8.428s][info ][gc,task       ] GC(12) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,phases     ] GC(12)   Pre Evacuate Collection Set: 0.1ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,phases     ] GC(12)   Evacuate Collection Set: 20.1ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,phases     ] GC(12)   Post Evacuate Collection Set: 1.8ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,phases     ] GC(12)   Other: 0.2ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,heap       ] GC(12) Eden regions: 182->0(210)
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,heap       ] GC(12) Survivor regions: 13->14(28)
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,heap       ] GC(12) Old regions: 17->17
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,heap       ] GC(12) Humongous regions: 0->0
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,metaspace  ] GC(12) Metaspace: 35061K(36048K)->35061K(36048K) NonClass: 30835K(31440K)->30835K(31440K) Class: 4225K(4608K)->4225K(4608K)
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc            ] GC(12) Pause Young (Concurrent Start) (Metadata GC Threshold) 209M->29M(374M) 22.479ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,cpu        ] GC(12) User=0.06s Sys=0.00s Real=0.03s
+[2023-11-12T16:57:30.328+0000][8.450s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.328+0000][8.450s][info ][safepoint     ] Total time for which application threads were stopped: 0.0227996 seconds, Stopping threads took: 0.0000527 seconds
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc            ] GC(13) Concurrent Cycle
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,marking    ] GC(13) Concurrent Clear Claimed Marks
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,stringdedup] Concurrent String Deduplication (8.450s)
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,marking    ] GC(13) Concurrent Clear Claimed Marks 0.089ms
+[2023-11-12T16:57:30.328+0000][8.450s][info ][gc,marking    ] GC(13) Concurrent Scan Root Regions
+[2023-11-12T16:57:30.329+0000][8.451s][info ][gc,stringdedup] Concurrent String Deduplication 126.1K->17128.0B(109.4K) avg 40.6% (8.450s, 8.451s) 0.893ms
+[2023-11-12T16:57:30.333+0000][8.456s][info ][gc,marking    ] GC(13) Concurrent Scan Root Regions 5.252ms
+[2023-11-12T16:57:30.334+0000][8.456s][info ][gc,marking    ] GC(13) Concurrent Mark (8.456s)
+[2023-11-12T16:57:30.334+0000][8.456s][info ][gc,marking    ] GC(13) Concurrent Mark From Roots
+[2023-11-12T16:57:30.334+0000][8.456s][info ][gc,task       ] GC(13) Using 2 workers of 2 for marking
+[2023-11-12T16:57:30.348+0000][8.471s][info ][gc,marking    ] GC(13) Concurrent Mark From Roots 14.924ms
+[2023-11-12T16:57:30.349+0000][8.471s][info ][gc,marking    ] GC(13) Concurrent Preclean
+[2023-11-12T16:57:30.349+0000][8.471s][info ][gc,marking    ] GC(13) Concurrent Preclean 0.152ms
+[2023-11-12T16:57:30.349+0000][8.471s][info ][gc,marking    ] GC(13) Concurrent Mark (8.456s, 8.471s) 15.178ms
+[2023-11-12T16:57:30.349+0000][8.471s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.349+0000][8.471s][info ][safepoint     ] Application time: 0.0207113 seconds
+[2023-11-12T16:57:30.349+0000][8.471s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:30.349+0000][8.471s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:30.349+0000][8.471s][info ][gc,start      ] GC(13) Pause Remark
+[2023-11-12T16:57:30.357+0000][8.479s][info ][gc,stringtable] GC(13) Cleaned string and symbol table, strings: 12677 processed, 28 removed, symbols: 122534 processed, 336 removed
+[2023-11-12T16:57:30.358+0000][8.480s][info ][gc            ] GC(13) Pause Remark 34M->34M(374M) 8.611ms
+[2023-11-12T16:57:30.358+0000][8.480s][info ][gc,cpu        ] GC(13) User=0.02s Sys=0.00s Real=0.01s
+[2023-11-12T16:57:30.358+0000][8.480s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.358+0000][8.480s][info ][safepoint     ] Total time for which application threads were stopped: 0.0090451 seconds, Stopping threads took: 0.0002632 seconds
+[2023-11-12T16:57:30.358+0000][8.480s][info ][gc,marking    ] GC(13) Concurrent Rebuild Remembered Sets
+[2023-11-12T16:57:30.366+0000][8.488s][info ][gc,marking    ] GC(13) Concurrent Rebuild Remembered Sets 8.436ms
+[2023-11-12T16:57:30.366+0000][8.489s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.366+0000][8.489s][info ][safepoint     ] Application time: 0.0085701 seconds
+[2023-11-12T16:57:30.370+0000][8.492s][debug][safepoint     ] ... found polling page loop exception at pc = 0x00007f5fdc533242, stub =0x00007f5fd4841b00
+[2023-11-12T16:57:30.371+0000][8.493s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:30.371+0000][8.493s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:30.371+0000][8.494s][info ][gc,start      ] GC(13) Pause Cleanup
+[2023-11-12T16:57:30.372+0000][8.494s][info ][gc            ] GC(13) Pause Cleanup 36M->36M(374M) 0.279ms
+[2023-11-12T16:57:30.372+0000][8.494s][info ][gc,cpu        ] GC(13) User=0.01s Sys=0.00s Real=0.00s
+[2023-11-12T16:57:30.372+0000][8.494s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.372+0000][8.494s][info ][safepoint     ] Total time for which application threads were stopped: 0.0053155 seconds, Stopping threads took: 0.0048649 seconds
+[2023-11-12T16:57:30.372+0000][8.494s][info ][gc,marking    ] GC(13) Concurrent Cleanup for Next Mark
+[2023-11-12T16:57:30.375+0000][8.497s][info ][gc,marking    ] GC(13) Concurrent Cleanup for Next Mark 3.471ms
+[2023-11-12T16:57:30.375+0000][8.497s][info ][gc            ] GC(13) Concurrent Cycle 47.191ms
+[2023-11-12T16:57:30.571+0000][8.693s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:30.571+0000][8.693s][info ][safepoint     ] Application time: 0.1996097 seconds
+[2023-11-12T16:57:30.571+0000][8.693s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:30.571+0000][8.694s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:30.572+0000][8.694s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:30.572+0000][8.694s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007062 seconds, Stopping threads took: 0.0000879 seconds
+[2023-11-12T16:57:31.033+0000][9.155s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:31.033+0000][9.155s][info ][safepoint     ] Application time: 0.4610084 seconds
+[2023-11-12T16:57:31.033+0000][9.155s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:31.033+0000][9.155s][info ][safepoint     ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:31.033+0000][9.156s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:31.033+0000][9.156s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002976 seconds, Stopping threads took: 0.0000532 seconds
+[2023-11-12T16:57:31.035+0000][9.157s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:31.035+0000][9.157s][info ][safepoint     ] Application time: 0.0017400 seconds
+[2023-11-12T16:57:31.035+0000][9.157s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:31.035+0000][9.157s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:31.036+0000][9.158s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:31.036+0000][9.158s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007160 seconds, Stopping threads took: 0.0000457 seconds
+[2023-11-12T16:57:31.103+0000][9.225s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:31.103+0000][9.225s][info ][safepoint     ] Application time: 0.0674436 seconds
+[2023-11-12T16:57:31.103+0000][9.226s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:31.103+0000][9.226s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:31.104+0000][9.226s][info ][gc,start      ] GC(14) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:31.104+0000][9.226s][info ][gc,task       ] GC(14) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,phases     ] GC(14)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,phases     ] GC(14)   Evacuate Collection Set: 24.5ms
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,phases     ] GC(14)   Post Evacuate Collection Set: 3.8ms
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,phases     ] GC(14)   Other: 0.2ms
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,heap       ] GC(14) Eden regions: 210->0(210)
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,heap       ] GC(14) Survivor regions: 14->14(28)
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,heap       ] GC(14) Old regions: 17->17
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,heap       ] GC(14) Humongous regions: 0->0
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,metaspace  ] GC(14) Metaspace: 38021K(39120K)->38021K(39120K) NonClass: 33367K(34000K)->33367K(34000K) Class: 4654K(5120K)->4654K(5120K)
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc            ] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 239M->29M(374M) 28.655ms
+[2023-11-12T16:57:31.132+0000][9.254s][info ][gc,cpu        ] GC(14) User=0.10s Sys=0.00s Real=0.03s
+[2023-11-12T16:57:31.132+0000][9.254s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:31.132+0000][9.254s][info ][safepoint     ] Total time for which application threads were stopped: 0.0289570 seconds, Stopping threads took: 0.0000639 seconds
+[2023-11-12T16:57:31.132+0000][9.255s][info ][gc,stringdedup] Concurrent String Deduplication (9.254s)
+[2023-11-12T16:57:31.134+0000][9.257s][info ][gc,stringdedup] Concurrent String Deduplication 470.9K->244.9K(225.9K) avg 41.0% (9.254s, 9.257s) 2.026ms
+[2023-11-12T16:57:31.763+0000][9.885s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:31.763+0000][9.885s][info ][safepoint     ] Application time: 0.6303129 seconds
+[2023-11-12T16:57:31.763+0000][9.885s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:31.763+0000][9.885s][info ][safepoint     ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:31.763+0000][9.885s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:31.763+0000][9.885s][info ][safepoint     ] Total time for which application threads were stopped: 0.0004560 seconds, Stopping threads took: 0.0000624 seconds
+[2023-11-12T16:57:32.296+0000][10.418s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.296+0000][10.418s][info ][safepoint     ] Application time: 0.5327077 seconds
+[2023-11-12T16:57:32.296+0000][10.418s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.297+0000][10.419s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:32.297+0000][10.419s][info ][gc,start      ] GC(15) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:32.297+0000][10.419s][info ][gc,task       ] GC(15) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:32.317+0000][10.439s][info ][gc,phases     ] GC(15)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:32.317+0000][10.439s][info ][gc,phases     ] GC(15)   Evacuate Collection Set: 18.3ms
+[2023-11-12T16:57:32.317+0000][10.440s][info ][gc,phases     ] GC(15)   Post Evacuate Collection Set: 1.8ms
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,phases     ] GC(15)   Other: 0.2ms
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,heap       ] GC(15) Eden regions: 210->0(208)
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,heap       ] GC(15) Survivor regions: 14->16(28)
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,heap       ] GC(15) Old regions: 17->17
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,heap       ] GC(15) Humongous regions: 0->0
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc,metaspace  ] GC(15) Metaspace: 40872K(42064K)->40872K(42064K) NonClass: 35820K(36560K)->35820K(36560K) Class: 5051K(5504K)->5051K(5504K)
+[2023-11-12T16:57:32.318+0000][10.440s][info ][gc            ] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 239M->31M(374M) 21.560ms
+[2023-11-12T16:57:32.318+0000][10.441s][info ][gc,cpu        ] GC(15) User=0.07s Sys=0.00s Real=0.02s
+[2023-11-12T16:57:32.319+0000][10.441s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.319+0000][10.441s][info ][safepoint     ] Total time for which application threads were stopped: 0.0226407 seconds, Stopping threads took: 0.0005741 seconds
+[2023-11-12T16:57:32.319+0000][10.441s][info ][gc,stringdedup] Concurrent String Deduplication (10.441s)
+[2023-11-12T16:57:32.320+0000][10.442s][info ][gc,stringdedup] Concurrent String Deduplication 202.9K->78264.0B(126.5K) avg 41.5% (10.441s, 10.442s) 1.138ms
+[2023-11-12T16:57:32.427+0000][10.549s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.427+0000][10.549s][info ][safepoint     ] Application time: 0.1086578 seconds
+[2023-11-12T16:57:32.427+0000][10.549s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.427+0000][10.549s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.428+0000][10.550s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.428+0000][10.550s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007693 seconds, Stopping threads took: 0.0000485 seconds
+[2023-11-12T16:57:32.442+0000][10.564s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.442+0000][10.564s][info ][safepoint     ] Application time: 0.0136206 seconds
+[2023-11-12T16:57:32.442+0000][10.564s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.442+0000][10.564s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.442+0000][10.564s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.442+0000][10.565s][info ][safepoint     ] Total time for which application threads were stopped: 0.0006639 seconds, Stopping threads took: 0.0000695 seconds
+[2023-11-12T16:57:32.470+0000][10.592s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.470+0000][10.592s][info ][safepoint     ] Application time: 0.0274287 seconds
+[2023-11-12T16:57:32.470+0000][10.592s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.470+0000][10.592s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.471+0000][10.593s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.471+0000][10.593s][info ][safepoint     ] Total time for which application threads were stopped: 0.0008092 seconds, Stopping threads took: 0.0000626 seconds
+[2023-11-12T16:57:32.816+0000][10.939s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.817+0000][10.939s][info ][safepoint     ] Application time: 0.3458487 seconds
+[2023-11-12T16:57:32.817+0000][10.939s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.817+0000][10.939s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.817+0000][10.939s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.817+0000][10.939s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007655 seconds, Stopping threads took: 0.0000496 seconds
+[2023-11-12T16:57:32.818+0000][10.941s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.818+0000][10.941s][info ][safepoint     ] Application time: 0.0010767 seconds
+[2023-11-12T16:57:32.818+0000][10.941s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.818+0000][10.941s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.819+0000][10.941s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.819+0000][10.941s][info ][safepoint     ] Total time for which application threads were stopped: 0.0002930 seconds, Stopping threads took: 0.0000444 seconds
+[2023-11-12T16:57:32.907+0000][11.029s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:32.907+0000][11.029s][info ][safepoint     ] Application time: 0.0879305 seconds
+[2023-11-12T16:57:32.907+0000][11.029s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:32.907+0000][11.029s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:32.907+0000][11.030s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:32.907+0000][11.030s][info ][safepoint     ] Total time for which application threads were stopped: 0.0007599 seconds, Stopping threads took: 0.0000493 seconds
+[2023-11-12T16:57:33.291+0000][11.413s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:33.291+0000][11.413s][info ][safepoint     ] Application time: 0.3833098 seconds
+[2023-11-12T16:57:33.291+0000][11.413s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:33.291+0000][11.413s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:33.292+0000][11.414s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:33.292+0000][11.414s][info ][safepoint     ] Total time for which application threads were stopped: 0.0008528 seconds, Stopping threads took: 0.0000518 seconds
+[2023-11-12T16:57:33.292+0000][11.414s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:33.292+0000][11.414s][info ][safepoint     ] Application time: 0.0006895 seconds
+[2023-11-12T16:57:33.292+0000][11.414s][debug][safepoint     ] Waiting for 2 thread(s) to block
+[2023-11-12T16:57:33.292+0000][11.415s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:33.293+0000][11.415s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:33.293+0000][11.415s][info ][safepoint     ] Total time for which application threads were stopped: 0.0003845 seconds, Stopping threads took: 0.0000919 seconds
+[2023-11-12T16:57:33.488+0000][11.610s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:33.488+0000][11.610s][info ][safepoint     ] Application time: 0.1949594 seconds
+[2023-11-12T16:57:33.488+0000][11.610s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:33.488+0000][11.610s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:33.489+0000][11.611s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:33.489+0000][11.611s][info ][safepoint     ] Total time for which application threads were stopped: 0.0008841 seconds, Stopping threads took: 0.0000609 seconds
+[2023-11-12T16:57:33.570+0000][11.693s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:33.571+0000][11.693s][info ][safepoint     ] Application time: 0.0821079 seconds
+[2023-11-12T16:57:33.571+0000][11.693s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:33.571+0000][11.694s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:33.572+0000][11.694s][info ][gc,start      ] GC(16) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:33.572+0000][11.694s][info ][gc,task       ] GC(16) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:33.601+0000][11.723s][info ][gc,phases     ] GC(16)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:33.601+0000][11.723s][info ][gc,phases     ] GC(16)   Evacuate Collection Set: 21.3ms
+[2023-11-12T16:57:33.601+0000][11.723s][info ][gc,phases     ] GC(16)   Post Evacuate Collection Set: 7.3ms
+[2023-11-12T16:57:33.601+0000][11.723s][info ][gc,phases     ] GC(16)   Other: 0.4ms
+[2023-11-12T16:57:33.601+0000][11.723s][info ][gc,heap       ] GC(16) Eden regions: 208->0(276)
+[2023-11-12T16:57:33.601+0000][11.724s][info ][gc,heap       ] GC(16) Survivor regions: 16->16(28)
+[2023-11-12T16:57:33.602+0000][11.724s][info ][gc,heap       ] GC(16) Old regions: 17->21
+[2023-11-12T16:57:33.602+0000][11.724s][info ][gc,heap       ] GC(16) Humongous regions: 0->0
+[2023-11-12T16:57:33.602+0000][11.724s][info ][gc,metaspace  ] GC(16) Metaspace: 47069K(48592K)->47069K(48592K) NonClass: 41222K(42192K)->41222K(42192K) Class: 5846K(6400K)->5846K(6400K)
+[2023-11-12T16:57:33.602+0000][11.724s][info ][gc            ] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 239M->34M(487M) 30.302ms
+[2023-11-12T16:57:33.602+0000][11.724s][info ][gc,cpu        ] GC(16) User=0.11s Sys=0.01s Real=0.03s
+[2023-11-12T16:57:33.602+0000][11.724s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:33.602+0000][11.725s][info ][safepoint     ] Total time for which application threads were stopped: 0.0311347 seconds, Stopping threads took: 0.0003163 seconds
+[2023-11-12T16:57:33.603+0000][11.725s][info ][gc,stringdedup] Concurrent String Deduplication (11.725s)
+[2023-11-12T16:57:33.604+0000][11.726s][info ][gc,stringdedup] Concurrent String Deduplication 254.9K->57880.0B(198.3K) avg 42.6% (11.725s, 11.726s) 1.311ms
+[2023-11-12T16:57:33.704+0000][11.826s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:33.704+0000][11.826s][info ][safepoint     ] Application time: 0.1012936 seconds
+[2023-11-12T16:57:33.704+0000][11.826s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:33.705+0000][11.827s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:33.705+0000][11.827s][info ][safepoint     ] Total time for which application threads were stopped: 0.0009620 seconds, Stopping threads took: 0.0001277 seconds
+[2023-11-12T16:57:34.167+0000][12.289s][debug][safepoint     ] Safepoint synchronization initiated. (11 threads)
+[2023-11-12T16:57:34.167+0000][12.290s][info ][safepoint     ] Application time: 0.4623613 seconds
+[2023-11-12T16:57:34.167+0000][12.290s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:34.168+0000][12.291s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:34.168+0000][12.291s][info ][safepoint     ] Total time for which application threads were stopped: 0.0010017 seconds, Stopping threads took: 0.0000215 seconds
+[2023-11-12T16:57:35.169+0000][13.291s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:35.169+0000][13.291s][info ][safepoint     ] Application time: 1.0005701 seconds
+[2023-11-12T16:57:35.169+0000][13.291s][info ][safepoint     ] Entering safepoint region: Cleanup
+[2023-11-12T16:57:35.170+0000][13.292s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:35.170+0000][13.292s][info ][safepoint     ] Total time for which application threads were stopped: 0.0009409 seconds, Stopping threads took: 0.0003004 seconds
+[2023-11-12T16:57:35.316+0000][13.438s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:35.316+0000][13.438s][info ][safepoint     ] Application time: 0.1457134 seconds
+[2023-11-12T16:57:35.317+0000][13.439s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:35.319+0000][13.441s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:35.319+0000][13.441s][info ][safepoint     ] Total time for which application threads were stopped: 0.0021158 seconds, Stopping threads took: 0.0004967 seconds
+[2023-11-12T16:57:35.535+0000][13.657s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:35.535+0000][13.658s][info ][safepoint     ] Application time: 0.2162677 seconds
+[2023-11-12T16:57:35.536+0000][13.658s][info ][safepoint     ] Entering safepoint region: Deoptimize
+[2023-11-12T16:57:35.537+0000][13.659s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:35.538+0000][13.660s][info ][safepoint     ] Total time for which application threads were stopped: 0.0019987 seconds, Stopping threads took: 0.0002974 seconds
+[2023-11-12T16:57:36.116+0000][14.238s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:36.116+0000][14.238s][info ][safepoint     ] Application time: 0.5779007 seconds
+[2023-11-12T16:57:36.116+0000][14.238s][info ][safepoint     ] Entering safepoint region: ICBufferFull
+[2023-11-12T16:57:36.117+0000][14.239s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:36.117+0000][14.239s][info ][safepoint     ] Total time for which application threads were stopped: 0.0005298 seconds, Stopping threads took: 0.0001414 seconds
+[2023-11-12T16:57:36.692+0000][14.814s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:36.692+0000][14.814s][info ][safepoint     ] Application time: 0.5748867 seconds
+[2023-11-12T16:57:36.692+0000][14.814s][info ][safepoint     ] Entering safepoint region: G1CollectForAllocation
+[2023-11-12T16:57:36.692+0000][14.814s][info ][gc,start      ] GC(17) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-11-12T16:57:36.692+0000][14.814s][info ][gc,task       ] GC(17) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,phases     ] GC(17)   Pre Evacuate Collection Set: 0.0ms
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,phases     ] GC(17)   Evacuate Collection Set: 18.1ms
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,phases     ] GC(17)   Post Evacuate Collection Set: 2.2ms
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,phases     ] GC(17)   Other: 0.3ms
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,heap       ] GC(17) Eden regions: 276->0(273)
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,heap       ] GC(17) Survivor regions: 16->19(37)
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,heap       ] GC(17) Old regions: 21->21
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,heap       ] GC(17) Humongous regions: 0->0
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,metaspace  ] GC(17) Metaspace: 55185K(56784K)->55185K(56784K) NonClass: 48378K(49360K)->48378K(49360K) Class: 6806K(7424K)->6806K(7424K)
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc            ] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 310M->38M(487M) 20.919ms
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,cpu        ] GC(17) User=0.07s Sys=0.00s Real=0.02s
+[2023-11-12T16:57:36.713+0000][14.835s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:36.713+0000][14.835s][info ][safepoint     ] Total time for which application threads were stopped: 0.0212875 seconds, Stopping threads took: 0.0000173 seconds
+[2023-11-12T16:57:36.713+0000][14.835s][info ][gc,stringdedup] Concurrent String Deduplication (14.835s)
+[2023-11-12T16:57:36.714+0000][14.836s][info ][gc,stringdedup] Concurrent String Deduplication 213.0K->97480.0B(117.8K) avg 42.9% (14.835s, 14.836s) 1.239ms
+[2023-11-12T16:57:37.713+0000][15.835s][debug][safepoint     ] Safepoint synchronization initiated. (13 threads)
+[2023-11-12T16:57:37.713+0000][15.836s][info ][safepoint     ] Application time: 1.0003567 seconds
+[2023-11-12T16:57:37.714+0000][15.837s][info ][safepoint     ] Entering safepoint region: Cleanup
+[2023-11-12T16:57:37.715+0000][15.837s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:37.715+0000][15.837s][info ][safepoint     ] Total time for which application threads were stopped: 0.0003438 seconds, Stopping threads took: 0.0000741 seconds
+[2023-11-12T16:57:38.480+0000][16.602s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:38.480+0000][16.602s][info ][safepoint     ] Application time: 0.7650360 seconds
+[2023-11-12T16:57:38.480+0000][16.602s][info ][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2023-11-12T16:57:38.480+0000][16.602s][info ][gc,start      ] GC(18) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2023-11-12T16:57:38.480+0000][16.602s][info ][gc,task       ] GC(18) Using 6 workers of 6 for evacuation
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,phases     ] GC(18)   Pre Evacuate Collection Set: 0.2ms
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,phases     ] GC(18)   Evacuate Collection Set: 44.0ms
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,phases     ] GC(18)   Post Evacuate Collection Set: 4.0ms
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,phases     ] GC(18)   Other: 0.5ms
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,heap       ] GC(18) Eden regions: 175->0(276)
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,heap       ] GC(18) Survivor regions: 19->16(37)
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,heap       ] GC(18) Old regions: 21->24
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,heap       ] GC(18) Humongous regions: 0->0
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,metaspace  ] GC(18) Metaspace: 59001K(60496K)->59001K(60496K) NonClass: 51529K(52432K)->51529K(52432K) Class: 7471K(8064K)->7471K(8064K)
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc            ] GC(18) Pause Young (Concurrent Start) (Metadata GC Threshold) 212M->37M(487M) 49.119ms
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc,cpu        ] GC(18) User=0.18s Sys=0.01s Real=0.05s
+[2023-11-12T16:57:38.529+0000][16.651s][info ][gc            ] GC(19) Concurrent Cycle
+[2023-11-12T16:57:38.529+0000][16.652s][info ][gc,marking    ] GC(19) Concurrent Clear Claimed Marks
+[2023-11-12T16:57:38.529+0000][16.652s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:38.530+0000][16.652s][info ][safepoint     ] Total time for which application threads were stopped: 0.0497197 seconds, Stopping threads took: 0.0000379 seconds
+[2023-11-12T16:57:38.530+0000][16.652s][info ][gc,marking    ] GC(19) Concurrent Clear Claimed Marks 0.222ms
+[2023-11-12T16:57:38.530+0000][16.652s][info ][gc,marking    ] GC(19) Concurrent Scan Root Regions
+[2023-11-12T16:57:38.530+0000][16.652s][info ][gc,stringdedup] Concurrent String Deduplication (16.652s)
+[2023-11-12T16:57:38.535+0000][16.657s][info ][gc,stringdedup] Concurrent String Deduplication 200.6K->74616.0B(127.7K) avg 43.4% (16.652s, 16.657s) 4.843ms
+[2023-11-12T16:57:38.562+0000][16.685s][info ][gc,marking    ] GC(19) Concurrent Scan Root Regions 32.740ms
+[2023-11-12T16:57:38.563+0000][16.685s][info ][gc,marking    ] GC(19) Concurrent Mark (16.685s)
+[2023-11-12T16:57:38.563+0000][16.685s][info ][gc,marking    ] GC(19) Concurrent Mark From Roots
+[2023-11-12T16:57:38.563+0000][16.685s][info ][gc,task       ] GC(19) Using 2 workers of 2 for marking
+[2023-11-12T16:57:38.631+0000][16.754s][info ][gc,marking    ] GC(19) Concurrent Mark From Roots 68.844ms
+[2023-11-12T16:57:38.632+0000][16.754s][info ][gc,marking    ] GC(19) Concurrent Preclean
+[2023-11-12T16:57:38.632+0000][16.754s][info ][gc,marking    ] GC(19) Concurrent Preclean 0.496ms
+[2023-11-12T16:57:38.632+0000][16.754s][info ][gc,marking    ] GC(19) Concurrent Mark (16.685s, 16.754s) 69.570ms
+[2023-11-12T16:57:38.632+0000][16.754s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:38.632+0000][16.754s][info ][safepoint     ] Application time: 0.1027428 seconds
+[2023-11-12T16:57:38.632+0000][16.754s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:38.632+0000][16.755s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:38.633+0000][16.755s][info ][gc,start      ] GC(19) Pause Remark
+[2023-11-12T16:57:38.653+0000][16.775s][info ][gc,stringtable] GC(19) Cleaned string and symbol table, strings: 23536 processed, 2 removed, symbols: 191769 processed, 189 removed
+[2023-11-12T16:57:38.662+0000][16.784s][info ][gc            ] GC(19) Pause Remark 46M->46M(487M) 29.639ms
+[2023-11-12T16:57:38.662+0000][16.785s][info ][gc,cpu        ] GC(19) User=0.09s Sys=0.00s Real=0.03s
+[2023-11-12T16:57:38.662+0000][16.785s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:38.662+0000][16.785s][info ][safepoint     ] Total time for which application threads were stopped: 0.0301075 seconds, Stopping threads took: 0.0001182 seconds
+[2023-11-12T16:57:38.663+0000][16.785s][info ][gc,marking    ] GC(19) Concurrent Rebuild Remembered Sets
+[2023-11-12T16:57:38.706+0000][16.828s][info ][gc,marking    ] GC(19) Concurrent Rebuild Remembered Sets 43.463ms
+[2023-11-12T16:57:38.710+0000][16.832s][debug][safepoint     ] Safepoint synchronization initiated. (14 threads)
+[2023-11-12T16:57:38.710+0000][16.832s][info ][safepoint     ] Application time: 0.0476690 seconds
+[2023-11-12T16:57:38.710+0000][16.832s][debug][safepoint     ] Waiting for 1 thread(s) to block
+[2023-11-12T16:57:38.716+0000][16.838s][info ][safepoint     ] Entering safepoint region: CGC_Operation
+[2023-11-12T16:57:38.716+0000][16.838s][info ][gc,start      ] GC(19) Pause Cleanup
+[2023-11-12T16:57:38.720+0000][16.842s][info ][gc            ] GC(19) Pause Cleanup 51M->51M(487M) 3.746ms
+[2023-11-12T16:57:38.720+0000][16.842s][info ][gc,cpu        ] GC(19) User=0.00s Sys=0.00s Real=0.00s
+[2023-11-12T16:57:38.720+0000][16.842s][info ][safepoint     ] Leaving safepoint region
+[2023-11-12T16:57:38.720+0000][16.842s][info ][safepoint     ] Total time for which application threads were stopped: 0.0098786 seconds, Stopping threads took: 0.0057865 seconds
+[2023-11-12T16:57:38.720+0000][16.842s][info ][gc,marking    ] GC(19) Concurrent Cleanup for Next Mark
+[2023-11-12T16:57:38.738+0000][16.860s][info ][gc,marking    ] GC(19) Concurrent Cleanup for Next Mark 17.955ms
+[2023-11-12T16:57:38.738+0000][16.860s][info ][gc            ] GC(19) Concurrent Cycle 208.868ms
+[2023-11-12T16:57:38.738+0000][16.861s][info ][gc,heap,exit  ] Heap
+[2023-11-12T16:57:38.739+0000][16.861s][info ][gc,heap,exit  ]  garbage-first heap   total 498688K, used 52831K [0x0000000706200000, 0x0000000800000000)
+[2023-11-12T16:57:38.739+0000][16.861s][info ][gc,heap,exit  ]   region size 1024K, 31 young (31744K), 16 survivors (16384K)
+[2023-11-12T16:57:38.739+0000][16.861s][info ][gc,heap,exit  ]  Metaspace       used 59194K, capacity 60550K, committed 60752K, reserved 1101824K
+[2023-11-12T16:57:38.739+0000][16.861s][info ][gc,heap,exit  ]   class space    used 7506K, capacity 8036K, committed 8064K, reserved 1048576K
+[2023-11-12T16:57:38.739+0000][16.861s][debug][safepoint     ] Safepoint synchronization initiated. (10 threads)
+[2023-11-12T16:57:38.739+0000][16.861s][info ][safepoint     ] Application time: 0.0188519 seconds
+[2023-11-12T16:57:38.739+0000][16.861s][info ][safepoint     ] Entering safepoint region: Halt

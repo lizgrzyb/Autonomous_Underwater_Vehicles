@@ -1,0 +1,18 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Install ZeroMQ
+RUN apt-get update && apt-get install -y libzmq3-dev nano net-tools && rm -rf /var/lib/apt/lists/*
+
+# Install Python ZeroMQ library
+RUN pip install --no-cache-dir cryptography pyzmq opcua icecream
+
+# Copy the server script into the container
+COPY opcua_server_v3.py .
+
+
+# Run server.py when the container launches
+CMD ["python", "./opcua_server_v3.py"]

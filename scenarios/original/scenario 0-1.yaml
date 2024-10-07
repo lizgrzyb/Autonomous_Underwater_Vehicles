@@ -1,0 +1,62 @@
+entities:
+  - x: 200
+    y: 1200
+    heading: 45
+    speed: 3
+    _id: "PrimaryBattleship"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 200
+        - 3200
+  - x: 2700
+    y: 2900
+    heading: 45
+    speed: 10
+    _id: "NE"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 3700
+        - 3900
+  - x: 2700
+    y: 2700
+    heading: 135
+    speed: 10
+    _id: "SE"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 3700
+        - 1700
+  - x: 2300
+    y: 2700
+    heading: -135
+    speed: 10
+    _id: "SW"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 1300
+        - 1700
+  - x: 2300
+    y: 2900
+    heading: -45
+    speed: 10
+    _id: "NW"
+    _configuration: "entity_configs/arleigh_burke.yaml"
+    _Navigation:
+      waypoints:
+      - - 1300
+        - 3900
+world:
+  guardrails:
+    - - 0
+      - 0
+    - - 5000
+      - 5000
+success_conditions:
+  World:PrimaryBattleship:Navigation:has_waypoints: false
+failure_conditions:
+  World:PrimaryBattleship:RadarSonar:collision_event: true
+  World:PrimaryBattleship:out_of_bounds: true
