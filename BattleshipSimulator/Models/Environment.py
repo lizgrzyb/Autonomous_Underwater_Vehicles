@@ -25,6 +25,8 @@ class Simulator(GetterSetter):
         self.logging_variables = ["total_time", "timedelta", "simulation_status"]
         #TODO: move scenario logic outside of the controller, where it belongs
         config_data = SimulatorUtilities.load_yaml(self.config_file)
+        #import pdb          # CIP
+        #pdb.set_trace()     # CIP
         # Create the world where the models will exist
         world_kwargs = {} if "world" not in config_data else config_data["world"]
         self.world = World(**world_kwargs)

@@ -187,7 +187,8 @@ class Weapons(BattleshipSystem):
 class Navigation(BattleshipSystem):
     """Represents the navigation system of the battleship."""
     NAME = "Navigation"
-    ALLOWED_DISTANCE_ERROR = 50
+    #ALLOWED_DISTANCE_ERROR = 50    # CIP
+    ALLOWED_DISTANCE_ERROR = 3      # CIP
     
     def setup(self, **kwargs):
         self.waypoints = []

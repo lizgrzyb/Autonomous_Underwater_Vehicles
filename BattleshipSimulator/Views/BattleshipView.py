@@ -45,9 +45,11 @@ class BattleshipViewGUI(arcade.View):
     """
 
     DEBUG = True
-    PIXELS_PER_METER = .3
+    # PIXELS_PER_METER = .3
+    PIXELS_PER_METER = 6
     #TODO: move the multiplier somewhere else
-    SIM_TIMEDELTA_CONSTANT = .5
+    #SIM_TIMEDELTA_CONSTANT = .5                # CIP
+    SIM_TIMEDELTA_CONSTANT = .02                # CIP
     SIM_TIME_MULTIPLIER = 1
 
     def __init__(self, controller, screen_width=800, screen_height=600):
@@ -270,9 +272,12 @@ class BattleshipViewGUI(arcade.View):
                     foreground_color = arcade.color.BLACK if target in targets else arcade.color.DARK_GRAY
                     background_color = arcade.color.RED if target in targets else arcade.color.GRAY
                     target = SimulatorViewUtilities.convert_coords_meters_to_pixels(*target, self.PIXELS_PER_METER)
-                    arcade.draw_circle_filled(target[0], target[1], 20 * self.PIXELS_PER_METER, background_color + (192,))
-                    arcade.draw_circle_outline(target[0], target[1], 40 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
-                    arcade.draw_circle_outline(target[0], target[1], 60 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
+                    #arcade.draw_circle_filled(target[0], target[1], 20 * self.PIXELS_PER_METER, background_color + (192,))
+                    #arcade.draw_circle_outline(target[0], target[1], 40 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
+                    #arcade.draw_circle_outline(target[0], target[1], 60 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
+                    arcade.draw_circle_filled(target[0], target[1], 2 * self.PIXELS_PER_METER, background_color + (192,))                               # CIP
+                    arcade.draw_circle_outline(target[0], target[1], 4 * self.PIXELS_PER_METER, background_color + (192,), 1 * self.PIXELS_PER_METER)   # CIP
+                    arcade.draw_circle_outline(target[0], target[1], 6 * self.PIXELS_PER_METER, background_color + (192,), 1 * self.PIXELS_PER_METER)   # CIP
                     arcade.draw_point(target[0], target[1], foreground_color, 4)
                     arcade.draw_text(f"{ship_id} - Target {i + 1}", target[0] + 4, target[1] + 4, foreground_color, font_size = 14)
             # Draw the path taken

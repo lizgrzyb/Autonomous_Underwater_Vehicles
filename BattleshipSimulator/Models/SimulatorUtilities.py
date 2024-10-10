@@ -556,7 +556,9 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
     #################################################################
     # u is control
 
-    vehicle.ref = targetHeading           # set the vehicles autopilot to target the heading
+    # CIP
+    #vehicle.ref = targetHeading           # set the vehicles autopilot to target the heading
+    vehicle.ref_z = targetHeading
     DOF = 6                     # degrees of freedom
     # Initial state vectors
     eta = prevEta    # position/attitude, user editable
@@ -570,6 +572,7 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
     elif (vehicle.controlMode == 'headingAutopilot'):
         u_control = vehicle.headingAutopilot(eta,nu,timeDelta)   
     elif (vehicle.controlMode == 'depthHeadingAutopilot'):
+        print(eta, nu)
         u_control = vehicle.depthHeadingAutopilot(eta,nu,timeDelta)             
     elif (vehicle.controlMode == 'DPcontrol'):
         u_control = vehicle.DPcontrol(eta,nu,timeDelta)

@@ -1,0 +1,33 @@
+entities:
+- _Navigation:
+    waypoints:
+    - - 50
+      - 50
+  _Weapons:
+    targets:
+    - - 90
+      - 90
+  _configuration: entity_configs/remus.yaml
+  _id: PrimaryBattleship
+  x: 10
+  y: 10
+failure_conditions:
+  World:PrimaryBattleship:RadarSonar:collision_event: true
+  World:PrimaryBattleship:out_of_bounds: true
+success_conditions:
+  World:PrimaryBattleship:Navigation:has_waypoints: false
+world:
+  guardrails:
+  - - 0
+    - 0
+  - - 100
+    - 100
+  obstacles:
+  - - - 46
+      - 47
+    - - 47
+      - 51
+    - - 48
+      - 48
+    - - 46
+      - 47

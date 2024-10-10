@@ -1,0 +1,30 @@
+speed: 0.5
+#supervisor: "BaseRemoteNavigator"
+# supervisor_kwargs:
+#   url: "http://192.168.123.123"
+#   timeout: .01
+#   attributes:
+#     - "x"
+#     - "y"
+#     - "heading"
+#     - "option_port"
+#     - "option_starboard"
+#     - "chosen_direction"
+#     - "current_speed"
+#     - "out_of_bounds"
+#     - "RadarSonar.collision_warning"
+#     - "RadarSonar.collision_event"
+#     - "RadarSonar.radar_objects"
+#     - "Navigation.waypoint_distances"
+collision_avoidance: "PointAvoidanceNavigator"
+_attached_systems:
+  - "Engine"
+  - "Navigation"
+  - "RadarSonar"
+  - "Weapons"
+_Engine:
+  max_speed: 1.5
+  acceleration: .1
+_RadarSonar:
+  radar_range: 28
+  minimum_safe_distance: 6

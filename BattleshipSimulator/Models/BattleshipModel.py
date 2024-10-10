@@ -1,7 +1,7 @@
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 import BattleshipSimulator.Supervisor.Navigators as SimulatorNavigators
 from BattleshipSimulator.Models.GetterSetter import GetterSetter
-from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate
+from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate, remus100
 import numpy as np
 
 class BattleshipModel(GetterSetter):
@@ -45,13 +45,17 @@ class BattleshipModel(GetterSetter):
         self.ca_override_heading = None
         self.ca_override_speed = None
         
-        self.geometry = ((-10,50), (10,50), (10,-50), (-10,-50)) if "geometry" not in kwargs else kwargs["geometry"]
+        #self.geometry = ((-10,50), (10,50), (10,-50), (-10,-50)) if "geometry" not in kwargs else kwargs["geometry"]   # CIP
+        self.geometry = ((-1,1), (1,1), (1,-1), (-1,-1)) if "geometry" not in kwargs else kwargs["geometry"]            # CIP
         self.x = 0 if "x" not in kwargs else kwargs["x"]
         self.y = 0 if "y" not in kwargs else kwargs["y"]
+        import pdb                          #CIP
+        pdb.set_trace()                     #CIP
         self.heading = 0 if "heading" not in kwargs else kwargs["heading"]
         self.current_speed = 0 if "speed" not in kwargs else kwargs["speed"]
         self.world = None if "world" not in kwargs else kwargs["world"]
-        self.guardrails = (0,0,5000,5000)
+        #self.guardrails = (0,0,5000,5000)  #CIP
+        self.guardrails = (0,0,100,100)     #CIP
         self.out_of_bounds = False
         self.logging_variables = [
             "x", "y", "actions", "heading", "waypoint_heading", "option_port", "option_starboard", "chosen_direction",
@@ -91,10 +95,14 @@ class BattleshipModel(GetterSetter):
         self.action_code = 0
         self.actions = ""
         
-        self.vehicle = frigate('headingAutopilot', self.current_speed, self.heading)
+        #self.vehicle = frigate('headingAutopilot', self.current_speed, self.heading)
+        self.vehicle = remus100('depthHeadingAutopilot', 50,0,1525,0.5,170) #CIP
+        import pdb      # CIP
+        pdb.set_trace() # CIP
         self.vehicle.L = abs(min_y) + abs(max_y)
         self.simData = np.empty( [0, 12 + 2 * self.vehicle.dimU], float)
-        self.oldEta = np.array([self.x, self.y, 0, 0, 0, 0], float)
+        #self.oldEta = np.array([self.x, self.y, 0, 0, 0, 0], float)    #CIP
+        self.oldEta = np.array([self.x, 0, self.y, 0, 0, 0], float)     #CIP
         self.oldU = self.vehicle.u_actual
         self.oldNu = self.vehicle.nu
 
@@ -121,6 +129,7 @@ class BattleshipModel(GetterSetter):
 
             # Get the left and right angles
             self.waypoint_heading = SimulatorUtilities.calculate_angle_degrees(self.x, self.y, self.children["Navigation"].waypoints[0][0], self.children["Navigation"].waypoints[0][1])
+            desired_depth = self.children["Navigation"].waypoints[0][1]     # CIP
 
             self.set_action_code(0)
 
@@ -190,12 +199,16 @@ class BattleshipModel(GetterSetter):
                     self.update_action_code(turning = True)
                 
                 # Generate the next set of data using the python vehicle simulator
-                thisSimData, self.oldEta, self.oldNu, self.oldU = SimulatorUtilities.getNextPosition(self.current_speed, self.chosen_heading, self.oldEta, self.vehicle, timedelta, self.oldNu, self.oldU)
+                #import pdb          # CIP
+                #pdb.set_trace()     # CIP
+                #thisSimData, self.oldEta, self.oldNu, self.oldU = SimulatorUtilities.getNextPosition(self.current_speed, self.chosen_heading, self.oldEta, self.vehicle, timedelta, self.oldNu, self.oldU) # CIP
+                thisSimData, self.oldEta, self.oldNu, self.oldU = SimulatorUtilities.getNextPosition(self.current_speed, desired_depth, self.oldEta, self.vehicle, timedelta, self.oldNu, self.oldU)        # CIP
                 self.simData = np.vstack([self.simData, thisSimData])
 
                 self.last_x, self.last_y, self.last_heading = self.x, self.y, self.heading
                 self.x = float(thisSimData[0][0])
-                self.y = float(thisSimData[0][1])
+                #self.y = float(thisSimData[0][1])  # CIP
+                self.y = float(thisSimData[0][2])   # CIP
                 self.heading = SimulatorUtilities.calculate_angle_degrees(self.last_x, self.last_y, self.x, self.y)
 
                 if (self.last_x, self.last_y) != (self.x, self.y):
