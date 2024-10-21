@@ -7,6 +7,12 @@ import argparse
 import os
 import glob
 
+import sys
+
+# Add the current directory to sys.path
+sys.path.append(os.getcwd() + "\\BattleshipSimulator")
+print(os.getcwd() + "\\BattleshipSimulator")
+
 # Constants for the screen width and height
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 768

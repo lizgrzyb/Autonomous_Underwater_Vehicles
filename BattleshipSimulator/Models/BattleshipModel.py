@@ -1,7 +1,7 @@
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 import BattleshipSimulator.Supervisor.Navigators as SimulatorNavigators
 from BattleshipSimulator.Models.GetterSetter import GetterSetter
-from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate, remus100
+from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate, remus100, SUB
 import numpy as np
 
 class BattleshipModel(GetterSetter):
@@ -96,7 +96,8 @@ class BattleshipModel(GetterSetter):
         self.actions = ""
         
         #self.vehicle = frigate('headingAutopilot', self.current_speed, self.heading)
-        self.vehicle = remus100('depthHeadingAutopilot', 50,0,1525,0.5,170) #CIP
+        #self.vehicle = remus100('depthHeadingAutopilot', 50,0,1525,0.5,170) #CIP
+        self.vehicle = SUB.SUB('depthHeadingAutopilot', r_z = 50)               #CIP
         import pdb      # CIP
         pdb.set_trace() # CIP
         self.vehicle.L = abs(min_y) + abs(max_y)

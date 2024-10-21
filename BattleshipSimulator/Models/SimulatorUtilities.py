@@ -572,7 +572,6 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
     elif (vehicle.controlMode == 'headingAutopilot'):
         u_control = vehicle.headingAutopilot(eta,nu,timeDelta)   
     elif (vehicle.controlMode == 'depthHeadingAutopilot'):
-        print(eta, nu)
         u_control = vehicle.depthHeadingAutopilot(eta,nu,timeDelta)             
     elif (vehicle.controlMode == 'DPcontrol'):
         u_control = vehicle.DPcontrol(eta,nu,timeDelta)
@@ -586,6 +585,8 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
     # Propagate vehicle and attitude dynamics
     nu, u_actual = vehicle.dynamics(eta,nu,u_actual,u_control,timeDelta)
     eta = attitudeEuler(eta,nu,timeDelta)
+
+    print(eta, nu)
 
     return simData, eta, nu, u_actual
 
