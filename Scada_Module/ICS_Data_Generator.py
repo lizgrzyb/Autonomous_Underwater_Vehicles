@@ -3,6 +3,7 @@ import random
 import time
 import threading
 
+### add comment 
 # Define the metrics generation functions for each ICS controller
 def generate_metrics():
     return {
@@ -16,7 +17,7 @@ def generate_metrics():
 
 # Function to simulate a controller's operation and log its metrics
 def simulate_controller(controller_name, csv_writer):
-    metrics = generate_metrics()
+    metrics = generate_metrics() 
     while not stop_event.is_set():
         # Simulate metric changes
         metrics["cpu_percent"] += random.uniform(-1, 1)
