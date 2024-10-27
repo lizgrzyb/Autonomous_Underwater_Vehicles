@@ -13,8 +13,8 @@ entities:
       - 3513
   _configuration: entity_configs/arleigh_burke.yaml
   _id: PrimaryBattleship
-  x: 4368
-  y: 2997
+  x: 150
+  y: 150
 failure_conditions:
   World:PrimaryBattleship:RadarSonar:collision_event: true
   World:PrimaryBattleship:out_of_bounds: true
@@ -24,8 +24,8 @@ world:
   guardrails:
   - - 0
     - 0
-  - - 600
-    - 800
+  - - 5000
+    - 5000
   obstacles:
   - - - 0
       - 600
