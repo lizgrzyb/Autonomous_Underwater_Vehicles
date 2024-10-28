@@ -3,3 +3,5 @@ BattleshipSimulator/Models/__pycache__/
 BattleshipSimulator/python_vehicle_simulator/lib/__pycache__/
 BattleshipSimulator/python_vehicle_simulator/vehicles/__pycache__/
 BattleshipSimulator/Views/__pycache__
+BattleshipSimulator/Supervisor/__pycache__
+BattleshipSimulator/__pycache__
