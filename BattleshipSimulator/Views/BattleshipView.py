@@ -74,6 +74,7 @@ class BattleshipViewGUI(arcade.View):
         self.simulation_time = 0
         self.pause_simulation = False
         self.restart_flag = False
+        self.width, self.height = arcade.get_window().get_size()  # CIP
         self.setup()
     
     def setup(self):
@@ -92,7 +93,7 @@ class BattleshipViewGUI(arcade.View):
             if obstacle[0][0] == 1026:
                 print("here")
             obstacle_shape = arcade.create_polygon(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-                obstacle, self.PIXELS_PER_METER),
+                obstacle, self.PIXELS_PER_METER, self.height),      # CIP
             obstacle_color)
             self.obstacle_list.append(obstacle_shape)
     
@@ -108,12 +109,12 @@ class BattleshipViewGUI(arcade.View):
         # Create three versions of the graphic: normal, collision warning, and collision event
         current_ship["ship_shape_list"] = []
         # Calculate the dimensions and location of the ship
-        battleship_coordinates = SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-            self.get_model_attribute(model_id, "geometry"), self.PIXELS_PER_METER)
+        battleship_coordinates = SimulatorViewUtilities.legacy_convert_coords_list_meters_to_pixels(
+            self.get_model_attribute(model_id, "geometry"), self.PIXELS_PER_METER)     # CIP
 
         # Calculate the dimensions and location of the safety ring
-        battleship_ring_coordinates = SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-            self.get_model_attribute(model_id, "RadarSonar:minimum_safe_area_geometry"), self.PIXELS_PER_METER)
+        battleship_ring_coordinates = SimulatorViewUtilities.legacy_convert_coords_list_meters_to_pixels(
+            self.get_model_attribute(model_id, "RadarSonar:minimum_safe_area_geometry"), self.PIXELS_PER_METER)    # CIP
 
         for i in range(3):
             # Clear the ShapeList to update it
@@ -181,8 +182,8 @@ class BattleshipViewGUI(arcade.View):
                         # Use the correct graphic to identify the collision state
                         current_ship["current_battleship_graphic"] = current_ship["ship_shape_list"][current_ship["collision_index"]]        
                         current_ship["current_battleship_graphic"].center_x = self.get_model_attribute(ship_id, "x") * self.PIXELS_PER_METER
-                        current_ship["current_battleship_graphic"].center_y = self.get_model_attribute(ship_id, "y") * self.PIXELS_PER_METER
-                        current_ship["current_battleship_graphic"].angle = self.get_model_attribute(ship_id, "heading")
+                        current_ship["current_battleship_graphic"].center_y = self.height - self.get_model_attribute(ship_id, "y") * self.PIXELS_PER_METER
+                        current_ship["current_battleship_graphic"].angle = 360 - self.get_model_attribute(ship_id, "heading")
             else:
                 playback_data = self.playback_ui.playback_data()
                 # The model that is displayed depends on the collision state (none, warning, event)
@@ -194,9 +195,9 @@ class BattleshipViewGUI(arcade.View):
                     else:
                         current_ship["current_battleship_graphic"] = current_ship["ship_shape_list"][2]
                     current_ship["current_battleship_graphic"].center_x = playback_data[f"World.{ship_id}.x"] * self.PIXELS_PER_METER
-                    current_ship["current_battleship_graphic"].center_y = playback_data[f"World.{ship_id}.y"] * self.PIXELS_PER_METER
+                    current_ship["current_battleship_graphic"].center_y = self.height - playback_data[f"World.{ship_id}.y"] * self.PIXELS_PER_METER
                     #current_ship["current_battleship_graphic"].angle = SimulatorUtilities.heading_to_angle(playback_data[f"World.{ship_id}.heading"])
-                    current_ship["current_battleship_graphic"].angle = playback_data[f"World.{ship_id}.heading"]
+                    current_ship["current_battleship_graphic"].angle = 360 - playback_data[f"World.{ship_id}.heading"]
                 
             self.status_bar.update(timedelta)
             self.playback_ui.update(timedelta)
@@ -223,30 +224,30 @@ class BattleshipViewGUI(arcade.View):
         #self.obstacle_list.draw()
         for obstacle in self.controller.get_attribute("Simulation:World:obstacles"):
             arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-                obstacle, self.PIXELS_PER_METER),
+                obstacle, self.PIXELS_PER_METER, self.height),  # CIP
             arcade.color.DARK_BROWN)
         
         for ship_id, current_ship in self.ship_models.items():
             radar_objects = self.get_model_attribute(ship_id, 'RadarSonar:radar_objects') if playback_data is None else playback_data[f"World.{ship_id}.RadarSonar.radar_objects"]
             if len(radar_objects) > 0:
                 for radar_object in radar_objects:
-                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(radar_object, self.PIXELS_PER_METER),
+                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(radar_object, self.PIXELS_PER_METER, self.height),   # CIP
                         arcade.color.DARK_PASTEL_GREEN)
         for ship_id, current_ship in self.ship_models.items():
             warning_objects = self.get_model_attribute(ship_id, 'RadarSonar:warning_objects') if playback_data is None else playback_data[f"World.{ship_id}.RadarSonar.warning_objects"]
             if len(warning_objects) > 0:
                 for warning_object in warning_objects:
-                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(warning_object, self.PIXELS_PER_METER),
+                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(warning_object, self.PIXELS_PER_METER, self.height), # CIP
                         arcade.color.ORANGE)
         for ship_id, current_ship in self.ship_models.items():
             collision_objects = self.get_model_attribute(ship_id, 'RadarSonar:collision_objects') if playback_data is None else playback_data[f"World.{ship_id}.RadarSonar.collision_objects"]
             if len(collision_objects) > 0:
                 for collision_object in collision_objects:
-                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(collision_object, self.PIXELS_PER_METER),
+                    arcade.draw_polygon_filled(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(collision_object, self.PIXELS_PER_METER, self.height),   # CIP
                         arcade.color.RED)
             # Draw the radar range
             radar_geometry = self.get_model_attribute(ship_id, 'RadarSonar:radar_geometry') if playback_data is None else playback_data[f"World.{ship_id}.RadarSonar.radar_geometry"]
-            arcade.draw_polygon_outline(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(radar_geometry, self.PIXELS_PER_METER), arcade.color.DIM_GRAY, 2)
+            arcade.draw_polygon_outline(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(radar_geometry, self.PIXELS_PER_METER, self.height), arcade.color.DIM_GRAY, 2)  # CIP
 
         # Draw each ship in the simulation
         for ship_id, current_ship in self.ship_models.items():
@@ -258,7 +259,7 @@ class BattleshipViewGUI(arcade.View):
                 for i, waypoint in enumerate(all_waypoints):
                     foreground_color = arcade.color.BLACK if waypoint in waypoints else arcade.color.DARK_GRAY
                     background_color = arcade.color.YELLOW if waypoint in waypoints else arcade.color.GRAY
-                    waypoint = SimulatorViewUtilities.convert_coords_meters_to_pixels(*waypoint, self.PIXELS_PER_METER)
+                    waypoint = SimulatorViewUtilities.convert_coords_meters_to_pixels(*waypoint, self.PIXELS_PER_METER, self.height)    # CIP
                     arcade.draw_circle_filled(waypoint[0], waypoint[1], self.get_model_attribute(ship_id, "Navigation:ALLOWED_DISTANCE_ERROR") * self.PIXELS_PER_METER, background_color + (192,))
                     arcade.draw_point(waypoint[0], waypoint[1], foreground_color, 4)
                     arcade.draw_text(f"{ship_id} - Waypoint {i + 1}", waypoint[0] + 4, waypoint[1] + 4, foreground_color, font_size = 14)
@@ -269,7 +270,7 @@ class BattleshipViewGUI(arcade.View):
                 for i, target in enumerate(targets):
                     foreground_color = arcade.color.BLACK if target in targets else arcade.color.DARK_GRAY
                     background_color = arcade.color.RED if target in targets else arcade.color.GRAY
-                    target = SimulatorViewUtilities.convert_coords_meters_to_pixels(*target, self.PIXELS_PER_METER)
+                    target = SimulatorViewUtilities.convert_coords_meters_to_pixels(*target, self.PIXELS_PER_METER, self.height)    # CIP
                     arcade.draw_circle_filled(target[0], target[1], 20 * self.PIXELS_PER_METER, background_color + (192,))
                     arcade.draw_circle_outline(target[0], target[1], 40 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
                     arcade.draw_circle_outline(target[0], target[1], 60 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
@@ -284,11 +285,11 @@ class BattleshipViewGUI(arcade.View):
                 current_path = complete_path[:self.playback_ui.current_index + 1]
                 future_path = complete_path[self.playback_ui.current_index + 1:]
             arcade.draw_line_strip(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-                current_path, self.PIXELS_PER_METER),
+                current_path, self.PIXELS_PER_METER, self.height),  # CIP
                 arcade.color.DARK_BLUE)
             if len(future_path) > 0:
                 arcade.draw_line_strip(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(
-                future_path, self.PIXELS_PER_METER),
+                future_path, self.PIXELS_PER_METER, self.height),   # CIP
                 arcade.color.BLUE_GRAY)
             
             # Draw the ships
@@ -372,7 +373,7 @@ class BattleshipViewGUI(arcade.View):
                 arcade.draw_point(chosen_heading_line[2], chosen_heading_line[3], arcade.color.BLACK, 6)
                 arcade.draw_text(f"{round(self.get_model_attribute(ship_id, 'waypoint_heading') if playback_data is None else playback_data[f'World.{ship_id}.waypoint_heading'], 2)}°", chosen_heading_text_line[2], chosen_heading_text_line[3], arcade.color.BLACK, anchor_x="center", anchor_y="center", font_size = 14)
 
-                arcade.draw_text(ship_id, (self.get_model_attribute(ship_id, 'x') if playback_data is None else playback_data[f'World.{ship_id}.x']) * self.PIXELS_PER_METER, (self.get_model_attribute(ship_id, 'y') if playback_data is None else playback_data[f'World.{ship_id}.y']) * self.PIXELS_PER_METER - 50, arcade.color.BLACK, anchor_x="center", anchor_y="center", font_size = 14)
+                arcade.draw_text(ship_id, (self.get_model_attribute(ship_id, 'x') if playback_data is None else playback_data[f'World.{ship_id}.x']) * self.PIXELS_PER_METER, self.height - (self.get_model_attribute(ship_id, 'y') if playback_data is None else self.height - playback_data[f'World.{ship_id}.y']) * self.PIXELS_PER_METER - 50, arcade.color.BLACK, anchor_x="center", anchor_y="center", font_size = 14)  # CIP
 
                 if self.pause_simulation and self.playback_ui.current_index == self.playback_ui.max_index and self.get_model_attribute(ship_id, "user_override_heading") is not None:
                     override_heading_line = SimulatorUtilities.calculate_line_coordinates_from_end(
@@ -425,7 +426,7 @@ class BattleshipViewGUI(arcade.View):
                     arcade.draw_text(f"{round(self.get_model_attribute(ship_id, 'ca_override_heading') if playback_data is None else playback_data[f'World.{ship_id}.ca_override_heading'], 2)}°", override_heading_text_line[2], override_heading_text_line[3], arcade.color.DEEP_CARROT_ORANGE, anchor_x="center", anchor_y="center", font_size = 14)
 
                     for coll_object in (self.get_model_attribute(ship_id, 'CollisionAvoidance:relevant_objects') if playback_data is None else playback_data[f'World.{ship_id}.CollisionAvoidance.relevant_objects']):
-                         arcade.draw_polygon_outline(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(coll_object, self.PIXELS_PER_METER), arcade.color.BLACK, 1)
+                         arcade.draw_polygon_outline(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(coll_object, self.PIXELS_PER_METER, self.height), arcade.color.BLACK, 1)   # CIP
 
             arcade.draw_text(f"{self.playback_ui.max_index}", self.status_bar.min_x - 5, self.screen_height, arcade.color.BLACK, anchor_x = "right", anchor_y = "top", font_size = 16)
 
