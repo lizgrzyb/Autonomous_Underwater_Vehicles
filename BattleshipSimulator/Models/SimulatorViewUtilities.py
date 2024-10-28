@@ -36,15 +36,21 @@ def seconds_to_hms(seconds):
     minutes, seconds = divmod(remainder, 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-def convert_coords_meters_to_pixels(x, y, pixels_per_meter):
+def convert_coords_meters_to_pixels(x, y, pixels_per_meter, height):
+    return (x * pixels_per_meter, height - y * pixels_per_meter)
+# CIP begin
+def legacy_convert_coords_meters_to_pixels(x, y, pixels_per_meter):
     return (x * pixels_per_meter, y * pixels_per_meter)
-
+# CIP end
 def convert_coords_pixels_to_meters(x, y, pixels_per_meter):
     return (x / pixels_per_meter, y / pixels_per_meter)
 
-def convert_coords_list_meters_to_pixels(coords_list, pixels_per_meter):
-    return [convert_coords_meters_to_pixels(coords[0], coords[1], pixels_per_meter) for coords in coords_list]
-
+def convert_coords_list_meters_to_pixels(coords_list, pixels_per_meter, height):
+    return [convert_coords_meters_to_pixels(coords[0], coords[1], pixels_per_meter, height) for coords in coords_list]
+# CIP begin
+def legacy_convert_coords_list_meters_to_pixels(coords_list, pixels_per_meter):
+    return [legacy_convert_coords_meters_to_pixels(coords[0], coords[1], pixels_per_meter) for coords in coords_list]
+# CIP end
 def convert_coords_list_pixels_to_meters(coords_list, pixels_per_meter):
     return [convert_coords_pixels_to_meters(coords[0], coords[1], pixels_per_meter) for coords in coords_list]
 
