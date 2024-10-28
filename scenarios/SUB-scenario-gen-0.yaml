@@ -1,0 +1,113 @@
+entities:
+- _Navigation:
+    waypoints:
+    - - 2553
+      - 4213
+    - - 3145
+      - 2060
+    - - 1204
+      - 1714
+  _Weapons:
+    targets:
+    - - 3033
+      - 3513
+  _configuration: entity_configs/arleigh_burke.yaml
+  _id: PrimaryBattleship
+  x: 150
+  y: 150
+failure_conditions:
+  World:PrimaryBattleship:RadarSonar:collision_event: true
+  World:PrimaryBattleship:out_of_bounds: true
+success_conditions:
+  World:PrimaryBattleship:Navigation:has_waypoints: false
+world:
+  guardrails:
+  - - 0
+    - 0
+  - - 5000
+    - 5000
+  obstacles:
+  - - - 0
+      - 600
+    - - 20
+      - 240
+    - - 40
+      - 280
+    - - 60
+      - 300
+    - - 80
+      - 320
+    - - 100
+      - 350
+    - - 120
+      - 380
+    - - 140
+      - 410
+    - - 160
+      - 420
+    - - 180
+      - 400
+    - - 200
+      - 390
+    - - 220
+      - 380
+    - - 240
+      - 370
+    - - 260
+      - 350
+    - - 280
+      - 340
+    - - 300
+      - 330
+    - - 320
+      - 310
+    - - 340
+      - 320
+    - - 360
+      - 330
+    - - 380
+      - 325
+    - - 400
+      - 330
+    - - 420
+      - 335
+    - - 440
+      - 340
+    - - 460
+      - 345
+    - - 480
+      - 350
+    - - 500
+      - 340
+    - - 520
+      - 320
+    - - 540
+      - 310
+    - - 560
+      - 300
+    - - 580
+      - 290
+    - - 600
+      - 280
+    - - 620
+      - 270
+    - - 640
+      - 250
+    - - 660
+      - 240
+    - - 680
+      - 225
+    - - 700
+      - 215
+    - - 720
+      - 210
+    - - 740
+      - 205
+    - - 760
+      - 215
+    - - 780
+      - 230
+    - - 800
+      - 220
+    - - 800
+      - 600
