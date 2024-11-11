@@ -37,7 +37,8 @@ speed: 3
 #     - "RadarSonar.collision_event"
 #     - "RadarSonar.radar_objects"
 #     - "Navigation.waypoint_distances"
-collision_avoidance: "PointAvoidanceNavigator"
+collision_avoidance: "NewPointAvoidanceNavigator"
+#collision_avoidance: "SubmarineNavigator"
 _attached_systems:
   - "Engine"
   - "Navigation"

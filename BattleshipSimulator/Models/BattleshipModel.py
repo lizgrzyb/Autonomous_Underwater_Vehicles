@@ -34,6 +34,7 @@ class BattleshipModel(GetterSetter):
         self.supervisor_override_heading = None
         self.supervisor_override_speed = None
         
+
         if "collision_avoidance" in kwargs:
             collision_avoidance_args = [] if "collision_avoidance_args" not in kwargs else kwargs["collision_avoidance_args"]
             collision_avoidance_kwargs = {} if "collision_avoidance_kwargs" not in kwargs else kwargs["collision_avoidance_kwargs"]
@@ -60,6 +61,7 @@ class BattleshipModel(GetterSetter):
         ]
         
         self.command_registry = {}
+        self.hardware = None            # CIP
         self.setup()
     
     def setup(self):
@@ -120,7 +122,7 @@ class BattleshipModel(GetterSetter):
         if self.current_speed > 0 and len(self.children["Navigation"].waypoints) > 0:
 
             # Get the left and right angles
-            self.waypoint_heading = SimulatorUtilities.calculate_angle_degrees(self.x, self.y, self.children["Navigation"].waypoints[0][0], self.children["Navigation"].waypoints[0][1])
+            self.waypoint_heading = SimulatorUtilities.calculate_angle_degrees(self.x + self.hardware.gps_x_offset, self.y + self.hardware.gps_y_offset, self.children["Navigation"].waypoints[0][0], self.children["Navigation"].waypoints[0][1])
 
             self.set_action_code(0)
 

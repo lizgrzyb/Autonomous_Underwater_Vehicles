@@ -1,7 +1,7 @@
 import math
 import numpy as np
 import yaml
-from shapely.geometry import Polygon, MultiPolygon, LineString
+from shapely.geometry import Polygon, MultiPolygon, LineString, Point
 from shapely.affinity import translate, rotate, scale
 from BattleshipSimulator.python_vehicle_simulator.lib.gnc import attitudeEuler
 from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate
@@ -607,3 +607,76 @@ def get_filename_without_extension(file_path):
     file_name_without_extension = os.path.splitext(base_name)[0]
 
     return file_name_without_extension
+
+# CIP
+def calculate_skimming_trajectory(model_x, model_y, obstacle, current_heading):
+        """
+        Calculate a skimming trajectory along the edge of an obstacle.
+ 
+        Parameters:
+        - model_x (float): Current x-coordinate of the submarine.
+        - model_y (float): Current y-coordinate of the submarine.
+        - obstacle (Polygon): The shapely polygon representing the obstacle.
+        - current_heading (float): The current heading of the submarine (degrees).
+ 
+        Returns:
+        - skimming_heading (float): Adjusted heading to skim along the obstacle edge.
+        - skimming_distance (float): Distance to maintain from the obstacle.
+        """
+ 
+        # Calculate the centroid of the obstacle
+        obstacle_centroid = obstacle.centroid
+        obstacle_center_x = obstacle_centroid.x
+        obstacle_center_y = obstacle_centroid.y
+ 
+        # Vector from the submarine to the obstacle centroid
+        vector_to_obstacle = (obstacle_center_x - model_x, obstacle_center_y - model_y)
+ 
+        # Calculate the distance to the obstacle
+        distance_to_obstacle = math.sqrt(vector_to_obstacle[0]**2 + vector_to_obstacle[1]**2)
+ 
+        # Normalize the vector to obtain a unit vector
+        magnitude = math.sqrt(vector_to_obstacle[0]**2 + vector_to_obstacle[1]**2)
+        unit_vector_to_obstacle = (vector_to_obstacle[0] / magnitude, vector_to_obstacle[1] / magnitude)
+ 
+        # Calculate the perpendicular vector to 'skim' along the obstacle's edge
+        # Clockwise rotation (90 degrees) of the unit vector
+        perpendicular_vector = (-unit_vector_to_obstacle[1], unit_vector_to_obstacle[0])
+ 
+        # Calculate new heading in degrees (convert from radians)
+        skimming_heading = math.atan2(perpendicular_vector[1], perpendicular_vector[0]) * (180 / math.pi)
+ 
+        # Ensure the heading is in the correct range (0-360 degrees)
+        skimming_heading = (skimming_heading + 360) % 360
+ 
+        # Adjust the skimming distance as a buffer (e.g., maintain a distance of 10% of the total distance)
+        skimming_distance = 0.1 * distance_to_obstacle
+ 
+        return skimming_heading, skimming_distance
+
+def get_distance_at_angle(point, polygon, angle):
+
+    angle_radians = math.radians(angle)
+    
+    ray_length = 1e6  
+    end_point = (
+        point.x + ray_length * math.cos(angle_radians),
+        point.y + ray_length * math.sin(angle_radians)
+    )
+    
+    ray = LineString([point, end_point])
+    
+    intersection = ray.intersection(polygon)
+    
+    if intersection.is_empty:
+        return None
+    
+    if intersection.geom_type == "Point":
+        nearest_point = intersection
+    elif intersection.geom_type == "MultiPoint":
+        nearest_point = min(intersection, key=lambda p: point.distance(p))
+    else:
+        return point.distance(intersection)
+    
+    return point.distance(nearest_point)
+# CIP end

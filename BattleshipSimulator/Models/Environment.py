@@ -5,6 +5,55 @@ import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 from BattleshipSimulator.Models.Logger import CSVLogger
 import datetime
 import time
+import random
+import numpy as np
+
+NORMAL = 1
+GPS_SPOOFING = 2
+
+# CIP begin
+
+class Hardware(GetterSetter):
+    def __init__(self):
+        super().__init__()
+        self.hardware_data = {
+            "cpu_usage": 0,
+            "io_usage": 0,
+            "mem_usage": 0,
+            "process_num": 0,
+            "packet_count": 0
+        }
+        self.global_status = NORMAL
+        self.counter = 0
+
+        self.gps_x_offset = 0
+        self.gps_y_offset = 0
+
+
+    def update(self, timeDelta):
+        self.counter += 1
+        values_array = np.array(list(self.hardware_data.values()))
+        if self.global_status == NORMAL:
+            with open("output.txt", "a") as file:
+             np.savetxt(file, values_array[None], fmt="%d")
+        else:
+            with open("output_abnormal.txt", "a") as file:
+                np.savetxt(file, values_array[None], fmt="%d")
+        self.hardware_data["cpu_usage"] = random.uniform(10, 20)
+        self.hardware_data["io_usage"] = random.uniform(5, 15)
+        self.hardware_data["mem_usage"] = random.uniform(15, 30)
+        self.hardware_data["process_num"] = random.uniform(100, 300)
+        self.hardware_data["packet_count"] = random.uniform(200, 500)
+
+        if self.global_status == GPS_SPOOFING:
+            self.hardware_data["packet_count"] += random.uniform(150, 700)
+            self.gps_x_offset += 2
+            self.gps_y_offset += 2
+        
+        #if self.counter > 1500:
+            #self.global_status = GPS_SPOOFING
+
+# CIP end
 
 class Simulator(GetterSetter):
 
@@ -16,6 +65,7 @@ class Simulator(GetterSetter):
         # Format the date and time in a filename-safe way
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")
         self.logger = CSVLogger(f"results/{timestamp}_{SimulatorUtilities.get_filename_without_extension(config_file)}_results.csv")
+        self.hardware = Hardware()    # CIP
         self.add_child("Logger", self.logger)
         self.setup()
     
@@ -43,6 +93,7 @@ class Simulator(GetterSetter):
                         if (underscored_system_name := f"_{system_name}") in entity:
                             self.recursive_key_update(battleship_config, {underscored_system_name: entity[underscored_system_name]})
                 model = BattleModel.BattleshipModel(**battleship_config)
+                model.hardware = self.hardware          # CIP
                 self.world.attach_model(entity["_id"], model)
                 for system_name in battleship_config["_attached_systems"]:
                     # Add kwargs if they exist for this system
@@ -68,6 +119,7 @@ class Simulator(GetterSetter):
             self.total_time += timedelta
             self.timedelta = timedelta
             self.world.update(timedelta)
+            self.hardware.update(timedelta)     # CIP
             # Check for success
             for condition_variable, condition_value in self.success_conditions.items():
                 if self.get_attribute(condition_variable) == condition_value:

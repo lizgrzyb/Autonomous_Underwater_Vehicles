@@ -3,6 +3,8 @@ entities:
     waypoints:
     - - 1556
       - 1500
+    - - 3500
+      - 800
   _Weapons:
     targets:
     - - 1600
