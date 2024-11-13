@@ -45,7 +45,7 @@ class BattleshipViewGUI(arcade.View):
     """
 
     DEBUG = True
-    PIXELS_PER_METER = .3
+    PIXELS_PER_METER = .25
     #TODO: move the multiplier somewhere else
     SIM_TIMEDELTA_CONSTANT = .5
     SIM_TIME_MULTIPLIER = 1
@@ -526,34 +526,34 @@ class BattleshipViewGUI(arcade.View):
     def left_action(self):
         # Turn to port (positive using mathematical angle)
         if self.controller.get_attribute("Simulation:simulation_running"):
-            self.pause_simulation = True
-            self.controller.get_child("Simulation").pause()
+            #self.pause_simulation = True
+            #self.controller.get_child("Simulation").pause()
             self.playback_ui.reset()
             
-            if self.get_model_attribute("PrimaryBattleship", "user_override_heading") is None:
-                self.set_model_attribute("PrimaryBattleship", "user_override_heading", self.get_model_attribute("PrimaryBattleship", "heading"))
-                if self.get_model_attribute("PrimaryBattleship", "user_override_heading") < 0:
-                    self.set_model_attribute("PrimaryBattleship", "user_override_heading", self.get_model_attribute("PrimaryBattleship", "user_override_heading") + 360)
+            if self.get_model_attribute("PrimarySubmarine", "user_override_heading") is None:
+                self.set_model_attribute("PrimarySubmarine", "user_override_heading", self.get_model_attribute("PrimarySubmarine", "heading"))
+                if self.get_model_attribute("PrimarySubmarine", "user_override_heading") < 0:
+                    self.set_model_attribute("PrimarySubmarine", "user_override_heading", self.get_model_attribute("PrimarySubmarine", "user_override_heading") + 360)
             
-            self.set_model_attribute("PrimaryBattleship", "user_override_heading", round(self.get_model_attribute("PrimaryBattleship", "user_override_heading") + 1))
-            if self.get_model_attribute("PrimaryBattleship", "user_override_heading") >= 360:
-                self.set_model_attribute("PrimaryBattleship", "user_override_heading", 0)
+            self.set_model_attribute("PrimarySubmarine", "user_override_heading", round(self.get_model_attribute("PrimarySubmarine", "user_override_heading") + 1))
+            if self.get_model_attribute("PrimarySubmarine", "user_override_heading") >= 360:
+                self.set_model_attribute("PrimarySubmarine", "user_override_heading", 0)
     
     def right_action(self):
         # Turn to starboard (negative using mathematical angle)
         if self.controller.get_attribute("Simulation:simulation_running"):
-            self.pause_simulation = True
-            self.controller.get_child("Simulation").pause()
+            #self.pause_simulation = True
+            #self.controller.get_child("Simulation").pause()
             self.playback_ui.reset()
 
-            if self.get_model_attribute("PrimaryBattleship", "user_override_heading") is None:
-                self.set_model_attribute("PrimaryBattleship", "user_override_heading", self.get_model_attribute("PrimaryBattleship", "heading"))
-                if self.get_model_attribute("PrimaryBattleship", "user_override_heading") > 0:
-                    self.set_model_attribute("PrimaryBattleship", "user_override_heading", self.get_model_attribute("PrimaryBattleship", "user_override_heading") - 360)
+            if self.get_model_attribute("PrimarySubmarine", "user_override_heading") is None:
+                self.set_model_attribute("PrimarySubmarine", "user_override_heading", self.get_model_attribute("PrimarySubmarine", "heading"))
+                if self.get_model_attribute("PrimarySubmarine", "user_override_heading") > 0:
+                    self.set_model_attribute("PrimarySubmarine", "user_override_heading", self.get_model_attribute("PrimarySubmarine", "user_override_heading") - 360)
             
-            self.set_model_attribute("PrimaryBattleship", "user_override_heading", round(self.get_model_attribute("PrimaryBattleship", "user_override_heading") - 1))
-            if self.get_model_attribute("PrimaryBattleship", "user_override_heading") <= -360:
-                self.set_model_attribute("PrimaryBattleship", "user_override_heading", 0)
+            self.set_model_attribute("PrimarySubmarine", "user_override_heading", round(self.get_model_attribute("PrimarySubmarine", "user_override_heading") - 1))
+            if self.get_model_attribute("PrimarySubmarine", "user_override_heading") <= -360:
+                self.set_model_attribute("PrimarySubmarine", "user_override_heading", 0)
     
     def backspace_action(self):
         if self.controller.get_attribute("Simulation:simulation_running"):
@@ -561,7 +561,7 @@ class BattleshipViewGUI(arcade.View):
             self.controller.get_child("Simulation").pause()
             self.playback_ui.reset()
 
-            self.set_model_attribute("PrimaryBattleship", "user_override_heading", None)
+            self.set_model_attribute("PrimarySubmarine", "user_override_heading", None)
 
     def on_key_release(self, key, _):
         """
@@ -592,7 +592,7 @@ class Status_Pane():
 
     STD_OFFSET = 5
 
-    def __init__(self, x, y, width, height, parent_view, tracked_object = "PrimaryBattleship"):
+    def __init__(self, x, y, width, height, parent_view, tracked_object = "PrimarySubmarine"):
 
         self.text_objects = [None, None, None]
         self.change_size(x, y, width, height)
