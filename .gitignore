@@ -5,3 +5,5 @@ BattleshipSimulator/python_vehicle_simulator/vehicles/__pycache__/
 BattleshipSimulator/Views/__pycache__
 BattleshipSimulator/Supervisor/__pycache__
 BattleshipSimulator/__pycache__
+output.txt
+output_abnormal.txt

@@ -35,7 +35,7 @@ class Hardware(GetterSetter):
         values_array = np.array(list(self.hardware_data.values()))
         if self.global_status == NORMAL:
             with open("output.txt", "a") as file:
-             np.savetxt(file, values_array[None], fmt="%d")
+                np.savetxt(file, values_array[None], fmt="%d")
         else:
             with open("output_abnormal.txt", "a") as file:
                 np.savetxt(file, values_array[None], fmt="%d")
