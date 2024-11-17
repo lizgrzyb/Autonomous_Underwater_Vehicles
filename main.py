@@ -24,7 +24,7 @@ def parse_arguments():
     parser.add_argument('--mode', type=str, default='gui',
                         help='Mode of operation. Default is "gui".')
     # Adding the 'scenario' argument with a default value
-    parser.add_argument('--scenario', type=str, default="scenarios/SUB-scenario-gen-0.yaml",
+    parser.add_argument('--scenario', type=str, default="scenarios/scenario-gen-12.yaml",
                         help='Scenario to run. Default is "scenarios/scenario-gen-0.yaml".')
     # Parse the arguments
     args = parser.parse_args()
