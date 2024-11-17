@@ -7,9 +7,14 @@ import datetime
 import time
 import random
 import numpy as np
+import csv
 
+#Operation modes/attacks
 NORMAL = 1
-GPS_SPOOFING = 2
+GPS_SPOOFING = 2 #Packet count spikes, gps x and y offset have a value
+SONAR_JAMMING = 3 #CPU usage and packet count increase
+COMMUNICATION_JAMMING = 4 #packet count and network bytes rate drop
+MINE = 5 #Some or all systems shut down
 
 # CIP begin
 
@@ -21,34 +26,98 @@ class Hardware(GetterSetter):
             "io_usage": 0,
             "mem_usage": 0,
             "process_num": 0,
-            "packet_count": 0
+            "network_bytes_rate": 0,
+            "packet_count": 0,
+            "gps_x_offset": 0,
+            "gps_y_offset": 0,
         }
-        self.global_status = NORMAL
+        self.global_status = MINE
         self.counter = 0
 
         self.gps_x_offset = 0
         self.gps_y_offset = 0
 
+        # Write headers to each CSV file (CPU Usage, IO Usage, Memory Usage, Process num, packet count)
+        with open("output_normal.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num", "Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
+        with open("output_GPS_SPOOFING.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
+        with open("output_SONAR_JAMMING.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
+        with open("output_COMMUNICATION_JAMMING.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
+        with open("output_MINE.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
 
     def update(self, timeDelta):
         self.counter += 1
-        values_array = np.array(list(self.hardware_data.values()))
+        # Sync GPS offsets with hardware_data dictionary
+        self.hardware_data["gps_x_offset"] = self.gps_x_offset
+        self.hardware_data["gps_y_offset"] = self.gps_y_offset
+
+        values_array = list(self.hardware_data.values())  # Convert to list for CSV writing
+
+        #Determining which output file should be used:
         if self.global_status == NORMAL:
-            with open("output.txt", "a") as file:
-                np.savetxt(file, values_array[None], fmt="%d")
+            with open("output_normal.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(values_array)
+
+        if self.global_status == GPS_SPOOFING:
+            with open("output_GPS_SPOOFING.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(values_array)
+        
+        if self.global_status == SONAR_JAMMING:
+            with open("output_SONAR_JAMMING.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(values_array)
+
+        if self.global_status == COMMUNICATION_JAMMING:
+            with open("output_COMMUNICATION_JAMMING.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(values_array)
+        
+        if self.global_status == MINE:
+            with open("output_MINE.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(values_array)
+
         else:
-            with open("output_abnormal.txt", "a") as file:
-                np.savetxt(file, values_array[None], fmt="%d")
+            print("Invalid opperating mode selected. Please choose NORMAL, GPS_SPOOFING, SONAR_JAMMING, COMMUNICATION_JAMMING, or MINE")
+
+        #Setting default and normal hardware opperating ranges:
         self.hardware_data["cpu_usage"] = random.uniform(10, 20)
         self.hardware_data["io_usage"] = random.uniform(5, 15)
         self.hardware_data["mem_usage"] = random.uniform(15, 30)
         self.hardware_data["process_num"] = random.uniform(100, 300)
+        self.hardware_data["network_bytes_rate"] = random.uniform(0, 10)
         self.hardware_data["packet_count"] = random.uniform(200, 500)
 
+        #Impacts of attacks are captured below:
         if self.global_status == GPS_SPOOFING:
             self.hardware_data["packet_count"] += random.uniform(150, 700)
             self.gps_x_offset += 2
             self.gps_y_offset += 2
+
+        if self.global_status == SONAR_JAMMING:
+            self.hardware_data["packet_count"] += random.uniform(1000, 1500)
+            self.hardware_data["cpu_usage"] += random.uniform(20, 40)
+
+        if self.global_status == COMMUNICATION_JAMMING:
+            self.hardware_data["packet_count"] = random.uniform(0, 10)
+            self.hardware_data["network_bytes_rate"] = random.uniform(0, 10)
+
+        if self.global_status == MINE:
+            self.hardware_data["cpu_usage"] += random.uniform(50, 90)
+            self.hardware_data["mem_usage"] += random.uniform(100, 200)
+            self.hardware_data["packet_count"] = 0
+        
         
         #if self.counter > 1500:
             #self.global_status = GPS_SPOOFING
