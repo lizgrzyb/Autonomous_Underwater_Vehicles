@@ -8,6 +8,8 @@ import time
 import random
 import numpy as np
 import csv
+import pickle
+import pandas as pd
 
 #Operation modes/attacks
 NORMAL = 1
@@ -22,102 +24,121 @@ class Hardware(GetterSetter):
     def __init__(self):
         super().__init__()
         self.hardware_data = {
-            "cpu_usage": 0,
-            "io_usage": 0,
-            "mem_usage": 0,
-            "process_num": 0,
-            "network_bytes_rate": 0,
-            "packet_count": 0,
-            "gps_x_offset": 0,
-            "gps_y_offset": 0,
+            "CPU Usage": 0,
+            "IO Usage": 0,
+            "Memory Usage": 0,
+            "Process Num": 0,
+            "Network Bytes Rate": 0,
+            "Packet Count": 0,
+            "GPS X Offset": 0,
+            "GPS Y Offset": 0,
         }
-        self.global_status = MINE
+        self.global_status = GPS_SPOOFING
         self.counter = 0
 
         self.gps_x_offset = 0
         self.gps_y_offset = 0
 
-        # Write headers to each CSV file (CPU Usage, IO Usage, Memory Usage, Process num, packet count)
-        with open("output_normal.csv", "w", newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num", "Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
-        with open("output_GPS_SPOOFING.csv", "w", newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
-        with open("output_SONAR_JAMMING.csv", "w", newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
-        with open("output_COMMUNICATION_JAMMING.csv", "w", newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
-        with open("output_MINE.csv", "w", newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow(["CPU Usage", "IO Usage", "Memory Usage", "Process Num","Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"])
+        # Load the trained ICS Monitor model
+        with open("AI-Models/ICS_TRAINING_V2/ICS_Monitor.pkl", "rb") as file:
+            self.model = pickle.load(file)
+
+        # Extract and validate feature names
+        self.feature_order = list(self.model.feature_names_in_)
+        self.validate_features()
+
+        # Initialize CSV files
+        self.init_csv_files()
+
+    def validate_features(self):
+        """Validate feature names in hardware_data against the model's expected features."""
+        hardware_keys = set(self.hardware_data.keys())
+        model_keys = set(self.feature_order)
+
+        missing_keys = model_keys - hardware_keys
+        extra_keys = hardware_keys - model_keys
+
+        if missing_keys:
+            raise ValueError(f"Missing keys in hardware_data: {missing_keys}")
+        if extra_keys:
+            print(f"Warning: Extra keys in hardware_data (not used in model): {extra_keys}")
+
+    def init_csv_files(self):
+        headers = [
+            "CPU Usage", "IO Usage", "Memory Usage", "Process Num",
+            "Network Bytes Rate", "Packet Count", "GPS X Offset", "GPS Y Offset"
+        ]
+        attack_types = ["normal", "GPS_SPOOFING", "SONAR_JAMMING", "COMMUNICATION_JAMMING", "MINE"]
+        for attack in attack_types:
+            with open(f"output_{attack}.csv", "w", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(headers)
 
     def update(self, timeDelta):
         self.counter += 1
+
         # Sync GPS offsets with hardware_data dictionary
-        self.hardware_data["gps_x_offset"] = self.gps_x_offset
-        self.hardware_data["gps_y_offset"] = self.gps_y_offset
+        self.hardware_data["GPS X Offset"] = self.gps_x_offset
+        self.hardware_data["GPS Y Offset"] = self.gps_y_offset
 
-        values_array = list(self.hardware_data.values())  # Convert to list for CSV writing
+        # Reorder hardware_data to match feature order in the model
+        prediction_data = {key: self.hardware_data[key] for key in self.feature_order}
+        data = pd.DataFrame([prediction_data])  # DataFrame with correct feature order
 
-        #Determining which output file should be used:
-        if self.global_status == NORMAL:
-            with open("output_normal.csv", "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(values_array)
+        # Use the model to predict the attack type
+        predicted_attack = self.model.predict(data)[0]
 
+        # Alert the detected attack type
+        print(f"Detected Attack: {predicted_attack}")
+
+        # Write the data to the appropriate CSV file
+        values_array = [self.hardware_data[key] for key in self.feature_order]
+        with open(f"output_{predicted_attack}.csv", "a", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(values_array)
+
+        # Simulate hardware metrics
+        self.simulate_hardware_metrics()
+
+        # Apply attack impacts
+        self.simulate_attack_impacts()
+
+    def simulate_hardware_metrics(self):
+        self.hardware_data["CPU Usage"] = random.uniform(10, 20)
+        self.hardware_data["IO Usage"] = random.uniform(5, 15)
+        self.hardware_data["Memory Usage"] = random.uniform(15, 30)
+        self.hardware_data["Process Num"] = random.uniform(100, 300)
+        self.hardware_data["Network Bytes Rate"] = random.uniform(0, 10)
+        self.hardware_data["Packet Count"] = random.uniform(200, 500)
+
+    def simulate_attack_impacts(self):
         if self.global_status == GPS_SPOOFING:
-            with open("output_GPS_SPOOFING.csv", "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(values_array)
-        
-        if self.global_status == SONAR_JAMMING:
-            with open("output_SONAR_JAMMING.csv", "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(values_array)
-
-        if self.global_status == COMMUNICATION_JAMMING:
-            with open("output_COMMUNICATION_JAMMING.csv", "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(values_array)
-        
-        if self.global_status == MINE:
-            with open("output_MINE.csv", "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(values_array)
-
-        else:
-            print("Invalid opperating mode selected. Please choose NORMAL, GPS_SPOOFING, SONAR_JAMMING, COMMUNICATION_JAMMING, or MINE")
-
-        #Setting default and normal hardware opperating ranges:
-        self.hardware_data["cpu_usage"] = random.uniform(10, 20)
-        self.hardware_data["io_usage"] = random.uniform(5, 15)
-        self.hardware_data["mem_usage"] = random.uniform(15, 30)
-        self.hardware_data["process_num"] = random.uniform(100, 300)
-        self.hardware_data["network_bytes_rate"] = random.uniform(0, 10)
-        self.hardware_data["packet_count"] = random.uniform(200, 500)
-
-        #Impacts of attacks are captured below:
-        if self.global_status == GPS_SPOOFING:
-            self.hardware_data["packet_count"] += random.uniform(150, 700)
+            self.hardware_data["Packet Count"] += random.uniform(150, 700)
             self.gps_x_offset += 2
             self.gps_y_offset += 2
 
         if self.global_status == SONAR_JAMMING:
-            self.hardware_data["packet_count"] += random.uniform(1000, 1500)
-            self.hardware_data["cpu_usage"] += random.uniform(20, 40)
+            self.hardware_data["Packet Count"] += random.uniform(1000, 1500)
+            self.hardware_data["CPU Usage"] += random.uniform(20, 40)
 
         if self.global_status == COMMUNICATION_JAMMING:
-            self.hardware_data["packet_count"] = random.uniform(0, 10)
-            self.hardware_data["network_bytes_rate"] = random.uniform(0, 10)
+            self.hardware_data["Packet Count"] = random.uniform(0, 10)
+            self.hardware_data["Network Bytes Rate"] = random.uniform(0, 10)
 
         if self.global_status == MINE:
-            self.hardware_data["cpu_usage"] += random.uniform(50, 90)
-            self.hardware_data["mem_usage"] += random.uniform(100, 200)
-            self.hardware_data["packet_count"] = 0
-        
+            self.hardware_data["CPU Usage"] += random.uniform(50, 90)
+            self.hardware_data["Memory Usage"] += random.uniform(100, 200)
+            self.hardware_data["Packet Count"] = 0
+
+    def monitor(self):
+        try:
+            print("Starting real-time monitoring. Press Ctrl+C to stop.")
+            while True:
+                self.update(1)  # Call update every second
+                time.sleep(1)  # Pause for 1 second
+        except KeyboardInterrupt:
+            print("Real-time monitoring stopped.")
+
         
         #if self.counter > 1500:
             #self.global_status = GPS_SPOOFING
@@ -126,7 +147,7 @@ class Hardware(GetterSetter):
 
 class Simulator(GetterSetter):
 
-    def __init__(self, config_file):
+    def __init__(self, config_file, prediction_window=None):  # Add `prediction_window` argument
         super().__init__()
         self.config_file = config_file
         self.success_conditions = {}
@@ -134,7 +155,9 @@ class Simulator(GetterSetter):
         # Format the date and time in a filename-safe way
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")
         self.logger = CSVLogger(f"results/{timestamp}_{SimulatorUtilities.get_filename_without_extension(config_file)}_results.csv")
-        self.hardware = Hardware()    # CIP
+        
+        # Pass the prediction_window to Hardware
+        self.hardware = Hardware()    # Pass prediction_window here
         self.add_child("Logger", self.logger)
         self.setup()
     
