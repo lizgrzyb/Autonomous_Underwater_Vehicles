@@ -33,8 +33,10 @@ class Hardware(GetterSetter):
             "GPS X Offset": 0,
             "GPS Y Offset": 0,
         }
-        self.global_status = GPS_SPOOFING
+        self.global_status = NORMAL
         self.counter = 0
+        self.counter_to_launch_attack = None
+        self.attack_to_launch = None
 
         self.gps_x_offset = 0
         self.gps_y_offset = 0
@@ -77,6 +79,11 @@ class Hardware(GetterSetter):
     def update(self, timeDelta):
         self.counter += 1
 
+        if (self.counter_to_launch_attack and self.counter == self.counter_to_launch_attack):
+            if (self.attack_to_launch is None):
+                self.attack_to_launch = random.uniform(2, 5)
+            self.global_status = self.attack_to_launch
+
         # Sync GPS offsets with hardware_data dictionary
         self.hardware_data["GPS X Offset"] = self.gps_x_offset
         self.hardware_data["GPS Y Offset"] = self.gps_y_offset
@@ -90,6 +97,7 @@ class Hardware(GetterSetter):
 
         # Alert the detected attack type
         print(f"Detected Attack: {predicted_attack}")
+        print(self.counter, self.counter_to_launch_attack)
 
         # Write the data to the appropriate CSV file
         values_array = [self.hardware_data[key] for key in self.feature_order]
@@ -186,6 +194,11 @@ class Simulator(GetterSetter):
                             self.recursive_key_update(battleship_config, {underscored_system_name: entity[underscored_system_name]})
                 model = BattleModel.BattleshipModel(**battleship_config)
                 model.hardware = self.hardware          # CIP
+                if "attack_counters" in config_data:
+                    self.hardware.counter_to_launch_attack = int(config_data["attack_counters"])
+                if "attack_to_launch" in config_data:
+                    self.hardware.attack_to_launch = int(config_data["attack_to_launch"])
+                    
                 self.world.attach_model(entity["_id"], model)
                 for system_name in battleship_config["_attached_systems"]:
                     # Add kwargs if they exist for this system

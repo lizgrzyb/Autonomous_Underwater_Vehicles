@@ -62,6 +62,7 @@ class BattleshipModel(GetterSetter):
         
         self.command_registry = {}
         self.hardware = None            # CIP
+        self.under_attack_status = 1  # CIP to tell view the attack we are undertakin
         self.setup()
     
     def setup(self):
@@ -118,6 +119,8 @@ class BattleshipModel(GetterSetter):
 
         for system in self.subsystems.values():
             system.update(timedelta)
+
+        self.under_attack_status = self.hardware.global_status  # CIP update under attack status
         
         if self.current_speed > 0 and len(self.children["Navigation"].waypoints) > 0:
 

@@ -11,6 +11,12 @@ entities:
     targets:
     - - 1340
       - 432
+      - 9
+      - 2
+    - - 3152
+      - 3243
+      - 8
+      - 1
   _configuration: entity_configs/arleigh_burke.yaml
   _id: PrimarySubmarine
   x: 2528
@@ -20,6 +26,8 @@ failure_conditions:
   World:PrimarySubmarine:out_of_bounds: true
 success_conditions:
   World:PrimarySubmarine:Navigation:has_waypoints: false
+attack_counters: 200
+attack_to_launch: 2
 world:
   guardrails:
   - - 0

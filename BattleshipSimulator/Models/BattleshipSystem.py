@@ -155,6 +155,7 @@ class Weapons(BattleshipSystem):
         self.target_distances = []
         self.has_targets = False
         self.logging_variables = ["targets", "target_distances", "has_targets"]
+        self.to_attack_target_index = None
         if "targets" in kwargs:
             for target in kwargs["targets"]:
                 self.add_target(*target)
@@ -162,7 +163,14 @@ class Weapons(BattleshipSystem):
     def update(self, timedelta):
         # Get the distances
         if len(self.targets) > 0:
-            self.target_distances = [SimulatorUtilities.distance(target, (self.model.x, self.model.y)) for target in self.targets]
+            self.target_distances = [SimulatorUtilities.distance(target[0:2], (self.model.x, self.model.y)) for target in self.targets]     # CIP
+            # CIP begin
+            for i in range(0, len(self.targets)):
+                distance = self.target_distances[i]
+                if (distance <= 100):
+                    self.to_attack_target_index = i
+                    break
+            # CIP end
         else:
             self.target_distances = []
     
@@ -180,8 +188,8 @@ class Weapons(BattleshipSystem):
         # Logic to fire weapons
         pass
 
-    def add_target(self, x, y):
-        self.targets.append((x, y))
+    def add_target(self, x, y, size, type):     # CIP
+        self.targets.append((x, y, size, type)) # CIP
         self.has_targets = len(self.targets) > 0
 
 class Navigation(BattleshipSystem):

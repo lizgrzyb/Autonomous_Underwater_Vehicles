@@ -1,6 +1,7 @@
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 import BattleshipSimulator.Models.SimulatorViewUtilities as SimulatorViewUtilities
 import arcade
+import time
 
 class BattleshipViewCLI():
     
@@ -73,8 +74,10 @@ class BattleshipViewGUI(arcade.View):
         self.elapsed_time = 0
         self.simulation_time = 0
         self.pause_simulation = False
+        self.no_playback_pause = False                      # CIP
         self.restart_flag = False
         self.width, self.height = arcade.get_window().get_size()  # CIP
+        self.weapon_attack_pause_counter = 0                        # CIP
         self.setup()
     
     def setup(self):
@@ -162,7 +165,7 @@ class BattleshipViewGUI(arcade.View):
                 self.pause_simulation = True
                 self.playback_ui.reset()
             self.elapsed_time += timedelta
-            if not self.pause_simulation:
+            if not self.pause_simulation or (self.pause_simulation and self.no_playback_pause):
                 # Update the models
                 if self.controller.get_attribute("Simulation:simulation_running"):
                     # If the constant
@@ -217,7 +220,7 @@ class BattleshipViewGUI(arcade.View):
         arcade.start_render()
 
         # If the simulation is paused, we need to pull the data from the past
-        playback_data = self.playback_ui.playback_data() if self.pause_simulation else None
+        playback_data = self.playback_ui.playback_data() if self.pause_simulation and not self.no_playback_pause else None
         
         # Draw the world
         # TODO: There is an issue rendering some polygons using the ShapeList
@@ -270,12 +273,13 @@ class BattleshipViewGUI(arcade.View):
                 for i, target in enumerate(targets):
                     foreground_color = arcade.color.BLACK if target in targets else arcade.color.DARK_GRAY
                     background_color = arcade.color.RED if target in targets else arcade.color.GRAY
-                    target = SimulatorViewUtilities.convert_coords_meters_to_pixels(*target, self.PIXELS_PER_METER, self.height)    # CIP
+                    target = SimulatorViewUtilities.convert_coords_meters_to_pixels(*(target[0:2]), self.PIXELS_PER_METER, self.height)    # CIP
                     arcade.draw_circle_filled(target[0], target[1], 20 * self.PIXELS_PER_METER, background_color + (192,))
                     arcade.draw_circle_outline(target[0], target[1], 40 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
                     arcade.draw_circle_outline(target[0], target[1], 60 * self.PIXELS_PER_METER, background_color + (192,), 10 * self.PIXELS_PER_METER)
                     arcade.draw_point(target[0], target[1], foreground_color, 4)
                     arcade.draw_text(f"{ship_id} - Target {i + 1}", target[0] + 4, target[1] + 4, foreground_color, font_size = 14)
+
             # Draw the path taken
             if not self.pause_simulation or self.playback_ui.current_index == self.playback_ui.max_index:
                 current_path = self.get_model_attribute(ship_id, "Navigation:actual_path")
@@ -429,8 +433,47 @@ class BattleshipViewGUI(arcade.View):
                          arcade.draw_polygon_outline(SimulatorViewUtilities.convert_coords_list_meters_to_pixels(coll_object, self.PIXELS_PER_METER, self.height), arcade.color.BLACK, 1)   # CIP
 
             arcade.draw_text(f"{self.playback_ui.max_index}", self.status_bar.min_x - 5, self.screen_height, arcade.color.BLACK, anchor_x = "right", anchor_y = "top", font_size = 16)
+            # CIP begin
+            to_attack_target = self.get_model_attribute(ship_id, "Weapons:to_attack_target_index")
+            if to_attack_target is not None:
+                image_texture = arcade.load_texture("fish/fish2.jpg")
+                image_texture2 = arcade.load_texture("fish/fish3.jpg")
+                image_texture3 = arcade.load_texture("fish/fish4.jpg")
+                arcade.draw_texture_rectangle(
+                    self.screen_width // 2, self.screen_height //2, 
+                    image_texture.width, image_texture.height, 
+                    image_texture
+                )
 
-        if self.pause_simulation:
+                arcade.draw_texture_rectangle(
+                    self.screen_width // 4, self.screen_height //2, 
+                    image_texture2.width, image_texture2.height, 
+                    image_texture2
+                )
+
+                arcade.draw_texture_rectangle(
+                    self.screen_width // 4 * 3, self.screen_height //2, 
+                    image_texture3.width, image_texture3.height, 
+                    image_texture3
+                )
+
+                self.weapon_attack_pause_counter += 1
+
+                if (self.weapon_attack_pause_counter >= 200):
+                    self.controller.simulation.world.models[ship_id].subsystems["Weapons"].targets.pop(to_attack_target)
+                    self.controller.simulation.world.models[ship_id].subsystems["Weapons"].to_attack_target_index = None
+                    self.pause_simulation = False
+                    self.no_playback_pause = False
+                    self.controller.get_child("Simulation").resume()
+                    self.weapon_attack_pause_counter = 0
+                    
+                else:
+                    self.pause_simulation = True
+                    self.no_playback_pause = True
+                    self.controller.get_child("Simulation").pause()
+            # CIP end
+
+        if self.pause_simulation and not self.no_playback_pause:
             self.playback_ui.draw()
         self.status_bar.draw()
 
@@ -603,6 +646,12 @@ class Status_Pane():
     def setup(self):
         self.update(0)
 
+    # CIP begin
+    def get_attack_string(self, idx):
+        attack_list = [None, "Normal", "GPS Spoofing", "Sonar Jamming", "Comms Jamming", "MINE"]
+        return attack_list[idx]
+    # CIP end
+
     def update(self, timedelta):
         # Index 0 is keys
         # Index 1 is values
@@ -627,6 +676,7 @@ class Status_Pane():
                 "Mouse Y (px)": self.parent_view.mouse_y,
                 "Mouse X (m)": round(self.parent_view.mouse_x / self.parent_view.PIXELS_PER_METER, 2),
                 "Mouse Y (m)": round(self.parent_view.mouse_y / self.parent_view.PIXELS_PER_METER, 2),
+                "Under Attack": self.get_attack_string(int(self.parent_view.get_model_attribute(self.tracked_object, "under_attack_status")))
             },
             #"----- Log Data -----": {k.rsplit(".")[-1]:v for k, v in self.parent_view.controller.world.logging_package().items()}
         }
