@@ -149,6 +149,9 @@ class PointAvoidanceNavigator(BaseNavigator):
             heading_override = False
             waypoint_heading_override = False
             self.relevant_objects = []
+            if (self.model.under_attack_status == 3):
+                return {}
+            
             for obstacle in self.model.get_attribute("RadarSonar:radar_objects"):
                 # Artificially increase the size of the object by 2x the ship's width
                 enlarged_obstacle = SimulatorUtilities.buffer_shape(obstacle, safe_threshhold)

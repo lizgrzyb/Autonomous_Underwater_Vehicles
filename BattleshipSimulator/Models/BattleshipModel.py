@@ -61,8 +61,9 @@ class BattleshipModel(GetterSetter):
         ]
         
         self.command_registry = {}
-        self.hardware = None            # CIP
-        self.under_attack_status = 1  # CIP to tell view the attack we are undertakin
+        self.hardware = None                # CIP
+        self.under_attack_status = 1        # CIP to tell view the attack we are undertakin
+        self.predicted_attack = "normal"    # CIP predict attack to set by ics security model
         self.setup()
     
     def setup(self):
@@ -121,6 +122,7 @@ class BattleshipModel(GetterSetter):
             system.update(timedelta)
 
         self.under_attack_status = self.hardware.global_status  # CIP update under attack status
+        self.predicted_attack = self.hardware.predicted_attack  # CIP update predict attack status
         
         if self.current_speed > 0 and len(self.children["Navigation"].waypoints) > 0:
 
@@ -168,9 +170,16 @@ class BattleshipModel(GetterSetter):
             self.supervisor_override_heading = supervisor_data["heading"] if "heading" in supervisor_data else None
 
             # If the ML reports a speed of 0, stop the ship immediately
+            
             if "speed" in supervisor_data and supervisor_data["speed"] == 0:
                 self.current_speed = 0
                 return None
+            
+            '''
+            if self.predicted_attack != "normal":
+                self.current_speed = 0
+                return None
+            '''
             
             # If the ML's heading is within 2 degrees of the heading we calculated, continue
             if "heading" not in supervisor_data or SimulatorUtilities.is_within_threshold(supervisor_data["heading"], self.waypoint_heading, 2):

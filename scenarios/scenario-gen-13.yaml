@@ -26,7 +26,7 @@ failure_conditions:
   World:PrimarySubmarine:out_of_bounds: true
 success_conditions:
   World:PrimarySubmarine:Navigation:has_waypoints: false
-attack_counters: 200
+attack_counters: 12200
 attack_to_launch: 3
 world:
   guardrails:
@@ -96,14 +96,3 @@ world:
       - 20
     - - 6300
       - 20
-
-  - - - 2600
-      - 2600
-    - - 3000
-      - 2600
-    - - 3000
-      - 2200
-    - - 2600
-      - 2200
-    - - 2600
-      - 2600

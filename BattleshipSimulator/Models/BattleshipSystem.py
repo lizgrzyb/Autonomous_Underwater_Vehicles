@@ -167,7 +167,7 @@ class Weapons(BattleshipSystem):
             # CIP begin
             for i in range(0, len(self.targets)):
                 distance = self.target_distances[i]
-                if (distance <= 100):
+                if (distance <= 500):
                     self.to_attack_target_index = i
                     break
             # CIP end

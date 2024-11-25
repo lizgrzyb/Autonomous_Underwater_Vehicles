@@ -37,6 +37,7 @@ class Hardware(GetterSetter):
         self.counter = 0
         self.counter_to_launch_attack = None
         self.attack_to_launch = None
+        self.predicted_attack = 1
 
         self.gps_x_offset = 0
         self.gps_y_offset = 0
@@ -93,15 +94,15 @@ class Hardware(GetterSetter):
         data = pd.DataFrame([prediction_data])  # DataFrame with correct feature order
 
         # Use the model to predict the attack type
-        predicted_attack = self.model.predict(data)[0]
+        self.predicted_attack = self.model.predict(data)[0]
 
         # Alert the detected attack type
-        print(f"Detected Attack: {predicted_attack}")
+        print(f"Detected Attack: {self.predicted_attack}")
         print(self.counter, self.counter_to_launch_attack)
 
         # Write the data to the appropriate CSV file
         values_array = [self.hardware_data[key] for key in self.feature_order]
-        with open(f"output_{predicted_attack}.csv", "a", newline="") as file:
+        with open(f"output_{self.predicted_attack}.csv", "a", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(values_array)
 

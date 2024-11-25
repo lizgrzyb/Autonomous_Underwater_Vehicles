@@ -2,6 +2,8 @@ import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 import BattleshipSimulator.Models.SimulatorViewUtilities as SimulatorViewUtilities
 import arcade
 import time
+from playsound import playsound
+import threading
 
 class BattleshipViewCLI():
     
@@ -78,6 +80,7 @@ class BattleshipViewGUI(arcade.View):
         self.restart_flag = False
         self.width, self.height = arcade.get_window().get_size()  # CIP
         self.weapon_attack_pause_counter = 0                        # CIP
+        self.sound_play_counter = 200                                # CIP
         self.setup()
     
     def setup(self):
@@ -436,28 +439,45 @@ class BattleshipViewGUI(arcade.View):
             # CIP begin
             to_attack_target = self.get_model_attribute(ship_id, "Weapons:to_attack_target_index")
             if to_attack_target is not None:
-                image_texture = arcade.load_texture("fish/fish2.jpg")
-                image_texture2 = arcade.load_texture("fish/fish3.jpg")
-                image_texture3 = arcade.load_texture("fish/fish4.jpg")
-                arcade.draw_texture_rectangle(
-                    self.screen_width // 2, self.screen_height //2, 
-                    image_texture.width, image_texture.height, 
-                    image_texture
+                def play_sonar_sound():
+                    playsound('C:\Critical Infrastructure Protection\Autonomous_Underwater_Vehicles\\fish\\sonar1.wav')
+
+                if self.sound_play_counter >= 200:
+                    thread = threading.Thread(target=play_sonar_sound)
+                    thread.start()
+                    self.sound_play_counter = 0
+                
+                self.sound_play_counter += 1
+
+                image_texture = arcade.load_texture("fish/fish8.jpg")
+                image_texture2 = arcade.load_texture("fish/fish9.jpg")
+                image_texture3 = arcade.load_texture("fish/fish10.jpg")
+                arcade.draw_scaled_texture_rectangle(
+                    self.screen_width - 150, self.screen_height // 2, 
+                    image_texture,
+                    0.8
                 )
 
-                arcade.draw_texture_rectangle(
-                    self.screen_width // 4, self.screen_height //2, 
-                    image_texture2.width, image_texture2.height, 
-                    image_texture2
+                arcade.draw_scaled_texture_rectangle(
+                    self.screen_width - 150, self.screen_height //4 * 3,  
+                    image_texture2,
+                    0.8
                 )
 
-                arcade.draw_texture_rectangle(
-                    self.screen_width // 4 * 3, self.screen_height //2, 
-                    image_texture3.width, image_texture3.height, 
-                    image_texture3
+                arcade.draw_scaled_texture_rectangle(
+                    self.screen_width - 150, self.screen_height // 4,  
+                    image_texture3,
+                    0.8
                 )
 
                 self.weapon_attack_pause_counter += 1
+                if (self.weapon_attack_pause_counter >= 150):
+                    image_texture_skeleton = arcade.load_texture("fish/skeleton.png")
+                    arcade.draw_scaled_texture_rectangle(
+                        self.screen_width - 150, self.screen_height // 4,  
+                        image_texture_skeleton,
+                        0.2
+                    )
 
                 if (self.weapon_attack_pause_counter >= 200):
                     self.controller.simulation.world.models[ship_id].subsystems["Weapons"].targets.pop(to_attack_target)
@@ -475,7 +495,9 @@ class BattleshipViewGUI(arcade.View):
 
         if self.pause_simulation and not self.no_playback_pause:
             self.playback_ui.draw()
-        self.status_bar.draw()
+
+        if not self.no_playback_pause:
+            self.status_bar.draw()
 
         if self.controller.get_attribute("Simulation:simulation_running"):
             arcade.draw_text(f"Press <SPACE> to {'pause' if not self.pause_simulation else 'resume'} or <ENTER> to restart", 5, self.screen_height, arcade.color.BLACK, anchor_x = "left", anchor_y = "top", font_size = 16)
