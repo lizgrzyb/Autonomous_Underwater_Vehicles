@@ -4,6 +4,7 @@ import arcade
 import time
 from playsound import playsound
 import threading
+import math
 
 class BattleshipViewCLI():
     
@@ -449,6 +450,8 @@ class BattleshipViewGUI(arcade.View):
                 
                 self.sound_play_counter += 1
 
+                # TODO: form into Eliz's MQTT json packet
+                # weapon target information
                 image_texture = arcade.load_texture("fish/fish8.jpg")
                 image_texture2 = arcade.load_texture("fish/fish9.jpg")
                 image_texture3 = arcade.load_texture("fish/fish10.jpg")
@@ -480,6 +483,17 @@ class BattleshipViewGUI(arcade.View):
                     )
 
                 if (self.weapon_attack_pause_counter >= 200):
+                    # weapon target info
+                    target = self.controller.simulation.world.models[ship_id].subsystems["Weapons"].targets[to_attack_target]
+                    submarine_x = self.controller.simulation.world.models[ship_id].x
+                    submarine_y = self.controller.simulation.world.models[ship_id].y
+                    target_x = target[0]
+                    target_y = target[1]
+                    target_size = target[2]
+                    target_type = target[3]
+                    submarine_target_distance = math.sqrt((target_x - submarine_x)**2 + (target_y - submarine_y)**2)
+                    print([submarine_x, submarine_y, target_size, target_type, target_x, target_y, submarine_target_distance])
+
                     self.controller.simulation.world.models[ship_id].subsystems["Weapons"].targets.pop(to_attack_target)
                     self.controller.simulation.world.models[ship_id].subsystems["Weapons"].to_attack_target_index = None
                     self.pause_simulation = False
@@ -670,7 +684,7 @@ class Status_Pane():
 
     # CIP begin
     def get_attack_string(self, idx):
-        attack_list = [None, "Normal", "GPS Spoofing", "Sonar Jamming", "Comms Jamming", "MINE"]
+        attack_list = [None, "Normal", "GPS Spoofing", "Sonar Jamming", "Comms Jamming", "MINE", "POWER_ATTACK", "RUDDER_ATTACK"]
         return attack_list[idx]
     # CIP end
 

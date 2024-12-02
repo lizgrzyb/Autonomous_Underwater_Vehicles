@@ -6,6 +6,9 @@ from shapely.affinity import translate, rotate, scale
 from BattleshipSimulator.python_vehicle_simulator.lib.gnc import attitudeEuler
 from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate
 import os
+import random
+import uuid
+import csv
 
 def calculate_heading_from_points(object_x, object_y, direction_x, direction_y):
     # Calculate the difference in coordinates
@@ -546,7 +549,7 @@ def distance(point1, point2):
     x2, y2 = point2
     return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, oldU):
+def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, oldU, status):
     #################################################################
     # prevEta, oldNu, oldU determine the state of the               #
     # vehicle in the past                                           #
@@ -581,6 +584,18 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
     simData = np.vstack( [simData, signals] )
 
     # Propagate vehicle and attitude dynamics
+    rudder_elec = 20000 + random.uniform(-1000, 1000)
+    if (status == 7):
+        u_control[0] = u_control[0] + random.uniform(0.3, 0.6)
+        rudder_elec = rudder_elec + random.uniform(2000, 5000)
+        with open("output\output_rudder_attack.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow([targetHeading, u_control[0], rudder_elec])
+    else:
+        with open("output\output_rudder.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow([targetHeading, u_control[0], rudder_elec])
+
     nu, u_actual = vehicle.dynamics(eta,nu,u_actual,u_control,timeDelta)
     eta = attitudeEuler(eta,nu,timeDelta)
 
@@ -679,4 +694,34 @@ def get_distance_at_angle(point, polygon, angle):
         return point.distance(intersection)
     
     return point.distance(nearest_point)
+
+def calculate_power(speed_mps, mode, beam_ft=34, drag_coeff=0.25, efficiency=0.75):
+    ############################################################################################
+    # This function only needs to take in the current speed of the ship for calculation.
+    # The input speed currently expects meters/second
+    # All calculations are based on "Marine Propellors and Propulsion" by John Carlton, 2018
+    # Dimensions and information on Virginia class sub are from:
+    # [1] U.S. Navy, "Attack Submarines (SSN)," [Online]. Available: https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2169558/attack-submarines-ssn/. [Accessed: Nov. 24, 2024].
+    # [2] Submarine Industrial Base Council, "Virginia Class," [Online]. Available: https://submarinesuppliers.org/programs/ssn-ssgn/virginia-class/. [Accessed: Nov. 24, 2024].
+    ############################################################################################
+
+    #Constants
+    water_density = 1025 #kg/m^3
+    beam_width_m = beam_ft* 0.3048
+    area = math.pi * (beam_width_m / 2) ** 2
+
+    #Calculating power:
+    power_watts = (0.5 * water_density * area * drag_coeff * speed_mps ** 3)/efficiency #in watts
+
+    #Additional fluctuation of +/-20% if attack is selected
+    if mode==6:
+        fluctuation = random.uniform(-0.2, 0.2)
+        power_watts *= (1 + fluctuation)
+    else:
+        fluctuation = random.uniform(-0.05, 0.05)
+        power_watts *= (1 + fluctuation)
+    
+    power_mw = power_watts / 1e6 #in megawatts
+
+    return power_mw
 # CIP end

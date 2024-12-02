@@ -7,3 +7,4 @@ BattleshipSimulator/Supervisor/__pycache__
 BattleshipSimulator/__pycache__
 output.txt
 output_abnormal.txt
+output/

@@ -13,12 +13,21 @@ import pandas as pd
 
 #Operation modes/attacks
 NORMAL = 1
-GPS_SPOOFING = 2 #Packet count spikes, gps x and y offset have a value
-SONAR_JAMMING = 3 #CPU usage and packet count increase
-COMMUNICATION_JAMMING = 4 #packet count and network bytes rate drop
-MINE = 5 #Some or all systems shut down
+GPS_SPOOFING = 2            # Packet count spikes, gps x and y offset have a value
+SONAR_JAMMING = 3           # CPU usage and packet count increase
+COMMUNICATION_JAMMING = 4   # packet count and network bytes rate drop
+MINE = 5                    # Some or all systems shut down
+POWER_ATTACK = 6            # power attack
+RUDDER_ATTACK = 7           # rudder attack
 
 # CIP begin
+
+class MessageSystem(GetterSetter):
+    def __init__(self):
+        super().__init__()
+        self.hardware_log = []
+        self.sonar_log = []
+        self.power_sys_log = []
 
 class Hardware(GetterSetter):
     def __init__(self):
@@ -42,7 +51,11 @@ class Hardware(GetterSetter):
         self.gps_x_offset = 0
         self.gps_y_offset = 0
 
+        self.message = MessageSystem()
+        self.power = [SimulatorUtilities.calculate_power(3, self.global_status)]             # [watt]
+
         # Load the trained ICS Monitor model
+        self.model = None
         with open("AI-Models/ICS_TRAINING_V2/ICS_Monitor.pkl", "rb") as file:
             self.model = pickle.load(file)
 
@@ -89,6 +102,9 @@ class Hardware(GetterSetter):
         self.hardware_data["GPS X Offset"] = self.gps_x_offset
         self.hardware_data["GPS Y Offset"] = self.gps_y_offset
 
+        # update into the message queue
+        self.message.hardware_log.append(self.hardware_data.items())
+
         # Reorder hardware_data to match feature order in the model
         prediction_data = {key: self.hardware_data[key] for key in self.feature_order}
         data = pd.DataFrame([prediction_data])  # DataFrame with correct feature order
@@ -97,20 +113,31 @@ class Hardware(GetterSetter):
         self.predicted_attack = self.model.predict(data)[0]
 
         # Alert the detected attack type
-        print(f"Detected Attack: {self.predicted_attack}")
-        print(self.counter, self.counter_to_launch_attack)
+        #print(f"Detected Attack: {self.predicted_attack}")
+        #print(self.counter, self.counter_to_launch_attack)
 
         # Write the data to the appropriate CSV file
         values_array = [self.hardware_data[key] for key in self.feature_order]
-        with open(f"output_{self.predicted_attack}.csv", "a", newline="") as file:
+        with open(f"output\output_{self.predicted_attack}.csv", "a", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(values_array)
+
+        if (self.global_status == POWER_ATTACK):
+            with open("output\output_power_attack.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(self.power)
+        else:
+            with open("output\output_power.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow(self.power)
 
         # Simulate hardware metrics
         self.simulate_hardware_metrics()
 
         # Apply attack impacts
         self.simulate_attack_impacts()
+
+        self.power[0] = SimulatorUtilities.calculate_power(3, self.global_status)
 
     def simulate_hardware_metrics(self):
         self.hardware_data["CPU Usage"] = random.uniform(10, 20)
@@ -166,6 +193,7 @@ class Simulator(GetterSetter):
         self.logger = CSVLogger(f"results/{timestamp}_{SimulatorUtilities.get_filename_without_extension(config_file)}_results.csv")
         
         # Pass the prediction_window to Hardware
+        self.message = MessageSystem()
         self.hardware = Hardware()    # Pass prediction_window here
         self.add_child("Logger", self.logger)
         self.setup()

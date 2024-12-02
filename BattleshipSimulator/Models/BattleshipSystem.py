@@ -1,6 +1,8 @@
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 from BattleshipSimulator.Models.GetterSetter import GetterSetter
 from shapely.geometry import Point, Polygon
+import random
+import csv
 
 class BattleshipSystem(GetterSetter):
     """
@@ -299,6 +301,18 @@ class RadarSonar(BattleshipSystem):
                 if SimulatorUtilities.polygons_intersect(self.transformed_geometry, world_object)[0]:
                     self.collision_event = True
                     self.collision_objects.append(world_object)
+
+        if self.model.hardware.global_status == 3:
+            self.fake_radar_objects = [[0 for i in range(0, random.randint(2, 5))] for i in range(0, random.randint(1, 6))]
+            with open("output\output_sonar_jamming_object.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow([self.fake_radar_objects, len(self.fake_radar_objects)])
+        else:
+            with open("output\output_sonar.csv", "a", newline="") as file:
+                writer = csv.writer(file)
+                writer.writerow([self.radar_objects, len(self.radar_objects)])
+
+
     
     def commands(self):
         return ["TOGGLE"]
