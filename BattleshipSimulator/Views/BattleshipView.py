@@ -5,6 +5,9 @@ import time
 from playsound import playsound
 import threading
 import math
+import json
+import os
+import base64
 
 class BattleshipViewCLI():
     
@@ -452,6 +455,22 @@ class BattleshipViewGUI(arcade.View):
 
                 # TODO: form into Eliz's MQTT json packet
                 # weapon target information
+                valid_extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.tiff')
+                image_paths = [os.path.join("./Test_Data/Sonar_Malicious", f) for f in os.listdir("./Test_Data/Sonar_Malicious") if f.lower().endswith(valid_extensions)]
+
+                for image_path in image_paths[:3]:
+                    with open(image_path, "rb") as image_file:
+                        encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+
+                    # Create the payload
+                    payload = json.dumps({
+                        "ImageName": os.path.basename(image_path),
+                        "ImageData": encoded_image
+                    })
+
+                    # Publish the payload
+                    self.controller.simulation.image_data_client.publish("submarine/sonar_input", payload)
+
                 image_texture = arcade.load_texture("fish/fish8.jpg")
                 image_texture2 = arcade.load_texture("fish/fish9.jpg")
                 image_texture3 = arcade.load_texture("fish/fish10.jpg")
@@ -492,7 +511,13 @@ class BattleshipViewGUI(arcade.View):
                     target_size = target[2]
                     target_type = target[3]
                     submarine_target_distance = math.sqrt((target_x - submarine_x)**2 + (target_y - submarine_y)**2)
-                    print([submarine_x, submarine_y, target_size, target_type, target_x, target_y, submarine_target_distance])
+                    weapon_choice = 1 if  target_size > 1 else 0
+                    weapon_log = [submarine_x, submarine_y, target_size, target_type, target_x, target_y, submarine_target_distance, weapon_choice]
+
+                    row_json = weapon_log.to_json()
+                    payload = json.dumps({"RowID": 1, "Data": row_json})
+
+                    self.controller.simulation.weapon_data_client.publish("submarine/weapons_input", payload)
 
                     self.controller.simulation.world.models[ship_id].subsystems["Weapons"].targets.pop(to_attack_target)
                     self.controller.simulation.world.models[ship_id].subsystems["Weapons"].to_attack_target_index = None

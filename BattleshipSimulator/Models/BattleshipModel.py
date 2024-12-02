@@ -204,7 +204,7 @@ class BattleshipModel(GetterSetter):
                     self.update_action_code(turning = True)
                 
                 # Generate the next set of data using the python vehicle simulator
-                thisSimData, self.oldEta, self.oldNu, self.oldU = SimulatorUtilities.getNextPosition(self.current_speed, self.chosen_heading, self.oldEta, self.vehicle, timedelta, self.oldNu, self.oldU, self.hardware.global_status)
+                thisSimData, self.oldEta, self.oldNu, self.oldU = SimulatorUtilities.getNextPosition(self.current_speed, self.chosen_heading, self.oldEta, self.vehicle, timedelta, self.oldNu, self.oldU, self.hardware)
                 self.simData = np.vstack([self.simData, thisSimData])
 
                 self.last_x, self.last_y, self.last_heading = self.x, self.y, self.heading

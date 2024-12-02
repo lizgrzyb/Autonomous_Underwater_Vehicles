@@ -9,6 +9,7 @@ import os
 import random
 import uuid
 import csv
+import json
 
 def calculate_heading_from_points(object_x, object_y, direction_x, direction_y):
     # Calculate the difference in coordinates
@@ -549,7 +550,7 @@ def distance(point1, point2):
     x2, y2 = point2
     return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, oldU, status):
+def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, oldU, hardware):
     #################################################################
     # prevEta, oldNu, oldU determine the state of the               #
     # vehicle in the past                                           #
@@ -585,7 +586,7 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
 
     # Propagate vehicle and attitude dynamics
     rudder_elec = 20000 + random.uniform(-1000, 1000)
-    if (status == 7):
+    if (hardware.status == 7):
         u_control[0] = u_control[0] + random.uniform(0.3, 0.6)
         rudder_elec = rudder_elec + random.uniform(2000, 5000)
         with open("output\output_rudder_attack.csv", "a", newline="") as file:
@@ -595,6 +596,20 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
         with open("output\output_rudder.csv", "a", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerow([targetHeading, u_control[0], rudder_elec])
+    
+    hardware.rudder_log.append([targetHeading, u_control[0], rudder_elec])
+    if (len(hardware.rudder_log) >= 10):
+        group_log = hardware.rudder_log[-10:]
+        for i, chunk in enumerate(group_log):
+            # Convert the chunk to JSON
+            chunk_json = chunk.to_json(orient="records")
+            payload = json.dumps({"ChunkID": i, "Data": chunk_json})
+            print(payload)
+
+            # Publish the chunk
+            hardware.rudder_data_client.publish("submarine/rudder_input", payload)
+            print(payload)
+
 
     nu, u_actual = vehicle.dynamics(eta,nu,u_actual,u_control,timeDelta)
     eta = attitudeEuler(eta,nu,timeDelta)

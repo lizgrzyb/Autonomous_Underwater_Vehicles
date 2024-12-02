@@ -311,8 +311,6 @@ class RadarSonar(BattleshipSystem):
             with open("output\output_sonar.csv", "a", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerow([self.radar_objects, len(self.radar_objects)])
-
-
     
     def commands(self):
         return ["TOGGLE"]

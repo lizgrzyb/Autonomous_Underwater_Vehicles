@@ -10,6 +10,9 @@ import numpy as np
 import csv
 import pickle
 import pandas as pd
+from multiprocessing import shared_memory
+import json
+import paho.mqtt.client as mqtt
 
 #Operation modes/attacks
 NORMAL = 1
@@ -53,11 +56,24 @@ class Hardware(GetterSetter):
 
         self.message = MessageSystem()
         self.power = [SimulatorUtilities.calculate_power(3, self.global_status)]             # [watt]
+        self.power_log = [self.power]
+        self.rudder_log = []
 
         # Load the trained ICS Monitor model
         self.model = None
+        self.power_data_client = None
+        self.rudder_data_client = None
+        self.weapon_data_client = None
+        self.image_data_client = None
         with open("AI-Models/ICS_TRAINING_V2/ICS_Monitor.pkl", "rb") as file:
             self.model = pickle.load(file)
+
+        try:
+            self.shared_mem_aggregator = shared_memory.SharedMemory("aggregator", False, 10)
+        except:
+            self.shared_mem_aggregator = shared_memory.SharedMemory("aggregator", True, 10)
+        self.shared_mem_aggregator_buff = self.shared_mem_aggregator.buf
+        self.shared_mem_aggregator_buff[0] = 1
 
         # Extract and validate feature names
         self.feature_order = list(self.model.feature_names_in_)
@@ -110,7 +126,9 @@ class Hardware(GetterSetter):
         data = pd.DataFrame([prediction_data])  # DataFrame with correct feature order
 
         # Use the model to predict the attack type
-        self.predicted_attack = self.model.predict(data)[0]
+        #self.predicted_attack = self.model.predict(data)[0]
+        self.predicted_attack = self.shared_mem_aggregator_buff[0]
+        print(self.predicted_attack)
 
         # Alert the detected attack type
         #print(f"Detected Attack: {self.predicted_attack}")
@@ -130,6 +148,22 @@ class Hardware(GetterSetter):
             with open("output\output_power.csv", "a", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerow(self.power)
+
+        self.power_log.append(self.power)
+
+        # client send power log to mqtt server
+        if (len(self.power_log) >= 10):
+            group_log = self.power_log[-10:]
+            for i, chunk in enumerate(group_log):
+                # Convert the chunk to JSON
+                chunk_json = chunk.to_json(orient="records")
+                payload = json.dumps({"ChunkID": i, "Data": chunk_json})
+                print(payload)
+
+                # Publish the chunk
+                self.client.publish("submarine/power_input", payload)
+                print(payload)
+
 
         # Simulate hardware metrics
         self.simulate_hardware_metrics()
@@ -192,9 +226,27 @@ class Simulator(GetterSetter):
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")
         self.logger = CSVLogger(f"results/{timestamp}_{SimulatorUtilities.get_filename_without_extension(config_file)}_results.csv")
         
+        # set up mqtt server
+        BROKER = "localhost"
+        PORT = 1883
+        TOPIC = "submarine/power_input"
+        self.power_data_client = mqtt.Client(client_id="Power_Data_Passer", protocol=mqtt.MQTTv311, callback_api_version=mqtt.CallbackAPIVersion.VERSION1)
+        self.power_data_client.connect(BROKER, PORT, 60)
+        self.rudder_data_client = mqtt.Client(client_id="Rudder_Data_Passer", protocol=mqtt.MQTTv311, callback_api_version=mqtt.CallbackAPIVersion.VERSION1)
+        self.rudder_data_client.connect(BROKER, PORT, 60)
+        self.weapon_data_client = mqtt.Client(client_id="Weapons_Data_Passer", protocol=mqtt.MQTTv311, callback_api_version=mqtt.CallbackAPIVersion.VERSION1)
+        self.weapon_data_client.connect(BROKER, PORT, 60)
+        self.image_data_client = mqtt.Client(client_id="Image_Publisher", protocol=mqtt.MQTTv311, callback_api_version=mqtt.CallbackAPIVersion.VERSION1)
+        self.image_data_client.connect(BROKER, PORT)
+
         # Pass the prediction_window to Hardware
         self.message = MessageSystem()
         self.hardware = Hardware()    # Pass prediction_window here
+        self.hardware.power_data_client = self.power_data_client
+        self.hardware.rudder_data_client = self.rudder_data_client
+        self.hardware.weapon_data_client = self.weapon_data_client
+        self.hardware.image_data_client = self.image_data_client
+
         self.add_child("Logger", self.logger)
         self.setup()
     
