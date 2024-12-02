@@ -10,6 +10,7 @@ import random
 import uuid
 import csv
 import json
+import pandas as pd
 
 def calculate_heading_from_points(object_x, object_y, direction_x, direction_y):
     # Calculate the difference in coordinates
@@ -586,7 +587,7 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
 
     # Propagate vehicle and attitude dynamics
     rudder_elec = 20000 + random.uniform(-1000, 1000)
-    if (hardware.status == 7):
+    if (hardware.global_status == 7):
         u_control[0] = u_control[0] + random.uniform(0.3, 0.6)
         rudder_elec = rudder_elec + random.uniform(2000, 5000)
         with open("output\output_rudder_attack.csv", "a", newline="") as file:
@@ -602,6 +603,7 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
         group_log = hardware.rudder_log[-10:]
         for i, chunk in enumerate(group_log):
             # Convert the chunk to JSON
+            chunk = pd.DataFrame([chunk], columns=["heading", "rudder angle", "rudder power"])
             chunk_json = chunk.to_json(orient="records")
             payload = json.dumps({"ChunkID": i, "Data": chunk_json})
             print(payload)

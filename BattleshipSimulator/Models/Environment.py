@@ -156,12 +156,13 @@ class Hardware(GetterSetter):
             group_log = self.power_log[-10:]
             for i, chunk in enumerate(group_log):
                 # Convert the chunk to JSON
+                chunk = pd.DataFrame(chunk, columns=["Power"])
                 chunk_json = chunk.to_json(orient="records")
                 payload = json.dumps({"ChunkID": i, "Data": chunk_json})
                 print(payload)
 
                 # Publish the chunk
-                self.client.publish("submarine/power_input", payload)
+                self.power_data_client.publish("submarine/power_input", payload)
                 print(payload)
 
 

@@ -8,6 +8,7 @@ import math
 import json
 import os
 import base64
+import pandas as pd
 
 class BattleshipViewCLI():
     
@@ -456,7 +457,7 @@ class BattleshipViewGUI(arcade.View):
                 # TODO: form into Eliz's MQTT json packet
                 # weapon target information
                 valid_extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.tiff')
-                image_paths = [os.path.join("./Test_Data/Sonar_Malicious", f) for f in os.listdir("./Test_Data/Sonar_Malicious") if f.lower().endswith(valid_extensions)]
+                image_paths = [os.path.join("./Security_Monitor/Test_Data/Sonar_Malicious", f) for f in os.listdir("./Security_Monitor/Test_Data/Sonar_Malicious") if f.lower().endswith(valid_extensions)]
 
                 for image_path in image_paths[:3]:
                     with open(image_path, "rb") as image_file:
@@ -513,9 +514,10 @@ class BattleshipViewGUI(arcade.View):
                     submarine_target_distance = math.sqrt((target_x - submarine_x)**2 + (target_y - submarine_y)**2)
                     weapon_choice = 1 if  target_size > 1 else 0
                     weapon_log = [submarine_x, submarine_y, target_size, target_type, target_x, target_y, submarine_target_distance, weapon_choice]
-
+                    weapon_log = ["1","Unarmed","None","None","None","Unarmed","No","Non-Malicious"]
+                    weapon_log = pd.DataFrame([weapon_log], columns=["S.No.", "Current Status", "Recommended Weapon", "Command Sent", "Armed Weapon", "Expected Next Status", "Fired?", "Class"])
                     row_json = weapon_log.to_json()
-                    payload = json.dumps({"RowID": 1, "Data": row_json})
+                    payload = json.dumps({"RowID": "1", "Data": row_json})
 
                     self.controller.simulation.weapon_data_client.publish("submarine/weapons_input", payload)
 

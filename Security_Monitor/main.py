@@ -83,22 +83,22 @@ if __name__ == "__main__":
         # Start the Sonar IDS and passer
         start_process(SONAR_IDS_SCRIPT)
         time.sleep(2)  # Allow the IDS to initialize
-        start_process(IMAGE_PASSER_SCRIPT)
+        #start_process(IMAGE_PASSER_SCRIPT)
 
         # Start the Power IDS and passer
         start_process(POWER_IDS_SCRIPT)
         time.sleep(2)
-        start_process(POWER_PASSER_SCRIPT)
+        #start_process(POWER_PASSER_SCRIPT)
 
         # Start the Rudder IDS and passer
         start_process(RUDDER_IDS_SCRIPT)
         time.sleep(2)
-        start_process(RUDDER_PASSER_SCRIPT)
+        #start_process(RUDDER_PASSER_SCRIPT)
 
         # Start the Weapons IDS and passer
         start_process(WEAPONS_IDS_SCRIPT)
         time.sleep(2)
-        start_process(WEAPONS_PASSER_SCRIPT)
+        #start_process(WEAPONS_PASSER_SCRIPT)
 
         # Start the Dashboard
         start_process(DASHBOARD_SCRIPT)
