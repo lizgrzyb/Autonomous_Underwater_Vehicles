@@ -1,0 +1,1500 @@
+S.No.,Current Status,Recommended Weapon,Command Sent,Armed Weapon,Expected Next Status,Fired?,Class,Prediction,Probability
+1,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+2,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+3,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+4,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+5,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+6,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+7,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+8,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+9,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+10,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+11,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+12,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+13,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+14,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+15,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+16,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+17,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+18,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+19,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+20,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+21,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+22,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+23,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+24,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+25,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+26,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+27,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+28,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+29,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+30,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+31,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+32,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+33,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+34,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+35,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+36,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+37,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+38,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+39,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+40,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+41,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+42,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+43,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+44,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+45,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+46,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+47,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+48,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+49,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+50,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+51,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+52,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+53,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+54,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+55,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+56,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+57,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+58,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+59,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+60,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+61,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+62,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+63,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+64,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+65,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+66,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+67,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+68,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+69,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+70,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+71,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+72,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+73,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+74,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+75,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+76,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+77,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+78,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+79,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+80,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+81,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+82,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+83,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+84,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+85,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+86,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+87,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+88,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+89,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+90,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+91,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+92,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+93,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+94,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+95,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+96,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+97,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+98,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+99,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+100,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+101,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+102,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+103,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+104,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+105,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+106,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+107,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+108,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+109,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+110,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+111,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+112,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+113,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+114,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+115,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+116,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+117,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+118,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+119,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+120,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+121,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+122,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+123,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+124,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+125,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+126,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+127,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+128,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+129,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+130,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+131,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+132,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+133,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+134,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+135,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+136,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+137,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+138,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+139,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+140,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+141,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+142,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+143,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+144,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+145,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+146,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+147,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+148,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+149,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+150,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+151,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+152,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+153,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+154,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+155,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+156,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+157,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+158,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+159,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+160,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+161,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+162,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+163,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+164,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+165,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+166,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+167,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+168,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+169,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+170,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+171,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+172,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+173,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+174,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+175,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+176,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+177,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+178,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+179,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+180,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+181,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+182,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+183,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+184,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+185,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+186,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+187,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+188,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+189,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+190,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+191,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+192,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+193,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+194,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+195,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+196,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+197,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+198,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+199,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+200,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+201,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+202,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+203,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+204,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+205,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+206,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+207,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+208,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+209,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+210,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+211,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+212,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+213,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+214,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+215,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+216,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+217,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+218,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+219,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+220,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+221,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+222,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+223,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+224,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+225,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+226,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+227,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+228,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+229,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+230,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+231,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+232,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+233,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+234,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+235,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+236,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+237,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+238,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+239,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+240,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+241,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+242,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+243,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+244,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+245,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+246,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+247,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+248,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+249,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+250,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+251,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+252,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+253,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+254,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+255,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+256,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+257,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+258,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+259,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+260,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+261,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+262,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+263,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+264,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+265,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+266,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+267,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+268,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+269,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+270,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+271,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+272,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+273,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+274,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+275,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+276,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+277,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+278,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+279,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+280,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+281,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+282,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+283,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+284,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+285,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+286,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+287,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+288,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+289,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+290,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+291,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+292,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+293,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+294,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+295,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+296,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+297,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+298,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+299,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+300,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+301,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+302,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+303,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+304,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+305,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+306,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+307,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+308,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+309,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+310,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+311,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+312,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+313,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+314,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+315,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+316,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+317,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+318,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+319,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+320,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+321,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+322,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+323,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+324,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+325,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+326,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+327,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+328,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+329,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+330,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+331,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+332,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+333,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+334,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+335,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+336,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+337,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+338,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+339,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+340,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+341,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+342,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+343,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+344,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+345,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+346,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+347,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+348,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+349,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+350,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+351,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+352,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+353,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+354,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+355,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+356,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+357,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+358,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+359,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+360,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+361,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+362,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+363,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+364,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+365,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+366,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+367,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+368,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+369,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+370,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+371,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+372,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+373,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+374,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+375,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+376,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+377,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+378,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+379,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+380,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+381,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+382,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+383,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+384,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+385,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+386,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+387,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+388,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+389,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+390,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+391,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+392,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+393,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+394,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+395,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+396,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+397,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+398,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+399,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+400,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+401,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+402,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+403,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+404,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+405,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+406,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+407,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+408,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+409,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+410,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+411,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+412,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+413,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+414,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+415,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+416,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+417,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+418,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+419,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+420,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+421,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+422,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+423,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+424,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+425,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+426,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+427,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+428,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+429,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+430,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+431,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+432,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+433,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+434,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+435,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+436,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+437,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+438,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+439,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+440,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+441,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+442,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+443,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+444,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+445,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+446,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+447,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+448,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+449,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+450,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+451,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+452,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+453,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+454,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+455,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+456,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+457,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+458,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+459,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+460,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+461,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+462,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+463,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+464,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+465,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+466,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+467,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+468,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+469,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+470,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+471,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+472,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+473,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+474,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+475,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+476,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+477,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+478,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+479,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+480,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+481,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+482,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+483,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+484,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+485,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+486,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+487,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+488,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+489,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+490,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+491,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+492,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+493,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+494,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+495,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+496,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+497,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+498,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+499,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+500,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+501,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+502,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+503,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+504,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+505,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+506,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+507,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+508,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+509,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+510,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+511,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+512,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+513,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+514,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+515,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+516,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+517,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+518,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+519,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+520,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+521,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+522,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+523,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+524,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+525,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+526,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+527,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+528,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+529,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+530,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+531,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+532,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+533,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+534,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+535,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+536,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+537,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+538,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+539,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+540,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+541,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+542,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+543,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+544,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+545,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+546,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+547,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+548,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+549,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+550,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+551,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+552,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+553,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+554,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+555,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+556,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+557,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+558,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+559,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+560,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+561,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+562,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+563,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+564,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+565,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+566,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+567,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+568,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+569,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+570,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+571,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+572,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+573,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+574,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+575,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+576,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+577,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+578,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+579,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+580,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+581,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+582,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+583,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+584,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+585,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+586,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+587,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+588,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+589,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+590,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+591,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+592,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+593,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+594,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+595,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+596,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+597,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+598,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+599,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+600,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+601,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+602,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+603,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+604,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+605,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+606,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+607,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+608,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+609,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+610,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+611,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+612,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+613,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+614,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+615,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+616,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+617,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+618,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+619,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+620,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+621,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+622,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+623,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+624,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+625,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+626,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+627,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+628,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+629,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+630,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+631,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+632,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+633,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+634,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+635,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+636,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+637,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+638,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+639,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+640,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+641,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+642,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+643,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+644,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+645,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+646,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+647,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+648,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+649,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+650,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+651,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+652,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+653,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+654,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+655,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+656,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+657,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+658,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+659,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+660,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+661,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+662,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+663,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+664,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+665,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+666,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+667,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+668,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+669,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+670,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+671,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+672,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+673,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+674,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+675,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+676,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+677,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+678,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+679,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+680,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+681,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+682,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+683,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+684,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+685,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+686,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+687,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+688,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+689,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+690,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+691,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+692,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+693,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+694,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+695,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+696,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+697,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+698,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+699,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+700,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+701,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+702,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+703,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+704,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+705,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+706,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+707,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+708,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+709,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+710,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+711,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+712,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+713,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+714,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+715,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+716,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+717,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+718,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+719,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+720,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+721,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+722,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+723,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+724,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+725,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+726,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+727,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+728,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+729,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+730,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+731,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+732,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+733,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+734,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+735,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+736,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+737,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+738,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+739,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+740,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+741,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+742,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+743,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+744,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+745,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+746,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+747,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+748,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+749,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+750,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+751,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+752,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+753,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+754,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+755,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+756,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+757,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+758,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+759,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+760,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+761,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+762,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+763,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+764,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+765,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+766,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+767,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+768,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+769,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+770,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+771,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+772,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+773,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+774,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+775,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+776,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+777,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+778,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+779,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+780,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+781,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+782,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+783,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+784,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+785,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+786,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+787,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+788,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+789,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+790,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+791,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+792,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+793,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+794,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+795,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+796,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+797,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+798,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+799,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+800,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+801,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+802,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+803,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+804,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+805,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+806,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+807,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+808,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+809,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+810,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+811,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+812,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+813,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+814,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+815,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+816,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+817,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+818,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+819,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+820,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+821,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+822,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+823,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+824,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+825,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+826,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+827,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+828,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+829,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+830,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+831,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+832,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+833,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+834,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+835,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+836,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+837,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+838,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+839,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+840,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+841,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+842,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+843,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+844,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+845,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+846,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+847,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+848,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+849,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+850,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+851,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+852,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+853,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+854,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+855,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+856,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+857,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+858,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+859,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+860,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+861,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+862,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+863,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+864,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+865,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+866,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+867,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+868,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+869,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+870,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+871,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+872,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+873,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+874,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+875,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+876,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+877,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+878,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+879,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+880,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+881,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+882,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+883,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+884,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+885,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+886,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+887,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+888,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+889,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+890,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+891,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+892,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+893,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+894,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+895,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+896,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+897,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+898,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+899,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+900,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+901,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+902,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+903,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+904,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+905,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+906,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+907,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+908,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+909,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+910,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+911,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+912,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+913,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+914,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+915,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+916,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+917,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+918,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+919,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+920,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+921,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+922,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+923,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+924,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+925,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+926,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+927,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+928,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+929,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+930,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+931,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+932,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+933,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+934,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+935,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+936,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+937,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+938,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+939,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+940,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+941,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+942,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+943,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+944,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+945,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+946,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+947,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+948,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+949,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+950,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+951,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+952,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+953,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+954,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+955,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+956,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+957,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+958,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+959,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+960,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+961,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+962,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+963,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+964,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+965,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+966,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+967,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+968,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+969,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+970,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+971,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+972,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+973,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+974,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+975,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+976,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+977,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+978,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+979,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+980,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+981,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+982,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+983,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+984,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+985,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+986,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+987,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+988,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+989,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+990,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+991,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+992,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+993,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+994,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+995,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+996,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+997,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+998,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+999,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1000,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1001,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1002,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1003,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1004,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1005,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1006,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1007,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1008,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1009,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1010,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1011,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1012,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1013,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1014,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1015,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1016,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1017,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1018,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1019,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1020,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1021,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1022,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1023,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1024,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1025,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1026,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1027,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1028,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1029,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1030,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1031,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1032,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1033,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1034,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1035,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1036,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1037,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1038,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1039,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1040,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1041,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1042,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1043,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1044,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1045,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1046,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1047,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1048,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1049,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1050,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1051,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1052,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1053,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1054,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1055,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1056,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1057,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1058,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1059,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1060,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1061,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1062,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1063,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1064,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1065,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1066,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1067,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1068,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1069,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1070,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1071,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1072,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1073,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1074,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1075,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1076,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1077,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1078,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1079,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1080,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1081,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1082,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1083,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1084,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1085,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1086,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1087,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1088,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1089,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1090,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1091,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1092,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1093,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1094,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1095,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1096,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1097,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1098,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1099,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1100,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1101,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1102,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1103,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1104,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1105,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1106,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1107,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1108,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1109,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1110,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1111,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1112,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1113,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1114,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1115,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1116,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1117,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1118,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1119,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1120,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1121,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1122,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1123,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1124,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1125,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1126,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1127,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1128,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1129,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1130,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1131,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1132,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1133,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1134,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1135,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1136,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1137,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1138,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1139,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1140,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1141,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1142,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1143,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1144,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1145,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1146,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1147,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1148,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1149,Unarmed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1150,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1151,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1152,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1153,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1154,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1155,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1156,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1157,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1158,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1159,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1160,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1161,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1162,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1163,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1164,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1165,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1166,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1167,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1168,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1169,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1170,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1171,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1172,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1173,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1174,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1175,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1176,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1177,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1178,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1179,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1180,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1181,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1182,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1183,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1184,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1185,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1186,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1187,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1188,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1189,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1190,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1191,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1192,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1193,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1194,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1195,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1196,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1197,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1198,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1199,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1200,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1201,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1202,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1203,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1204,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1205,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1206,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1207,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1208,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1209,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1210,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1211,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1212,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1213,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1214,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1215,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1216,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1217,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1218,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1219,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1220,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1221,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1222,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1223,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1224,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1225,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1226,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1227,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1228,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1229,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1230,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1231,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1232,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1233,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1234,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1235,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1236,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1237,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1238,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1239,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1240,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1241,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1242,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1243,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1244,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1245,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1246,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1247,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1248,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1249,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1250,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1251,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1252,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1253,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1254,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1255,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1256,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1257,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1258,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1259,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1260,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1261,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1262,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1263,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1264,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1265,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1266,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1267,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1268,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1269,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1270,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1271,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1272,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1273,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1274,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1275,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1276,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1277,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1278,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1279,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1280,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1281,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1282,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1283,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1284,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1285,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1286,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1287,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1288,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1289,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1290,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1291,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1292,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1293,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1294,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1295,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1296,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1297,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1298,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1299,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1300,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1301,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1302,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1303,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.6606294036532103
+1304,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.6606294036532103
+1305,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1306,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1307,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1308,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1309,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1310,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1311,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1312,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.6606294036532103
+1313,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.6606294036532103
+1314,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1315,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1316,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1317,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1318,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1319,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1320,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1321,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1322,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1323,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1324,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1325,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1326,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1327,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1328,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1329,Armed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1330,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1331,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1332,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1333,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1334,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1335,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1336,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1337,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1338,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1339,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1340,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1341,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1342,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1343,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1344,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1345,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1346,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1347,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1348,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1349,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1350,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1351,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1352,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1353,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1354,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1355,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1356,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1357,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1358,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1359,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1360,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1361,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1362,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1363,Armed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1364,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1365,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1366,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1367,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1368,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1369,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1370,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1371,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1372,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1373,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1374,Unarmed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1375,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1376,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1377,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1378,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1379,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1380,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1381,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1382,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1383,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1384,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1385,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1386,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1387,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1388,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1389,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1390,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1391,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1392,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1393,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1394,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1395,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1396,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1397,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1398,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1399,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1400,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1401,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1402,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1403,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1404,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1405,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1406,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1407,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1408,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1409,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1410,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1411,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1412,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1413,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1414,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1415,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1416,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1417,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1418,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1419,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1420,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1421,Armed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1422,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1423,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1424,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1425,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1426,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1427,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1428,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1429,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1430,Unarmed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1431,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1432,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1433,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1434,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1435,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1436,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1437,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1438,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1439,Unarmed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1440,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1441,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1442,Armed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1443,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1444,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1445,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1446,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1447,Unarmed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1448,Unarmed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1449,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1450,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1451,Unarmed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1452,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1453,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1454,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1455,Armed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1456,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1457,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1458,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1459,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1460,Unarmed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1461,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1462,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1463,Armed,Light Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1464,Armed,Heavy Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1465,Armed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1466,Unarmed,Heavy Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1467,Unarmed,,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1468,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1469,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1470,Unarmed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1471,Armed,Light Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1472,Armed,,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1473,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1474,Armed,,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1475,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1476,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1477,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1478,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1479,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1480,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1481,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1482,Unarmed,Light Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1483,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1484,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1485,Armed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1486,Unarmed,,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1487,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1488,Unarmed,Light Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1489,Armed,Light Torpedo,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1490,Armed,,,Light Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1491,Armed,,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1492,Armed,Heavy Torpedo,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1493,Armed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1494,Unarmed,Heavy Torpedo,,Heavy Torpedo,Unarmed,No,Malicious,1,0.7133801344847649
+1495,Unarmed,Heavy Torpedo,,Light Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1496,Armed,,,Heavy Torpedo,Armed,No,Malicious,1,0.7133801344847649
+1497,Armed,Light Torpedo,,Heavy Torpedo,Unarmed,Yes,Malicious,1,0.7133801344847649
+1498,Unarmed,,,Light Torpedo,Armed,Yes,Malicious,1,0.7133801344847649
+1499,Armed,Light Torpedo,,Light Torpedo,Armed,No,Malicious,1,0.7133801344847649
