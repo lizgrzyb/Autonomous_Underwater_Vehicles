@@ -1,7 +1,0 @@
-Sonar Image Classifier:
-Best Model: densenet121 with Accuracy: 0.9857142857142858
-Best Hyperparameters: Learning Rate = 0.0005, Batch Size = 32, Optimizer = adam, weight_decay = 0.0001
-
-Malicious Image Classifier:
-Best Model: resnet18 with Accuracy: 99.88%
-Best Hyperparameters: Learning Rate = 0.0001, Batch Size = 32, Optimizer = RMSprop
