@@ -175,11 +175,12 @@ class BattleshipModel(GetterSetter):
                 self.current_speed = 0
                 return None
             
-            '''
-            if self.predicted_attack != "normal":
+            
+            if int(self.predicted_attack) != 1:
                 self.current_speed = 0
                 return None
-            '''
+ 
+            
             
             # If the ML's heading is within 2 degrees of the heading we calculated, continue
             if "heading" not in supervisor_data or SimulatorUtilities.is_within_threshold(supervisor_data["heading"], self.waypoint_heading, 2):

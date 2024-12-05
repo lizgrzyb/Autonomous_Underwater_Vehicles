@@ -5,7 +5,7 @@ import select
 import time
 
 # Base directory where the scripts are located
-BASE_DIR = "/Users/lizgrzyb/Desktop/CIP_Sub/Security_Monitor"
+BASE_DIR = "/Users/lizgrzyb/Desktop/CIP_Sub/Autonomous_Underwater_Vehicles/Security_Monitor"
 
 # Paths to the scripts
 IMAGE_PASSER_SCRIPT = os.path.join(BASE_DIR, "EXAMPLE_Sonar.py")

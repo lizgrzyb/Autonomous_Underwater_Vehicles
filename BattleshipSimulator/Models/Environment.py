@@ -13,6 +13,8 @@ import pandas as pd
 from multiprocessing import shared_memory
 import json
 import paho.mqtt.client as mqtt
+import copy
+import os
 
 #Operation modes/attacks
 NORMAL = 1
@@ -56,7 +58,7 @@ class Hardware(GetterSetter):
 
         self.message = MessageSystem()
         self.power = [SimulatorUtilities.calculate_power(3, self.global_status)]             # [watt]
-        self.power_log = [self.power]
+        self.power_log = [copy.deepcopy(self.power)]
         self.rudder_log = []
 
         # Load the trained ICS Monitor model
@@ -149,21 +151,23 @@ class Hardware(GetterSetter):
                 writer = csv.writer(file)
                 writer.writerow(self.power)
 
-        self.power_log.append(self.power)
+        self.power_log.append(copy.deepcopy(self.power))
 
         # client send power log to mqtt server
         if (len(self.power_log) >= 10):
-            group_log = self.power_log[-10:]
+            group_log = [self.power_log[-10:]]
             for i, chunk in enumerate(group_log):
                 # Convert the chunk to JSON
                 chunk = pd.DataFrame(chunk, columns=["Power"])
                 chunk_json = chunk.to_json(orient="records")
                 payload = json.dumps({"ChunkID": i, "Data": chunk_json})
-                print(payload)
+                #print(payload)
 
                 # Publish the chunk
-                self.power_data_client.publish("submarine/power_input", payload)
-                print(payload)
+                #self.power_data_client.publish("submarine/power_input", payload)
+                os.system(f"mosquitto_pub -h localhost -t \"submarine/power_input\" -m {payload}")
+
+                #print(payload)
 
 
         # Simulate hardware metrics

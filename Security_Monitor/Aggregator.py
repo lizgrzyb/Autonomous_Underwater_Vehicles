@@ -1,11 +1,21 @@
 import paho.mqtt.client as mqtt
 import json
+from multiprocessing import shared_memory
 
 # MQTT Configuration
 BROKER = "localhost"
 PORT = 1883
 INPUT_TOPICS = ["submarine/sonar", "submarine/power", "submarine/rudder", "submarine/weapons"]
 OUTPUT_TOPIC = "submarine/dashboard"
+
+#Attack States:
+NORMAL = 1
+GPS_SPOOFING = 2            # Packet count spikes, gps x and y offset have a value
+SONAR_JAMMING = 3           # CPU usage and packet count increase
+COMMUNICATION_JAMMING = 4   # packet count and network bytes rate drop
+MINE = 5                    # Some or all systems shut down
+POWER_ATTACK = 6            # power attack
+RUDDER_ATTACK = 7           # rudder attack
 
 # System-wide status
 system_status = {
@@ -41,9 +51,25 @@ def on_message(client, userdata, msg):
         # Determine overall system status
         overall_status = "Anomalous" if "Attack" in system_status.values() else "Normal"
 
+        try:
+            shared_mem_aggregator = shared_memory.SharedMemory("aggregator", False, 10)
+        except:
+            shared_mem_aggregator = shared_memory.SharedMemory("aggregator", True, 10)
+        shared_mem_aggregator_buff = shared_mem_aggregator.buf
+        shared_mem_aggregator_buff[0] = 1
+        if overall_status == "Normal":
+            shared_mem_aggregator_buff[0] = 1
+        elif topic == "Sonar":
+            shared_mem_aggregator_buff[0] = 3
+        elif topic == "Power":
+            shared_mem_aggregator_buff[0] = 6
+        elif topic == "Rudder":
+            shared_mem_aggregator_buff[0] = 7
+        print(f"BUFF {shared_mem_aggregator_buff[0]}")
+ 
+ 
+
         # Log updates
-        #print(f"Updated System Status: {system_status}")
-        #print(f"Overall System Status: {overall_status}")
 
         # Publish to dashboard
         dashboard_payload = json.dumps({
@@ -51,8 +77,7 @@ def on_message(client, userdata, msg):
             "Details": system_status
         })
         client.publish(OUTPUT_TOPIC, dashboard_payload)
-        print(f"AGGREGATOR OUT: {payload}")
-        print(f"Published to dashboard: {dashboard_payload}")
+    
 
     except Exception as e:
         print(f"Error processing message: {e}")

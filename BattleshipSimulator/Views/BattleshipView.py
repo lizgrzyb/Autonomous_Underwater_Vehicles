@@ -472,9 +472,9 @@ class BattleshipViewGUI(arcade.View):
                     # Publish the payload
                     self.controller.simulation.image_data_client.publish("submarine/sonar_input", payload)
 
-                image_texture = arcade.load_texture("fish/fish8.jpg")
-                image_texture2 = arcade.load_texture("fish/fish9.jpg")
-                image_texture3 = arcade.load_texture("fish/fish10.jpg")
+                image_texture = arcade.load_texture("Security_Monitor/Noisy_Images/file1.jpg")
+                image_texture2 = arcade.load_texture("Security_Monitor/Noisy_Images/file2.jpg")
+                image_texture3 = arcade.load_texture("Security_Monitor/Noisy_Images/file3.jpg")
                 arcade.draw_scaled_texture_rectangle(
                     self.screen_width - 150, self.screen_height // 2, 
                     image_texture,
@@ -494,7 +494,7 @@ class BattleshipViewGUI(arcade.View):
                 )
 
                 self.weapon_attack_pause_counter += 1
-                if (self.weapon_attack_pause_counter >= 150):
+                if (self.weapon_attack_pause_counter >= 150 and self.controller.simulation.world.models[ship_id].hardware.shared_mem_aggregator_buff[0] != 3):
                     image_texture_skeleton = arcade.load_texture("fish/skeleton.png")
                     arcade.draw_scaled_texture_rectangle(
                         self.screen_width - 150, self.screen_height // 4,  

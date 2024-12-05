@@ -48,6 +48,7 @@ def extract_features(data):
     
     # Return as DataFrame
     feature_df = pd.DataFrame(features, columns=['Mean', 'StdDev', 'Min', 'Max', 'Range'])
+    
     return feature_df
 
 # Function to log prediction results to CSV
@@ -60,6 +61,7 @@ def log_results(chunk_id, power_values, features, prediction):
 
 # Handle incoming MQTT messages
 def on_message(client, userdata, msg):
+    print(f"MESSAGE {msg}")
     try:
         # Decode the incoming message
         payload = json.loads(msg.payload.decode())
@@ -68,6 +70,7 @@ def on_message(client, userdata, msg):
 
         # Convert JSON string to DataFrame
         data = pd.read_json(chunk_data)
+        print(f"DATAFRAME POWER: {data}")
 
         # Debugging: Print the raw chunk data
         print(f"Chunk {chunk_id} Raw Data:\n{data}")
@@ -90,7 +93,7 @@ def on_message(client, userdata, msg):
         prediction_label = "Normal" if predictions[0] == 0 else "Attack"
 
         # Debugging: Print predictions
-        print(f"Chunk {chunk_id} Prediction: {prediction_label}")
+        #print(f"Chunk {chunk_id} Prediction: {prediction_label}")
 
         # Log the results
         log_results(chunk_id, data['Power'].tolist(), features, prediction_label)
@@ -98,6 +101,7 @@ def on_message(client, userdata, msg):
         # Publish the result
         result = {"System": "Power", "ChunkID": chunk_id, "Prediction": prediction_label}
         client.publish(OUTPUT_TOPIC, json.dumps(result))
+        print(f"POWER OUT {log_results}")
     except Exception as e:
         print(f"Error processing message: {e}")
 
