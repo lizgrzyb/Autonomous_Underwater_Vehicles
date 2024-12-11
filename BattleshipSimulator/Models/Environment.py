@@ -3,6 +3,7 @@ from BattleshipSimulator.Models.GetterSetter import GetterSetter
 import BattleshipSimulator.Models.BattleshipSystem as BattleSystem
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
 from BattleshipSimulator.Models.Logger import CSVLogger
+import BattleshipSimulator.Models.BattleshipConstant as BattleshipConstant
 import datetime
 import time
 import random
@@ -15,15 +16,6 @@ import json
 import paho.mqtt.client as mqtt
 import copy
 import os
-
-#Operation modes/attacks
-NORMAL = 1
-GPS_SPOOFING = 2            # Packet count spikes, gps x and y offset have a value
-SONAR_JAMMING = 3           # CPU usage and packet count increase
-COMMUNICATION_JAMMING = 4   # packet count and network bytes rate drop
-MINE = 5                    # Some or all systems shut down
-POWER_ATTACK = 6            # power attack
-RUDDER_ATTACK = 7           # rudder attack
 
 # CIP begin
 
@@ -47,7 +39,7 @@ class Hardware(GetterSetter):
             "GPS X Offset": 0,
             "GPS Y Offset": 0,
         }
-        self.global_status = NORMAL
+        self.global_status = BattleshipConstant.NORMAL
         self.counter = 0
         self.counter_to_launch_attack = None
         self.attack_to_launch = None
@@ -142,7 +134,7 @@ class Hardware(GetterSetter):
             writer = csv.writer(file)
             writer.writerow(values_array)
 
-        if (self.global_status == POWER_ATTACK):
+        if (self.global_status == BattleshipConstant.POWER_ATTACK):
             with open("output\output_power_attack.csv", "a", newline="") as file:
                 writer = csv.writer(file)
                 writer.writerow(self.power)
@@ -187,20 +179,20 @@ class Hardware(GetterSetter):
         self.hardware_data["Packet Count"] = random.uniform(200, 500)
 
     def simulate_attack_impacts(self):
-        if self.global_status == GPS_SPOOFING:
+        if self.global_status == BattleshipConstant.GPS_SPOOFING:
             self.hardware_data["Packet Count"] += random.uniform(150, 700)
             self.gps_x_offset += 2
             self.gps_y_offset += 2
 
-        if self.global_status == SONAR_JAMMING:
+        if self.global_status == BattleshipConstant.SONAR_JAMMING:
             self.hardware_data["Packet Count"] += random.uniform(1000, 1500)
             self.hardware_data["CPU Usage"] += random.uniform(20, 40)
 
-        if self.global_status == COMMUNICATION_JAMMING:
+        if self.global_status == BattleshipConstant.COMMUNICATION_JAMMING:
             self.hardware_data["Packet Count"] = random.uniform(0, 10)
             self.hardware_data["Network Bytes Rate"] = random.uniform(0, 10)
 
-        if self.global_status == MINE:
+        if self.global_status == BattleshipConstant.MINE:
             self.hardware_data["CPU Usage"] += random.uniform(50, 90)
             self.hardware_data["Memory Usage"] += random.uniform(100, 200)
             self.hardware_data["Packet Count"] = 0
@@ -213,10 +205,6 @@ class Hardware(GetterSetter):
                 time.sleep(1)  # Pause for 1 second
         except KeyboardInterrupt:
             print("Real-time monitoring stopped.")
-
-        
-        #if self.counter > 1500:
-            #self.global_status = GPS_SPOOFING
 
 # CIP end
 

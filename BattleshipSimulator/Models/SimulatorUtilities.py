@@ -5,6 +5,7 @@ from shapely.geometry import Polygon, MultiPolygon, LineString, Point
 from shapely.affinity import translate, rotate, scale
 from BattleshipSimulator.python_vehicle_simulator.lib.gnc import attitudeEuler
 from BattleshipSimulator.python_vehicle_simulator.vehicles import frigate
+import BattleshipSimulator.Models.BattleshipConstant as BattleshipConstant
 import os
 import random
 import uuid
@@ -587,7 +588,7 @@ def getNextPosition(speed, targetHeading, prevEta, vehicle, timeDelta, oldNu, ol
 
     # Propagate vehicle and attitude dynamics
     rudder_elec = 20000 + random.uniform(-1000, 1000)
-    if (hardware.global_status == 7):
+    if (hardware.global_status == BattleshipConstant.RUDDER_ATTACK):
         u_control[0] = u_control[0] + random.uniform(0.3, 0.6)
         rudder_elec = rudder_elec + random.uniform(2000, 5000)
         with open("output\output_rudder_attack.csv", "a", newline="") as file:

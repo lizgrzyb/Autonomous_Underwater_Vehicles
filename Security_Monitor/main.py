@@ -5,7 +5,7 @@ import select
 import time
 
 # Base directory where the scripts are located
-BASE_DIR = "/Users/lizgrzyb/Desktop/CIP_Sub/Autonomous_Underwater_Vehicles/Security_Monitor"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Paths to the scripts
 IMAGE_PASSER_SCRIPT = os.path.join(BASE_DIR, "EXAMPLE_Sonar.py")
@@ -17,7 +17,7 @@ RUDDER_IDS_SCRIPT = os.path.join(BASE_DIR, "IDS_Rudder.py")
 WEAPONS_PASSER_SCRIPT = os.path.join(BASE_DIR, "EXAMPLE_Weapons.py")
 WEAPONS_IDS_SCRIPT = os.path.join(BASE_DIR, "IDS_Weapons.py")
 AGGREGATOR_SCRIPT = os.path.join(BASE_DIR, "Aggregator.py")
-DASHBOARD_SCRIPT = os.path.join(BASE_DIR, "dashboard.py")
+DASHBOARD_SCRIPT = os.path.join(BASE_DIR, "Dashboard.py")
 
 # Process container
 processes = []

@@ -1,4 +1,5 @@
 import BattleshipSimulator.Models.SimulatorUtilities as SimulatorUtilities
+import BattleshipSimulator.Models.BattleshipConstant as BattleshipConstant
 from BattleshipSimulator.Models.GetterSetter import GetterSetter
 from shapely.geometry import Point, Polygon
 import random
@@ -302,7 +303,7 @@ class RadarSonar(BattleshipSystem):
                     self.collision_event = True
                     self.collision_objects.append(world_object)
 
-        if self.model.hardware.global_status == 3:
+        if self.model.hardware.global_status == BattleshipConstant.SONAR_JAMMING:
             self.fake_radar_objects = [[0 for i in range(0, random.randint(2, 5))] for i in range(0, random.randint(1, 6))]
             with open("output\output_sonar_jamming_object.csv", "a", newline="") as file:
                 writer = csv.writer(file)

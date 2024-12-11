@@ -445,7 +445,7 @@ class BattleshipViewGUI(arcade.View):
             to_attack_target = self.get_model_attribute(ship_id, "Weapons:to_attack_target_index")
             if to_attack_target is not None:
                 def play_sonar_sound():
-                    playsound('C:\Critical Infrastructure Protection\Autonomous_Underwater_Vehicles\\fish\\sonar1.wav')
+                    playsound('./fish/sonar1.wav')
 
                 if self.sound_play_counter >= 200:
                     thread = threading.Thread(target=play_sonar_sound)

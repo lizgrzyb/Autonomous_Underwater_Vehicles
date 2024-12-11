@@ -6,3 +6,10 @@ matplotlib
 zmq
 icecream
 requests
+paho-mqtt
+torch
+pandas
+numpy
+playsound
+scikit-learn
+torchvision
