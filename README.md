@@ -7,6 +7,7 @@ https://github.com/TechGeek001/Battleship-Simulator
 
 # Run
 The security monitor and base submarine simulator are designed to be run seperately and communicate with eachother via MQTT.
+### Step 1:
 First, download this repo and execute commands from the base directory "Autonomous_Underwater_Vehicles".
 
 Run the security monitor with:
