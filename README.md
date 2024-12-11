@@ -8,9 +8,12 @@ https://github.com/TechGeek001/Battleship-Simulator
 # Run
 The security monitor and base submarine simulator are designed to be run seperately and communicate with eachother via MQTT.
 ### Step 1:
-First, download this repo and execute commands from the base directory "Autonomous_Underwater_Vehicles".
+Download this repo and execute commands from the base directory "Autonomous_Underwater_Vehicles".
 
-Run the security monitor with:
-'''Python
+### Step 2:
+From the base directory, run the security monitor with:
 python Security_Monitor/main.py
+
+### Step 3:
+Run the simulator with: 
 python main.py --scenario scenarios/scenario-gen-1.yaml
